@@ -1,5 +1,6 @@
-.header{
+.jumbotron{
     padding-top: 0;
     background: url(../img/home-bg.svg),linear-gradient(180deg,#7014e8 30.12%,#0e5ecf 192.47%);
     margin: 0;
+    color:#fff;
 }
