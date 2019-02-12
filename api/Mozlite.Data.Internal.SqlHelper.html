@@ -1,0 +1,1539 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SqlHelper 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SqlHelper 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Data.Internal.SqlHelper">
+  
+  
+  <h1 id="Mozlite_Data_Internal_SqlHelper" data-uid="Mozlite.Data.Internal.SqlHelper" class="text-break">SqlHelper 类
+  </h1>
+  <div class="markdown level0 summary"><p>SQL辅助类基类。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SqlHelper</span></div>
+      <div class="level2"><a class="xref" href="Mozlite.Data.SqlServer.SqlServerHelper.html">SqlServerHelper</a></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Data.ISqlHelper.html">ISqlHelper</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Data.Internal.html">Mozlite.Data.Internal</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Data.dll</h6>
+  <h5 id="Mozlite_Data_Internal_SqlHelper_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SqlHelper : ISqlHelper</code></pre>
+  </div>
+  <h3 id="properties">&#23646;&#24615;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_DateTimeFormat.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.DateTimeFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L89">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_DateTimeFormat_" data-uid="Mozlite.Data.Internal.SqlHelper.DateTimeFormat*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_DateTimeFormat" data-uid="Mozlite.Data.Internal.SqlHelper.DateTimeFormat">DateTimeFormat</h4>
+  <div class="markdown level1 summary"><p>日期格式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string DateTimeFormat { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_DateTimeOffsetFormat.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.DateTimeOffsetFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L94">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_DateTimeOffsetFormat_" data-uid="Mozlite.Data.Internal.SqlHelper.DateTimeOffsetFormat*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_DateTimeOffsetFormat" data-uid="Mozlite.Data.Internal.SqlHelper.DateTimeOffsetFormat">DateTimeOffsetFormat</h4>
+  <div class="markdown level1 summary"><p>DateTimeOffset格式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string DateTimeOffsetFormat { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_DecimalFormat.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.DecimalFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L84">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_DecimalFormat_" data-uid="Mozlite.Data.Internal.SqlHelper.DecimalFormat*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_DecimalFormat" data-uid="Mozlite.Data.Internal.SqlHelper.DecimalFormat">DecimalFormat</h4>
+  <div class="markdown level1 summary"><p>decimal格式.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string DecimalFormat { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_FloatingPointFormatString.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.FloatingPointFormatString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L79">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_FloatingPointFormatString_" data-uid="Mozlite.Data.Internal.SqlHelper.FloatingPointFormatString*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_FloatingPointFormatString" data-uid="Mozlite.Data.Internal.SqlHelper.FloatingPointFormatString">FloatingPointFormatString</h4>
+  <div class="markdown level1 summary"><p>float格式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string FloatingPointFormatString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_StatementTerminator.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.StatementTerminator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L17">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_StatementTerminator_" data-uid="Mozlite.Data.Internal.SqlHelper.StatementTerminator*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_StatementTerminator" data-uid="Mozlite.Data.Internal.SqlHelper.StatementTerminator">StatementTerminator</h4>
+  <div class="markdown level1 summary"><p>语句结束符。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string StatementTerminator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_DelimitIdentifier_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.DelimitIdentifier(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L58">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_DelimitIdentifier_" data-uid="Mozlite.Data.Internal.SqlHelper.DelimitIdentifier*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_DelimitIdentifier_System_String_" data-uid="Mozlite.Data.Internal.SqlHelper.DelimitIdentifier(System.String)">DelimitIdentifier(String)</h4>
+  <div class="markdown level1 summary"><p>将表格名称或列名称加上安全括弧。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string DelimitIdentifier(string identifier)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>当前标识字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回格式化后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_DelimitIdentifier_System_String_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.DelimitIdentifier(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L66">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_DelimitIdentifier_" data-uid="Mozlite.Data.Internal.SqlHelper.DelimitIdentifier*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_DelimitIdentifier_System_String_System_String_" data-uid="Mozlite.Data.Internal.SqlHelper.DelimitIdentifier(System.String,System.String)">DelimitIdentifier(String, String)</h4>
+  <div class="markdown level1 summary"><p>将表格名称或列名称加上安全括弧。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string DelimitIdentifier(string name, string schema)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>当前标识字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>架构名称。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回格式化后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_EscapeIdentifier_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.EscapeIdentifier(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L46">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_EscapeIdentifier_" data-uid="Mozlite.Data.Internal.SqlHelper.EscapeIdentifier*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_EscapeIdentifier_System_String_" data-uid="Mozlite.Data.Internal.SqlHelper.EscapeIdentifier(System.String)">EscapeIdentifier(String)</h4>
+  <div class="markdown level1 summary"><p>将字符串的“'”替换为“''”。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EscapeIdentifier(string identifier)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">identifier</span></td>
+        <td><p>当前字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回替换后的结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_EscapeLiteral_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.EscapeLiteral(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L34">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_EscapeLiteral_" data-uid="Mozlite.Data.Internal.SqlHelper.EscapeLiteral*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_EscapeLiteral_System_Object_" data-uid="Mozlite.Data.Internal.SqlHelper.EscapeLiteral(System.Object)">EscapeLiteral(Object)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EscapeLiteral(object literal)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">literal</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L165">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Boolean_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Boolean)">GenerateLiteralValue(Boolean)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Byte_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L133">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Byte_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Byte)">GenerateLiteralValue(Byte)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(byte value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Byte___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L189">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Byte___" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Byte[])">GenerateLiteralValue(Byte[])</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(byte[] value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Char_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L173">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Char_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Char)">GenerateLiteralValue(Char)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(char value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Data_DbType_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Data.DbType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L219">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Data_DbType_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Data.DbType)">GenerateLiteralValue(DbType)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(DbType value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DbType</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_DateTime_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L243">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_DateTime_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.DateTime)">GenerateLiteralValue(DateTime)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_DateTimeOffset_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.DateTimeOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L251">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_DateTimeOffset_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.DateTimeOffset)">GenerateLiteralValue(DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(DateTimeOffset value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Decimal_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L141">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Decimal_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Decimal)">GenerateLiteralValue(Decimal)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(decimal value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Double_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L149">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Double_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Double)">GenerateLiteralValue(Double)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(double value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Enum_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Enum)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L227">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Enum_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Enum)">GenerateLiteralValue(Enum)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(Enum value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Enum</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Guid_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L235">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Guid_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Guid)">GenerateLiteralValue(Guid)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(Guid value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Int16_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Int16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L117">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Int16_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Int16)">GenerateLiteralValue(Int16)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(short value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L109">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Int32_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Int32)">GenerateLiteralValue(Int32)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(int value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Int64_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L125">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Int64_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Int64)">GenerateLiteralValue(Int64)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(long value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L181">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Object_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Object)">GenerateLiteralValue(Object)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(object value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Single_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L157">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Single_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Single)">GenerateLiteralValue(Single)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(float value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L101">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_String_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.String)">GenerateLiteralValue(String)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(string value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_TimeSpan_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.TimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L259">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_TimeSpan_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.TimeSpan)">GenerateLiteralValue(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(TimeSpan value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Type_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L267">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_GenerateLiteralValue_System_Type_" data-uid="Mozlite.Data.Internal.SqlHelper.GenerateLiteralValue(System.Type)">GenerateLiteralValue(Type)</h4>
+  <div class="markdown level1 summary"><p>将对象转换为安全的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GenerateLiteralValue(Type value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回转换后的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper_Parameterized_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper.Parameterized(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L24">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_SqlHelper_Parameterized_" data-uid="Mozlite.Data.Internal.SqlHelper.Parameterized*"></a>
+  <h4 id="Mozlite_Data_Internal_SqlHelper_Parameterized_System_String_" data-uid="Mozlite.Data.Internal.SqlHelper.Parameterized(System.String)">Parameterized(String)</h4>
+  <div class="markdown level1 summary"><p>参数化字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Parameterized(string name)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>参数名称。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回参数化的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Data.ISqlHelper.html">ISqlHelper</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_SqlHelper.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.SqlHelper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/SqlHelper.cs/#L12" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

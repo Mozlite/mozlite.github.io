@@ -1,0 +1,975 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>IUserManager&lt;TUser, TRole&gt; 接口
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="IUserManager&lt;TUser, TRole&gt; 接口
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Extensions.Security.IUserManager`2">
+  
+  
+  <h1 id="Mozlite_Extensions_Security_IUserManager_2" data-uid="Mozlite.Extensions.Security.IUserManager`2" class="text-break">IUserManager&lt;TUser, TRole&gt; 接口
+  </h1>
+  <div class="markdown level0 summary"><p>用户管理接口。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_SignInManager">IUserManager&lt;TUser&gt;.SignInManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_FindByIdAsync_System_Int32_">IUserManager&lt;TUser&gt;.FindByIdAsync(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_FindByNameAsync_System_String_">IUserManager&lt;TUser&gt;.FindByNameAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_NormalizeKey_System_String_">IUserManager&lt;TUser&gt;.NormalizeKey(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GetUser">IUserManager&lt;TUser&gt;.GetUser()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GetUserAsync">IUserManager&lt;TUser&gt;.GetUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_IsSignedIn">IUserManager&lt;TUser&gt;.IsSignedIn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_HashPassword__0_">IUserManager&lt;TUser&gt;.HashPassword(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_HashPassword_System_String_">IUserManager&lt;TUser&gt;.HashPassword(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_VerifyHashedPassword_System_String_System_String_">IUserManager&lt;TUser&gt;.VerifyHashedPassword(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_PasswordSalt_System_String_System_String_">IUserManager&lt;TUser&gt;.PasswordSalt(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_PasswordSignInAsync_System_String_System_String_System_Boolean_">IUserManager&lt;TUser&gt;.PasswordSignInAsync(String, String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_PasswordSignInAsync_System_String_System_String_System_Boolean_System_Func__0_System_Threading_Tasks_Task__">IUserManager&lt;TUser&gt;.PasswordSignInAsync(String, String, Boolean, Func&lt;TUser, Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_SignOutAsync">IUserManager&lt;TUser&gt;.SignOutAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_ChangePasswordAsync__0_System_String_System_String_">IUserManager&lt;TUser&gt;.ChangePasswordAsync(TUser, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_AddPasswordAsync__0_System_String_">IUserManager&lt;TUser&gt;.AddPasswordAsync(TUser, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_ResetPasswordAsync__0_System_String_">IUserManager&lt;TUser&gt;.ResetPasswordAsync(TUser, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_ResetPasswordAsync__0_System_String_System_String_">IUserManager&lt;TUser&gt;.ResetPasswordAsync(TUser, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GeneratePasswordResetTokenAsync__0_">IUserManager&lt;TUser&gt;.GeneratePasswordResetTokenAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_Update_System_Int32_System_Object_">IUserManager&lt;TUser&gt;.Update(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_UpdateAsync_System_Int32_System_Object_">IUserManager&lt;TUser&gt;.UpdateAsync(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_UpdateAsync__0_">IUserManager&lt;TUser&gt;.UpdateAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_Load__1___0_">IUserManager&lt;TUser&gt;.Load&lt;TQuery&gt;(TQuery)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_LoadAsync__1___0_">IUserManager&lt;TUser&gt;.LoadAsync&lt;TQuery&gt;(TQuery)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_CreateAsync__0_">IUserManager&lt;TUser&gt;.CreateAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_CreateAsync__0_System_String_">IUserManager&lt;TUser&gt;.CreateAsync(TUser, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_DeleteAsync__0_">IUserManager&lt;TUser&gt;.DeleteAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_IsDuplicated__0_">IUserManager&lt;TUser&gt;.IsDuplicated(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_IsDuplicatedAsync__0_">IUserManager&lt;TUser&gt;.IsDuplicatedAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_IsDuplicated_System_Int32_System_String_">IUserManager&lt;TUser&gt;.IsDuplicated(Int32, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_IsDuplicatedAsync_System_Int32_System_String_">IUserManager&lt;TUser&gt;.IsDuplicatedAsync(Int32, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_Lockout_System_Int32_System_Nullable_System_DateTimeOffset__">IUserManager&lt;TUser&gt;.Lockout(Int32, Nullable&lt;DateTimeOffset&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_LockoutAsync_System_Int32_System_Nullable_System_DateTimeOffset__">IUserManager&lt;TUser&gt;.LockoutAsync(Int32, Nullable&lt;DateTimeOffset&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_Delete_System_Int32___">IUserManager&lt;TUser&gt;.Delete(Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_Delete_System_Int32_">IUserManager&lt;TUser&gt;.Delete(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_DeleteAsync_System_Int32___">IUserManager&lt;TUser&gt;.DeleteAsync(Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_DeleteAsync_System_Int32_">IUserManager&lt;TUser&gt;.DeleteAsync(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_AddLoginAsync__0_Microsoft_AspNetCore_Identity_UserLoginInfo_">IUserManager&lt;TUser&gt;.AddLoginAsync(TUser, UserLoginInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GenerateEmailConfirmationTokenAsync__0_">IUserManager&lt;TUser&gt;.GenerateEmailConfirmationTokenAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_CheckPasswordAsync__0_System_String_">IUserManager&lt;TUser&gt;.CheckPasswordAsync(TUser, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GetLoginsAsync__0_">IUserManager&lt;TUser&gt;.GetLoginsAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GenerateTwoFactorTokenAsync__0_System_String_">IUserManager&lt;TUser&gt;.GenerateTwoFactorTokenAsync(TUser, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GetAuthenticatorKeyAsync__0_">IUserManager&lt;TUser&gt;.GetAuthenticatorKeyAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_VerifyTwoFactorTokenAsync__0_System_String_">IUserManager&lt;TUser&gt;.VerifyTwoFactorTokenAsync(TUser, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_CountRecoveryCodesAsync__0_">IUserManager&lt;TUser&gt;.CountRecoveryCodesAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GenerateNewTwoFactorRecoveryCodesAsync__0_System_Int32_">IUserManager&lt;TUser&gt;.GenerateNewTwoFactorRecoveryCodesAsync(TUser, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_ResetAuthenticatorKeyAsync__0_">IUserManager&lt;TUser&gt;.ResetAuthenticatorKeyAsync(TUser)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_RemoveLoginAsync__0_System_String_System_String_">IUserManager&lt;TUser&gt;.RemoveLoginAsync(TUser, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_ConfirmEmailAsync__0_System_String_">IUserManager&lt;TUser&gt;.ConfirmEmailAsync(TUser, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GenerateChangeEmailTokenAsync__0_System_String_">IUserManager&lt;TUser&gt;.GenerateChangeEmailTokenAsync(TUser, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_ChangeEmailAsync__0_System_String_System_String_">IUserManager&lt;TUser&gt;.ChangeEmailAsync(TUser, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_ChangePhoneNumberAsync__0_System_String_System_String_">IUserManager&lt;TUser&gt;.ChangePhoneNumberAsync(TUser, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GenerateChangePhoneNumberTokenAsync__0_System_String_">IUserManager&lt;TUser&gt;.GenerateChangePhoneNumberTokenAsync(TUser, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_VerifyChangePhoneNumberTokenAsync__0_System_String_System_String_">IUserManager&lt;TUser&gt;.VerifyChangePhoneNumberTokenAsync(TUser, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_GetAuthenticationTokenAsync__0_System_String_System_String_">IUserManager&lt;TUser&gt;.GetAuthenticationTokenAsync(TUser, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_SetAuthenticationTokenAsync__0_System_String_System_String_System_String_">IUserManager&lt;TUser&gt;.SetAuthenticationTokenAsync(TUser, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html#Mozlite_Extensions_Security_IUserManager_1_RemoveAuthenticationTokenAsync__0_System_String_System_String_">IUserManager&lt;TUser&gt;.RemoveAuthenticationTokenAsync(TUser, String, String)</a>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Extensions.Security.html">Mozlite.Extensions.Security</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Extensions.dll</h6>
+  <h5 id="Mozlite_Extensions_Security_IUserManager_2_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IUserManager&lt;TUser, TRole&gt; : IUserManager&lt;TUser&gt; where TUser : UserBase, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TUser</span></td>
+        <td><p>用户类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>角色类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_AddUserToRoles_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.AddUserToRoles(System.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L519">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_AddUserToRoles_" data-uid="Mozlite.Extensions.Security.IUserManager`2.AddUserToRoles*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_AddUserToRoles_System_Int32_System_Int32___" data-uid="Mozlite.Extensions.Security.IUserManager`2.AddUserToRoles(System.Int32,System.Int32[])">AddUserToRoles(Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p>将用户添加到角色中。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AddUserToRoles(int userId, int[] roleIds)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">roleIds</span></td>
+        <td><p>角色Id列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回添加结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_AddUserToRolesAsync_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.AddUserToRolesAsync(System.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L527">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_AddUserToRolesAsync_" data-uid="Mozlite.Extensions.Security.IUserManager`2.AddUserToRolesAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_AddUserToRolesAsync_System_Int32_System_Int32___" data-uid="Mozlite.Extensions.Security.IUserManager`2.AddUserToRolesAsync(System.Int32,System.Int32[])">AddUserToRolesAsync(Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p>将用户添加到角色中。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; AddUserToRolesAsync(int userId, int[] roleIds)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">roleIds</span></td>
+        <td><p>角色Id列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回添加结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_CreateOwnerAsync_System_String_System_String_System_String_System_Action__0__.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.CreateOwnerAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.Action%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L553">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_CreateOwnerAsync_" data-uid="Mozlite.Extensions.Security.IUserManager`2.CreateOwnerAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_CreateOwnerAsync_System_String_System_String_System_String_System_Action__0__" data-uid="Mozlite.Extensions.Security.IUserManager`2.CreateOwnerAsync(System.String,System.String,System.String,System.Action{`0})">CreateOwnerAsync(String, String, String, Action&lt;TUser&gt;)</h4>
+  <div class="markdown level1 summary"><p>添加所有者账号。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; CreateOwnerAsync(string userName, string loginName, string password, Action&lt;TUser&gt; init = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>用户名。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">loginName</span></td>
+        <td><p>登录名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>密码。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TUser&gt;</td>
+        <td><span class="parametername">init</span></td>
+        <td><p>实例化用户方法。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回添加结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_GetMaxRole_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.GetMaxRole(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L504">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_GetMaxRole_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetMaxRole*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_GetMaxRole_System_Int32_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetMaxRole(System.Int32)">GetMaxRole(Int32)</h4>
+  <div class="markdown level1 summary"><p>获取最高级角色实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TRole GetMaxRole(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><p>返回用户实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_GetMaxRoleAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.GetMaxRoleAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L511">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_GetMaxRoleAsync_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetMaxRoleAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_GetMaxRoleAsync_System_Int32_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetMaxRoleAsync(System.Int32)">GetMaxRoleAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>获取最高级角色实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TRole&gt; GetMaxRoleAsync(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TRole&gt;</td>
+        <td><p>返回用户实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_GetRoleIds_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.GetRoleIds(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L476">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_GetRoleIds_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRoleIds*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_GetRoleIds_System_Int32_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRoleIds(System.Int32)">GetRoleIds(Int32)</h4>
+  <div class="markdown level1 summary"><p>获取角色Id。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int[] GetRoleIds(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><p>返回角色Id集合。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_GetRoleIdsAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.GetRoleIdsAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L483">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_GetRoleIdsAsync_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRoleIdsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_GetRoleIdsAsync_System_Int32_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRoleIdsAsync(System.Int32)">GetRoleIdsAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>获取角色Id。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;int[]&gt; GetRoleIdsAsync(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>[]&gt;</td>
+        <td><p>返回角色Id集合。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_GetRoles_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.GetRoles(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L490">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_GetRoles_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRoles*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_GetRoles_System_Int32_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRoles(System.Int32)">GetRoles(Int32)</h4>
+  <div class="markdown level1 summary"><p>获取角色列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TRole&gt; GetRoles(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRole&gt;</td>
+        <td><p>返回角色Id集合。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_GetRolesAsync__0_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.GetRolesAsync(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L469">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_GetRolesAsync_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRolesAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_GetRolesAsync__0_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRolesAsync(`0)">GetRolesAsync(TUser)</h4>
+  <div class="markdown level1 summary"><p>获取用户的所有角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IList&lt;string&gt;&gt; GetRolesAsync(TUser user)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>用户实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>返回当前用户的所有角色列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_GetRolesAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.GetRolesAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L497">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_GetRolesAsync_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRolesAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_GetRolesAsync_System_Int32_" data-uid="Mozlite.Extensions.Security.IUserManager`2.GetRolesAsync(System.Int32)">GetRolesAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>获取角色列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;TRole&gt;&gt; GetRolesAsync(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRole&gt;&gt;</td>
+        <td><p>返回角色Id集合。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_SetUserToRoles_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.SetUserToRoles(System.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L535">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_SetUserToRoles_" data-uid="Mozlite.Extensions.Security.IUserManager`2.SetUserToRoles*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_SetUserToRoles_System_Int32_System_Int32___" data-uid="Mozlite.Extensions.Security.IUserManager`2.SetUserToRoles(System.Int32,System.Int32[])">SetUserToRoles(Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p>设置用户角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetUserToRoles(int userId, int[] roleIds)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">roleIds</span></td>
+        <td><p>角色Id列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回添加结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2_SetUserToRolesAsync_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602.SetUserToRolesAsync(System.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L543">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_IUserManager_2_SetUserToRolesAsync_" data-uid="Mozlite.Extensions.Security.IUserManager`2.SetUserToRolesAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_IUserManager_2_SetUserToRolesAsync_System_Int32_System_Int32___" data-uid="Mozlite.Extensions.Security.IUserManager`2.SetUserToRolesAsync(System.Int32,System.Int32[])">SetUserToRolesAsync(Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p>设置用户角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; SetUserToRolesAsync(int userId, int[] roleIds)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">roleIds</span></td>
+        <td><p>角色Id列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回设置结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_IUserManager_2.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.IUserManager%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/IUserManager.cs/#L460" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

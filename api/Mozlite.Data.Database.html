@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Database 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Database 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Data.Database">
+  
+  
+  <h1 id="Mozlite_Data_Database" data-uid="Mozlite.Data.Database" class="text-break">Database 类
+  </h1>
+  <div class="markdown level0 summary"><p>数据库基类。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Database</span></div>
+      <div class="level2"><a class="xref" href="Mozlite.Data.SqlServer.SqlServerDatabase.html">SqlServerDatabase</a></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Data.IDatabase.html">IDatabase</a></div>
+    <div><a class="xref" href="Mozlite.Data.Internal.IDbExecutor.html">IDbExecutor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Data.html">Mozlite.Data</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Data.dll</h6>
+  <h5 id="Mozlite_Data_Database_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Database : IDatabase, IDbExecutor</code></pre>
+  </div>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database__ctor_Microsoft_Extensions_Logging_ILogger_System_Data_Common_DbProviderFactory_Microsoft_Extensions_Options_IOptions_Mozlite_Data_DatabaseOptions__Mozlite_Data_ISqlHelper_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.%23ctor(Microsoft.Extensions.Logging.ILogger%2CSystem.Data.Common.DbProviderFactory%2CMicrosoft.Extensions.Options.IOptions%7BMozlite.Data.DatabaseOptions%7D%2CMozlite.Data.ISqlHelper)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L33">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database__ctor_" data-uid="Mozlite.Data.Database.#ctor*"></a>
+  <h4 id="Mozlite_Data_Database__ctor_Microsoft_Extensions_Logging_ILogger_System_Data_Common_DbProviderFactory_Microsoft_Extensions_Options_IOptions_Mozlite_Data_DatabaseOptions__Mozlite_Data_ISqlHelper_" data-uid="Mozlite.Data.Database.#ctor(Microsoft.Extensions.Logging.ILogger,System.Data.Common.DbProviderFactory,Microsoft.Extensions.Options.IOptions{Mozlite.Data.DatabaseOptions},Mozlite.Data.ISqlHelper)">Database(ILogger, DbProviderFactory, IOptions&lt;DatabaseOptions&gt;, ISqlHelper)</h4>
+  <div class="markdown level1 summary"><p>初始化 <a class="xref" href="Mozlite.Data.Database.html">Database</a> 类的新实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Database(ILogger logger, DbProviderFactory factory, IOptions&lt;DatabaseOptions&gt; options, ISqlHelper sqlHelper)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>日志接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbProviderFactory</span></td>
+        <td><span class="parametername">factory</span></td>
+        <td><p>数据库提供者工厂类。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<a class="xref" href="Mozlite.Data.DatabaseOptions.html">DatabaseOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>配置选项。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.ISqlHelper.html">ISqlHelper</a></td>
+        <td><span class="parametername">sqlHelper</span></td>
+        <td><p>SQL辅助接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">&#23646;&#24615;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_Logger.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L44">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_Logger_" data-uid="Mozlite.Data.Database.Logger*"></a>
+  <h4 id="Mozlite_Data_Database_Logger" data-uid="Mozlite.Data.Database.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>日志接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger Logger { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_Options.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L24">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_Options_" data-uid="Mozlite.Data.Database.Options*"></a>
+  <h4 id="Mozlite_Data_Database_Options" data-uid="Mozlite.Data.Database.Options">Options</h4>
+  <div class="markdown level1 summary"><p>数据库选项。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DatabaseOptions Options { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.DatabaseOptions.html">DatabaseOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_BeginTransaction_System_Func_Mozlite_Data_Internal_IDbTransaction_System_Boolean__System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.BeginTransaction(System.Func%7BMozlite.Data.Internal.IDbTransaction%2CSystem.Boolean%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L297">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_BeginTransaction_" data-uid="Mozlite.Data.Database.BeginTransaction*"></a>
+  <h4 id="Mozlite_Data_Database_BeginTransaction_System_Func_Mozlite_Data_Internal_IDbTransaction_System_Boolean__System_Int32_" data-uid="Mozlite.Data.Database.BeginTransaction(System.Func{Mozlite.Data.Internal.IDbTransaction,System.Boolean},System.Int32)">BeginTransaction(Func&lt;IDbTransaction, Boolean&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>开启一个事务并执行。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool BeginTransaction(Func&lt;IDbTransaction, bool&gt; executor, int timeout = 30)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Mozlite.Data.Internal.IDbTransaction.html">IDbTransaction</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">executor</span></td>
+        <td><p>事务执行的方法。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>等待命令执行所需的时间（以秒为单位）。默认值为 30 秒。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回事务实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_BeginTransactionAsync_System_Func_Mozlite_Data_Internal_IDbTransaction_System_Threading_Tasks_Task_System_Boolean___System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.BeginTransactionAsync(System.Func%7BMozlite.Data.Internal.IDbTransaction%2CSystem.Threading.Tasks.Task%7BSystem.Boolean%7D%7D%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L348">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_BeginTransactionAsync_" data-uid="Mozlite.Data.Database.BeginTransactionAsync*"></a>
+  <h4 id="Mozlite_Data_Database_BeginTransactionAsync_System_Func_Mozlite_Data_Internal_IDbTransaction_System_Threading_Tasks_Task_System_Boolean___System_Int32_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Database.BeginTransactionAsync(System.Func{Mozlite.Data.Internal.IDbTransaction,System.Threading.Tasks.Task{System.Boolean}},System.Int32,System.Threading.CancellationToken)">BeginTransactionAsync(Func&lt;IDbTransaction, Task&lt;Boolean&gt;&gt;, Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>开启一个事务并执行。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; BeginTransactionAsync(Func&lt;IDbTransaction, Task&lt;bool&gt;&gt; executor, int timeout = 30, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Mozlite.Data.Internal.IDbTransaction.html">IDbTransaction</a>, <span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">executor</span></td>
+        <td><p>事务执行的方法。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>等待命令执行所需的时间（以秒为单位）。默认值为 30 秒。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回事务实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_CreateParameter_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.CreateParameter(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L63">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_CreateParameter_" data-uid="Mozlite.Data.Database.CreateParameter*"></a>
+  <h4 id="Mozlite_Data_Database_CreateParameter_System_String_System_Object_" data-uid="Mozlite.Data.Database.CreateParameter(System.String,System.Object)">CreateParameter(String, Object)</h4>
+  <div class="markdown level1 summary"><p>创建参数表达式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DbParameter CreateParameter(string name, object value)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>参数名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>参数值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbParameter</span></td>
+        <td><p>返回数据库参数实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_ExecuteNonQuery_System_String_System_Object_System_Data_CommandType_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.ExecuteNonQuery(System.String%2CSystem.Object%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L173">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_ExecuteNonQuery_" data-uid="Mozlite.Data.Database.ExecuteNonQuery*"></a>
+  <h4 id="Mozlite_Data_Database_ExecuteNonQuery_System_String_System_Object_System_Data_CommandType_" data-uid="Mozlite.Data.Database.ExecuteNonQuery(System.String,System.Object,System.Data.CommandType)">ExecuteNonQuery(String, Object, CommandType)</h4>
+  <div class="markdown level1 summary"><p>执行没有返回值的查询实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ExecuteNonQuery(string commandText, object parameters = null, CommandType commandType = CommandType.Text)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>命令类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回是否有执行影响到数据行。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_ExecuteNonQueryAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.ExecuteNonQueryAsync(System.String%2CSystem.Object%2CSystem.Data.CommandType%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L232">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_ExecuteNonQueryAsync_" data-uid="Mozlite.Data.Database.ExecuteNonQueryAsync*"></a>
+  <h4 id="Mozlite_Data_Database_ExecuteNonQueryAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Database.ExecuteNonQueryAsync(System.String,System.Object,System.Data.CommandType,System.Threading.CancellationToken)">ExecuteNonQueryAsync(String, Object, CommandType, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>执行SQL语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; ExecuteNonQueryAsync(string commandText, object parameters = null, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数匿名类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>SQL类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回影响的行数。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_ExecuteReader_System_String_System_Object_System_Data_CommandType_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.ExecuteReader(System.String%2CSystem.Object%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L193">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_ExecuteReader_" data-uid="Mozlite.Data.Database.ExecuteReader*"></a>
+  <h4 id="Mozlite_Data_Database_ExecuteReader_System_String_System_Object_System_Data_CommandType_" data-uid="Mozlite.Data.Database.ExecuteReader(System.String,System.Object,System.Data.CommandType)">ExecuteReader(String, Object, CommandType)</h4>
+  <div class="markdown level1 summary"><p>查询实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbDataReader ExecuteReader(string commandText, object parameters = null, CommandType commandType = CommandType.Text)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>命令类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbDataReader</span></td>
+        <td><p>返回数据库读取实例接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_ExecuteReaderAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.ExecuteReaderAsync(System.String%2CSystem.Object%2CSystem.Data.CommandType%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L255">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_ExecuteReaderAsync_" data-uid="Mozlite.Data.Database.ExecuteReaderAsync*"></a>
+  <h4 id="Mozlite_Data_Database_ExecuteReaderAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Database.ExecuteReaderAsync(System.String,System.Object,System.Data.CommandType,System.Threading.CancellationToken)">ExecuteReaderAsync(String, Object, CommandType, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>执行SQL语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;DbDataReader&gt; ExecuteReaderAsync(string commandText, object parameters = null, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数匿名类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>SQL类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Data.Common.DbDataReader</span>&gt;</td>
+        <td><p>返回数据库读取器实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_ExecuteScalar_System_String_System_Object_System_Data_CommandType_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.ExecuteScalar(System.String%2CSystem.Object%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L211">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_ExecuteScalar_" data-uid="Mozlite.Data.Database.ExecuteScalar*"></a>
+  <h4 id="Mozlite_Data_Database_ExecuteScalar_System_String_System_Object_System_Data_CommandType_" data-uid="Mozlite.Data.Database.ExecuteScalar(System.String,System.Object,System.Data.CommandType)">ExecuteScalar(String, Object, CommandType)</h4>
+  <div class="markdown level1 summary"><p>查询数据库聚合值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object ExecuteScalar(string commandText, object parameters = null, CommandType commandType = CommandType.Text)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>命令类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>返回聚合值实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_ExecuteScalarAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.ExecuteScalarAsync(System.String%2CSystem.Object%2CSystem.Data.CommandType%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L276">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_ExecuteScalarAsync_" data-uid="Mozlite.Data.Database.ExecuteScalarAsync*"></a>
+  <h4 id="Mozlite_Data_Database_ExecuteScalarAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Database.ExecuteScalarAsync(System.String,System.Object,System.Data.CommandType,System.Threading.CancellationToken)">ExecuteScalarAsync(String, Object, CommandType, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>执行SQL语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;object&gt; ExecuteScalarAsync(string commandText, object parameters = null, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数匿名类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>SQL类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><p>返回单一结果实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_GetConnection.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.GetConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L50">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_GetConnection_" data-uid="Mozlite.Data.Database.GetConnection*"></a>
+  <h4 id="Mozlite_Data_Database_GetConnection" data-uid="Mozlite.Data.Database.GetConnection">GetConnection()</h4>
+  <div class="markdown level1 summary"><p>获取链接实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DbConnection GetConnection()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbConnection</span></td>
+        <td><p>返回数据库连接实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_GetVersion.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.GetVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L339">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_GetVersion_" data-uid="Mozlite.Data.Database.GetVersion*"></a>
+  <h4 id="Mozlite_Data_Database_GetVersion" data-uid="Mozlite.Data.Database.GetVersion">GetVersion()</h4>
+  <div class="markdown level1 summary"><p>获取数据库版本信息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string GetVersion()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回数据库版本信息。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_ImportAsync_System_Data_DataTable_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.ImportAsync(System.Data.DataTable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L333">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_ImportAsync_" data-uid="Mozlite.Data.Database.ImportAsync*"></a>
+  <h4 id="Mozlite_Data_Database_ImportAsync_System_Data_DataTable_" data-uid="Mozlite.Data.Database.ImportAsync(System.Data.DataTable)">ImportAsync(DataTable)</h4>
+  <div class="markdown level1 summary"><p>批量插入数据。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task ImportAsync(DataTable table)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.DataTable</span></td>
+        <td><span class="parametername">table</span></td>
+        <td><p>模型列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database_ReplacePrefixed_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database.ReplacePrefixed(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L101">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Database_ReplacePrefixed_" data-uid="Mozlite.Data.Database.ReplacePrefixed*"></a>
+  <h4 id="Mozlite_Data_Database_ReplacePrefixed_System_String_" data-uid="Mozlite.Data.Database.ReplacePrefixed(System.String)">ReplacePrefixed(String)</h4>
+  <div class="markdown level1 summary"><p>替换表格前缀。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string ReplacePrefixed(string commandText)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>当前SQL语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回替换后的语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Data.IDatabase.html">IDatabase</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.Internal.IDbExecutor.html">IDbExecutor</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_ImportAsync__1_Mozlite_Data_IDatabase_System_Collections_Generic_IEnumerable___0__">DatabaseExtensions.ImportAsync&lt;TModel&gt;(IDatabase, IEnumerable&lt;TModel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Database.md&amp;value=---%0Auid%3A%20Mozlite.Data.Database%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Database.cs/#L17" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

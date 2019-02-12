@@ -1,0 +1,990 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SourceReader 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SourceReader 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Utils.SourceReader">
+  
+  
+  <h1 id="Mozlite_Utils_SourceReader" data-uid="Mozlite.Utils.SourceReader" class="text-break">SourceReader 类
+  </h1>
+  <div class="markdown level0 summary"><p>源码读取器。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SourceReader</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Utils.html">Mozlite.Utils</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Core.dll</h6>
+  <h5 id="Mozlite_Utils_SourceReader_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SourceReader</code></pre>
+  </div>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader__ctor_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L28">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader__ctor_" data-uid="Mozlite.Utils.SourceReader.#ctor*"></a>
+  <h4 id="Mozlite_Utils_SourceReader__ctor_System_String_" data-uid="Mozlite.Utils.SourceReader.#ctor(System.String)">SourceReader(String)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Utils.SourceReader.html">SourceReader</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SourceReader(string source)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>源代码。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">&#23383;&#27573;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_EscapeChar.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.EscapeChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L22">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <h4 id="Mozlite_Utils_SourceReader_EscapeChar" data-uid="Mozlite.Utils.SourceReader.EscapeChar">EscapeChar</h4>
+  <div class="markdown level1 summary"><p>转义符。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly char EscapeChar</code></pre>
+  </div>
+  <h5 class="fieldValue">&#23383;&#27573;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_NullChar.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.NullChar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L18">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <h4 id="Mozlite_Utils_SourceReader_NullChar" data-uid="Mozlite.Utils.SourceReader.NullChar">NullChar</h4>
+  <div class="markdown level1 summary"><p>空字符。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly char NullChar</code></pre>
+  </div>
+  <h5 class="fieldValue">&#23383;&#27573;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">&#23646;&#24615;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_Current.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.Current%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L154">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_Current_" data-uid="Mozlite.Utils.SourceReader.Current*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_Current" data-uid="Mozlite.Utils.SourceReader.Current">Current</h4>
+  <div class="markdown level1 summary"><p>当前字符，如果已经到末尾返回空字符。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char Current { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_IsNext_System_Char_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.IsNext(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L54">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_IsNext_" data-uid="Mozlite.Utils.SourceReader.IsNext*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_IsNext_System_Char_" data-uid="Mozlite.Utils.SourceReader.IsNext(System.Char)">IsNext(Char)</h4>
+  <div class="markdown level1 summary"><p>判断是否下一个字符串是否为当前字符。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNext(char current)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">current</span></td>
+        <td><p>当前字符。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_IsNext_System_String_System_StringComparison_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.IsNext(System.String%2CSystem.StringComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L92">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_IsNext_" data-uid="Mozlite.Utils.SourceReader.IsNext*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_IsNext_System_String_System_StringComparison_" data-uid="Mozlite.Utils.SourceReader.IsNext(System.String,System.StringComparison)">IsNext(String, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>判断是否下一个字符串是否为当前字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNext(string current, StringComparison comparison = StringComparison.Ordinal)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">current</span></td>
+        <td><p>当前字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">comparison</span></td>
+        <td><p>字符串对比模式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_IsNextNonWhiteSpace_System_Char_System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.IsNextNonWhiteSpace(System.Char%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L67">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_IsNextNonWhiteSpace_" data-uid="Mozlite.Utils.SourceReader.IsNextNonWhiteSpace*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_IsNextNonWhiteSpace_System_Char_System_Boolean_" data-uid="Mozlite.Utils.SourceReader.IsNextNonWhiteSpace(System.Char,System.Boolean)">IsNextNonWhiteSpace(Char, Boolean)</h4>
+  <div class="markdown level1 summary"><p>判断是否下一个非空字符是否为当前字符。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNextNonWhiteSpace(char current, bool skip = true)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">current</span></td>
+        <td><p>当前非空字符。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>跳过当前位置。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_IsNextNonWhiteSpace_System_String_System_Boolean_System_StringComparison_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.IsNextNonWhiteSpace(System.String%2CSystem.Boolean%2CSystem.StringComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L105">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_IsNextNonWhiteSpace_" data-uid="Mozlite.Utils.SourceReader.IsNextNonWhiteSpace*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_IsNextNonWhiteSpace_System_String_System_Boolean_System_StringComparison_" data-uid="Mozlite.Utils.SourceReader.IsNextNonWhiteSpace(System.String,System.Boolean,System.StringComparison)">IsNextNonWhiteSpace(String, Boolean, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>判断是否下一个非空字符串是否为当前字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNextNonWhiteSpace(string current, bool skip = true, StringComparison stringComparison = StringComparison.Ordinal)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">current</span></td>
+        <td><p>当前字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>是否将读取位置与当前位置。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">stringComparison</span></td>
+        <td><p>字符串对比模式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_MoveNext.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.MoveNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L38">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_MoveNext_" data-uid="Mozlite.Utils.SourceReader.MoveNext*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_MoveNext" data-uid="Mozlite.Utils.SourceReader.MoveNext">MoveNext()</h4>
+  <div class="markdown level1 summary"><p>过滤空字符串，并且判断是否可读。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MoveNext()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_ReadBlock_System_Char_System_Char_System_Text_StringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.ReadBlock(System.Char%2CSystem.Char%2CSystem.Text.StringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L230">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_ReadBlock_" data-uid="Mozlite.Utils.SourceReader.ReadBlock*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_ReadBlock_System_Char_System_Char_System_Text_StringBuilder_" data-uid="Mozlite.Utils.SourceReader.ReadBlock(System.Char,System.Char,System.Text.StringBuilder)">ReadBlock(Char, Char, StringBuilder)</h4>
+  <div class="markdown level1 summary"><p>读取代码块。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadBlock(char start, char end, StringBuilder builder = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>块开始符号。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>块结束符号。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.StringBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>字符串构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回当前字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_ReadQuote_System_Char_System_Text_StringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.ReadQuote(System.Char%2CSystem.Text.StringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L179">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_ReadQuote_" data-uid="Mozlite.Utils.SourceReader.ReadQuote*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_ReadQuote_System_Char_System_Text_StringBuilder_" data-uid="Mozlite.Utils.SourceReader.ReadQuote(System.Char,System.Text.StringBuilder)">ReadQuote(Char, StringBuilder)</h4>
+  <div class="markdown level1 summary"><p>读取引用块。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadQuote(char quote, StringBuilder builder = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">quote</span></td>
+        <td><p>引用符号：'&quot;','`','&amp;apos;'。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.StringBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>字符串构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回当前引用块字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_ReadUntil_System_Char_System_Text_StringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.ReadUntil(System.Char%2CSystem.Text.StringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L262">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_ReadUntil_" data-uid="Mozlite.Utils.SourceReader.ReadUntil*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_ReadUntil_System_Char_System_Text_StringBuilder_" data-uid="Mozlite.Utils.SourceReader.ReadUntil(System.Char,System.Text.StringBuilder)">ReadUntil(Char, StringBuilder)</h4>
+  <div class="markdown level1 summary"><p>读取字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadUntil(char end, StringBuilder builder = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>结束字符。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.StringBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>字符串构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回当前字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_ReadUntil_System_Char___System_Text_StringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.ReadUntil(System.Char%5B%5D%2CSystem.Text.StringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L312">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_ReadUntil_" data-uid="Mozlite.Utils.SourceReader.ReadUntil*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_ReadUntil_System_Char___System_Text_StringBuilder_" data-uid="Mozlite.Utils.SourceReader.ReadUntil(System.Char[],System.Text.StringBuilder)">ReadUntil(Char[], StringBuilder)</h4>
+  <div class="markdown level1 summary"><p>读取字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadUntil(char[] ends, StringBuilder builder = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span>[]</td>
+        <td><span class="parametername">ends</span></td>
+        <td><p>结束字符集。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.StringBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>字符串构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回当前字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_ReadUntil_System_String_System_Text_StringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.ReadUntil(System.String%2CSystem.Text.StringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L287">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_ReadUntil_" data-uid="Mozlite.Utils.SourceReader.ReadUntil*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_ReadUntil_System_String_System_Text_StringBuilder_" data-uid="Mozlite.Utils.SourceReader.ReadUntil(System.String,System.Text.StringBuilder)">ReadUntil(String, StringBuilder)</h4>
+  <div class="markdown level1 summary"><p>读取字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadUntil(string end, StringBuilder builder = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>结束字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.StringBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>字符串构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回当前字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_Skip_System_Char_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.Skip(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L142">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_Skip_" data-uid="Mozlite.Utils.SourceReader.Skip*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_Skip_System_Char_" data-uid="Mozlite.Utils.SourceReader.Skip(System.Char)">Skip(Char)</h4>
+  <div class="markdown level1 summary"><p>跳过<code data-dev-comment-type="paramref" class="paramref">current</code>字符及以前的字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Skip(char current)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">current</span></td>
+        <td><p>跳过字符。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_Skip_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.Skip(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L133">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_Skip_" data-uid="Mozlite.Utils.SourceReader.Skip*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_Skip_System_Int32_" data-uid="Mozlite.Utils.SourceReader.Skip(System.Int32)">Skip(Int32)</h4>
+  <div class="markdown level1 summary"><p>跳过<code data-dev-comment-type="paramref" class="paramref">size</code>位置。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Skip(int size = 1)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>跳过位置量。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_ToString.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L166">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_ToString_" data-uid="Mozlite.Utils.SourceReader.ToString*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_ToString" data-uid="Mozlite.Utils.SourceReader.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>返回当前可读取的字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回可读取的字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="operators">&#36816;&#31639;&#31526;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader_op_Implicit_Mozlite_Utils_SourceReader__System_String.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader.op_Implicit(Mozlite.Utils.SourceReader)~System.String%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L160">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Utils_SourceReader_op_Implicit_" data-uid="Mozlite.Utils.SourceReader.op_Implicit*"></a>
+  <h4 id="Mozlite_Utils_SourceReader_op_Implicit_Mozlite_Utils_SourceReader__System_String" data-uid="Mozlite.Utils.SourceReader.op_Implicit(Mozlite.Utils.SourceReader)~System.String">Implicit(SourceReader to String)</h4>
+  <div class="markdown level1 summary"><p>隐式转换为字符串实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string (SourceReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Utils.SourceReader.html">SourceReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>当前源码读取实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Utils_SourceReader.md&amp;value=---%0Auid%3A%20Mozlite.Utils.SourceReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Core/Utils/SourceReader.cs/#L10" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

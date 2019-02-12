@@ -1,0 +1,1080 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ISettingsManager 接口
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ISettingsManager 接口
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Extensions.Settings.ISettingsManager">
+  
+  
+  <h1 id="Mozlite_Extensions_Settings_ISettingsManager" data-uid="Mozlite.Extensions.Settings.ISettingsManager" class="text-break">ISettingsManager 接口
+  </h1>
+  <div class="markdown level0 summary"><p>配置管理接口。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Extensions.Settings.html">Mozlite.Extensions.Settings</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Extensions.dll</h6>
+  <h5 id="Mozlite_Extensions_Settings_ISettingsManager_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISettingsManager : ISingletonService, IService</code></pre>
+  </div>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_DeleteSettings_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.DeleteSettings(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L120">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_DeleteSettings_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.DeleteSettings*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_DeleteSettings_System_String_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.DeleteSettings(System.String)">DeleteSettings(String)</h4>
+  <div class="markdown level1 summary"><p>删除网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteSettings(string key)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_DeleteSettings__1.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.DeleteSettings%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L114">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_DeleteSettings_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.DeleteSettings*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_DeleteSettings__1" data-uid="Mozlite.Extensions.Settings.ISettingsManager.DeleteSettings``1">DeleteSettings&lt;TSiteSettings&gt;()</h4>
+  <div class="markdown level1 summary"><p>删除网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DeleteSettings&lt;TSiteSettings&gt;()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_DeleteSettingsAsync_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.DeleteSettingsAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L132">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_DeleteSettingsAsync_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.DeleteSettingsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_DeleteSettingsAsync_System_String_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.DeleteSettingsAsync(System.String)">DeleteSettingsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>删除网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; DeleteSettingsAsync(string key)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_DeleteSettingsAsync__1.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.DeleteSettingsAsync%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L126">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_DeleteSettingsAsync_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.DeleteSettingsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_DeleteSettingsAsync__1" data-uid="Mozlite.Extensions.Settings.ISettingsManager.DeleteSettingsAsync``1">DeleteSettingsAsync&lt;TSiteSettings&gt;()</h4>
+  <div class="markdown level1 summary"><p>删除网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; DeleteSettingsAsync&lt;TSiteSettings&gt;()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_GetSettings_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.GetSettings(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L15">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_GetSettings_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettings*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_GetSettings_System_String_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettings(System.String)">GetSettings(String)</h4>
+  <div class="markdown level1 summary"><p>获取配置字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetSettings(string key)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回当前配置字符串实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_GetSettings__1.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.GetSettings%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L31">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_GetSettings_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettings*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_GetSettings__1" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettings``1">GetSettings&lt;TSiteSettings&gt;()</h4>
+  <div class="markdown level1 summary"><p>获取网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TSiteSettings GetSettings&lt;TSiteSettings&gt;()
+    where TSiteSettings : class, new()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSiteSettings</span></td>
+        <td><p>返回网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_GetSettings__1_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.GetSettings%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L23">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_GetSettings_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettings*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_GetSettings__1_System_String_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettings``1(System.String)">GetSettings&lt;TSiteSettings&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>获取网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TSiteSettings GetSettings&lt;TSiteSettings&gt;(string key)
+    where TSiteSettings : class, new()</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSiteSettings</span></td>
+        <td><p>返回网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_GetSettingsAsync_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.GetSettingsAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L39">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_GetSettingsAsync_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettingsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_GetSettingsAsync_System_String_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettingsAsync(System.String)">GetSettingsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>获取配置字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; GetSettingsAsync(string key)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>返回当前配置字符串实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_GetSettingsAsync__1.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.GetSettingsAsync%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L55">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_GetSettingsAsync_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettingsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_GetSettingsAsync__1" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettingsAsync``1">GetSettingsAsync&lt;TSiteSettings&gt;()</h4>
+  <div class="markdown level1 summary"><p>获取网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TSiteSettings&gt; GetSettingsAsync&lt;TSiteSettings&gt;()
+    where TSiteSettings : class, new()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TSiteSettings&gt;</td>
+        <td><p>返回网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_GetSettingsAsync__1_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.GetSettingsAsync%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L47">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_GetSettingsAsync_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettingsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_GetSettingsAsync__1_System_String_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.GetSettingsAsync``1(System.String)">GetSettingsAsync&lt;TSiteSettings&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>获取网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TSiteSettings&gt; GetSettingsAsync&lt;TSiteSettings&gt;(string key)
+    where TSiteSettings : class, new()</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TSiteSettings&gt;</td>
+        <td><p>返回网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_Refresh_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.Refresh(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L108">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_Refresh_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.Refresh*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_Refresh_System_String_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.Refresh(System.String)">Refresh(String)</h4>
+  <div class="markdown level1 summary"><p>刷新缓存。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Refresh(string key)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_SaveSettings_System_String_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.SaveSettings(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L102">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettings_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettings*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettings_System_String_System_String_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettings(System.String,System.String)">SaveSettings(String, String)</h4>
+  <div class="markdown level1 summary"><p>保存网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SaveSettings(string key, string settings)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_SaveSettings__1___0_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.SaveSettings%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L86">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettings_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettings*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettings__1___0_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettings``1(``0)">SaveSettings&lt;TSiteSettings&gt;(TSiteSettings)</h4>
+  <div class="markdown level1 summary"><p>保存网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SaveSettings&lt;TSiteSettings&gt;(TSiteSettings settings)
+    where TSiteSettings : class, new()</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSiteSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_SaveSettings__1_System_String___0_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.SaveSettings%60%601(System.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L95">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettings_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettings*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettings__1_System_String___0_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettings``1(System.String,``0)">SaveSettings&lt;TSiteSettings&gt;(String, TSiteSettings)</h4>
+  <div class="markdown level1 summary"><p>保存网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SaveSettings&lt;TSiteSettings&gt;(string key, TSiteSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TSiteSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_SaveSettingsAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.SaveSettingsAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L79">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettingsAsync_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettingsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettingsAsync_System_String_System_String_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettingsAsync(System.String,System.String)">SaveSettingsAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>保存网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; SaveSettingsAsync(string key, string settings)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_SaveSettingsAsync__1___0_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.SaveSettingsAsync%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L63">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettingsAsync_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettingsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettingsAsync__1___0_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettingsAsync``1(``0)">SaveSettingsAsync&lt;TSiteSettings&gt;(TSiteSettings)</h4>
+  <div class="markdown level1 summary"><p>保存网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; SaveSettingsAsync&lt;TSiteSettings&gt;(TSiteSettings settings)
+    where TSiteSettings : class, new()</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSiteSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager_SaveSettingsAsync__1_System_String___0_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager.SaveSettingsAsync%60%601(System.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L72">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettingsAsync_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettingsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Settings_ISettingsManager_SaveSettingsAsync__1_System_String___0_" data-uid="Mozlite.Extensions.Settings.ISettingsManager.SaveSettingsAsync``1(System.String,``0)">SaveSettingsAsync&lt;TSiteSettings&gt;(String, TSiteSettings)</h4>
+  <div class="markdown level1 summary"><p>保存网站配置实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; SaveSettingsAsync&lt;TSiteSettings&gt;(string key, TSiteSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>配置唯一键。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TSiteSettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td><p>网站配置实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSiteSettings</span></td>
+        <td><p>网站配置类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Settings_ISettingsManager.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Settings.ISettingsManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Settings/ISettingsManager.cs/#L8" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

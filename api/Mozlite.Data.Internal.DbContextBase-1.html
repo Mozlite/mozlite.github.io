@@ -1,0 +1,3465 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>DbContextBase&lt;TModel&gt; 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="DbContextBase&lt;TModel&gt; 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Data.Internal.DbContextBase`1">
+  
+  
+  <h1 id="Mozlite_Data_Internal_DbContextBase_1" data-uid="Mozlite.Data.Internal.DbContextBase`1" class="text-break">DbContextBase&lt;TModel&gt; 类
+  </h1>
+  <div class="markdown level0 summary"><p>实体数据库操作基类。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DbContextBase&lt;TModel&gt;</span></div>
+      <div class="level2"><a class="xref" href="Mozlite.Data.Internal.DbContext-1.html">DbContext&lt;TModel&gt;</a></div>
+      <div class="level2"><a class="xref" href="Mozlite.Data.Internal.DbTransactionContext-1.html">DbTransactionContext&lt;TModel&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Data.Internal.IDbContextBase-1.html">IDbContextBase</a>&lt;TModel&gt;</div>
+    <div><a class="xref" href="Mozlite.Data.Internal.IDbExecutor.html">IDbExecutor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Data.Internal.html">Mozlite.Data.Internal</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Data.dll</h6>
+  <h5 id="Mozlite_Data_Internal_DbContextBase_1_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DbContextBase&lt;TModel&gt; : IDbContextBase&lt;TModel&gt;, IDbExecutor</code></pre>
+  </div>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>实体模型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1__ctor_Mozlite_Data_Internal_IDbExecutor_Microsoft_Extensions_Logging_ILogger_Mozlite_Data_ISqlHelper_Mozlite_Data_Query_IQuerySqlGenerator_Mozlite_Data_Query_IExpressionVisitorFactory_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.%23ctor(Mozlite.Data.Internal.IDbExecutor%2CMicrosoft.Extensions.Logging.ILogger%2CMozlite.Data.ISqlHelper%2CMozlite.Data.Query.IQuerySqlGenerator%2CMozlite.Data.Query.IExpressionVisitorFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L51">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1__ctor_" data-uid="Mozlite.Data.Internal.DbContextBase`1.#ctor*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1__ctor_Mozlite_Data_Internal_IDbExecutor_Microsoft_Extensions_Logging_ILogger_Mozlite_Data_ISqlHelper_Mozlite_Data_Query_IQuerySqlGenerator_Mozlite_Data_Query_IExpressionVisitorFactory_" data-uid="Mozlite.Data.Internal.DbContextBase`1.#ctor(Mozlite.Data.Internal.IDbExecutor,Microsoft.Extensions.Logging.ILogger,Mozlite.Data.ISqlHelper,Mozlite.Data.Query.IQuerySqlGenerator,Mozlite.Data.Query.IExpressionVisitorFactory)">DbContextBase(IDbExecutor, ILogger, ISqlHelper, IQuerySqlGenerator, IExpressionVisitorFactory)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Data.Internal.DbContextBase-1.html">DbContextBase&lt;TModel&gt;</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DbContextBase(IDbExecutor executor, ILogger logger, ISqlHelper sqlHelper, IQuerySqlGenerator sqlGenerator, IExpressionVisitorFactory visitorFactory)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Internal.IDbExecutor.html">IDbExecutor</a></td>
+        <td><span class="parametername">executor</span></td>
+        <td><p>数据库执行接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>日志接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.ISqlHelper.html">ISqlHelper</a></td>
+        <td><span class="parametername">sqlHelper</span></td>
+        <td><p>SQL辅助接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.IQuerySqlGenerator.html">IQuerySqlGenerator</a></td>
+        <td><span class="parametername">sqlGenerator</span></td>
+        <td><p>脚本生成器。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.IExpressionVisitorFactory.html">IExpressionVisitorFactory</a></td>
+        <td><span class="parametername">visitorFactory</span></td>
+        <td><p>条件表达式解析器工厂实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">&#23646;&#24615;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_EntityType.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.EntityType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L131">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_EntityType_" data-uid="Mozlite.Data.Internal.DbContextBase`1.EntityType*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_EntityType" data-uid="Mozlite.Data.Internal.DbContextBase`1.EntityType">EntityType</h4>
+  <div class="markdown level1 summary"><p>当前实体类型。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityType EntityType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.IEntityType.html">IEntityType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Logger.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L23">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Logger_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Logger*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Logger" data-uid="Mozlite.Data.Internal.DbContextBase`1.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>日志接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_SqlGenerator.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.SqlGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L39">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_SqlGenerator_" data-uid="Mozlite.Data.Internal.DbContextBase`1.SqlGenerator*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_SqlGenerator" data-uid="Mozlite.Data.Internal.DbContextBase`1.SqlGenerator">SqlGenerator</h4>
+  <div class="markdown level1 summary"><p>脚本生成接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IQuerySqlGenerator SqlGenerator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.IQuerySqlGenerator.html">IQuerySqlGenerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_SqlHelper.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.SqlHelper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L28">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_SqlHelper_" data-uid="Mozlite.Data.Internal.DbContextBase`1.SqlHelper*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_SqlHelper" data-uid="Mozlite.Data.Internal.DbContextBase`1.SqlHelper">SqlHelper</h4>
+  <div class="markdown level1 summary"><p>SQL辅助接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISqlHelper SqlHelper { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.ISqlHelper.html">ISqlHelper</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Any_System_Linq_Expressions_Expression_System_Predicate__0___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Any(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L544">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Any_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Any*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Any_System_Linq_Expressions_Expression_System_Predicate__0___" data-uid="Mozlite.Data.Internal.DbContextBase`1.Any(System.Linq.Expressions.Expression{System.Predicate{`0}})">Any(Expression&lt;Predicate&lt;TModel&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式判断是否存在实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Any(Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Any_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Any(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L567">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Any_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Any*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Any_System_Object_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Any(System.Object)">Any(Object)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式判断是否存在实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Any(object key)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值，主键必须为一列时候才可使用。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_AnyAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.AnyAsync(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L556">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_AnyAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.AnyAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_AnyAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.AnyAsync(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Threading.CancellationToken)">AnyAsync(Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式判断是否存在实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; AnyAsync(Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_AnyAsync_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.AnyAsync(System.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L580">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_AnyAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.AnyAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_AnyAsync_System_Object_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.AnyAsync(System.Object,System.Threading.CancellationToken)">AnyAsync(Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式判断是否存在实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; AnyAsync(object key, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值，主键必须为一列时候才可使用。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_AsQueryable.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.AsQueryable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L34">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_AsQueryable_" data-uid="Mozlite.Data.Internal.DbContextBase`1.AsQueryable*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_AsQueryable" data-uid="Mozlite.Data.Internal.DbContextBase`1.AsQueryable">AsQueryable()</h4>
+  <div class="markdown level1 summary"><p>实例化一个查询实例，这个实例相当于实例化一个查询类，不能当作属性直接调用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;TModel&gt; AsQueryable()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回模型的一个查询实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Count_System_Linq_Expressions_Expression_System_Predicate__0___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Count(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L592">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Count_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Count*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Count_System_Linq_Expressions_Expression_System_Predicate__0___" data-uid="Mozlite.Data.Internal.DbContextBase`1.Count(System.Linq.Expressions.Expression{System.Predicate{`0}})">Count(Expression&lt;Predicate&lt;TModel&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>获取条件表达式的数量。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Count(Expression&lt;Predicate&lt;TModel&gt;&gt; expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>返回计算结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_CountAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.CountAsync(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L607">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_CountAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.CountAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_CountAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.CountAsync(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Threading.CancellationToken)">CountAsync(Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>获取条件表达式的数量。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;int&gt; CountAsync(Expression&lt;Predicate&lt;TModel&gt;&gt; expression, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>返回计算结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Create__0_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Create(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L138">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Create_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Create*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Create__0_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Create(`0)">Create(TModel)</h4>
+  <div class="markdown level1 summary"><p>新建实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Create(TModel model)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回是否成功新建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_CreateAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.CreateAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L165">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_CreateAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.CreateAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_CreateAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.CreateAsync(`0,System.Threading.CancellationToken)">CreateAsync(TModel, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>新建实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; CreateAsync(TModel model, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>模型实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回是否成功新建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Delete_System_Linq_Expressions_Expression_System_Predicate__0___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Delete(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L326">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Delete_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Delete*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Delete_System_Linq_Expressions_Expression_System_Predicate__0___" data-uid="Mozlite.Data.Internal.DbContextBase`1.Delete(System.Linq.Expressions.Expression{System.Predicate{`0}})">Delete(Expression&lt;Predicate&lt;TModel&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>根据条件删除模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Delete(Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>判断是否删除成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Delete_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Delete(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L412">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Delete_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Delete*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Delete_System_Object_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Delete(System.Object)">Delete(Object)</h4>
+  <div class="markdown level1 summary"><p>根据主键删除模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Delete(object key)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值，主键必须为一列时候才可使用。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>判断是否删除成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_DeleteAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.DeleteAsync(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L335">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_DeleteAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.DeleteAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_DeleteAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.DeleteAsync(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Threading.CancellationToken)">DeleteAsync(Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>根据条件删除模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; DeleteAsync(Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>判断是否删除成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_DeleteAsync_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.DeleteAsync(System.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L423">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_DeleteAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.DeleteAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_DeleteAsync_System_Object_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.DeleteAsync(System.Object,System.Threading.CancellationToken)">DeleteAsync(Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>根据主键删除模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; DeleteAsync(object key, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值，主键必须为一列时候才可使用。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>判断是否删除成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ExecuteNonQuery_System_String_System_Object_System_Data_CommandType_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ExecuteNonQuery(System.String%2CSystem.Object%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L68">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ExecuteNonQuery_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteNonQuery*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ExecuteNonQuery_System_String_System_Object_System_Data_CommandType_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteNonQuery(System.String,System.Object,System.Data.CommandType)">ExecuteNonQuery(String, Object, CommandType)</h4>
+  <div class="markdown level1 summary"><p>执行没有返回值的查询实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExecuteNonQuery(string commandText, object parameters = null, CommandType commandType = CommandType.Text)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>命令类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回是否有执行影响到数据行。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ExecuteNonQueryAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ExecuteNonQueryAsync(System.String%2CSystem.Object%2CSystem.Data.CommandType%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L100">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ExecuteNonQueryAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteNonQueryAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ExecuteNonQueryAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteNonQueryAsync(System.String,System.Object,System.Data.CommandType,System.Threading.CancellationToken)">ExecuteNonQueryAsync(String, Object, CommandType, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>执行SQL语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; ExecuteNonQueryAsync(string commandText, object parameters = null, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数匿名类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>SQL类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回影响的行数。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ExecuteReader_System_String_System_Object_System_Data_CommandType_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ExecuteReader(System.String%2CSystem.Object%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L79">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ExecuteReader_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteReader*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ExecuteReader_System_String_System_Object_System_Data_CommandType_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteReader(System.String,System.Object,System.Data.CommandType)">ExecuteReader(String, Object, CommandType)</h4>
+  <div class="markdown level1 summary"><p>查询实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbDataReader ExecuteReader(string commandText, object parameters = null, CommandType commandType = CommandType.Text)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>命令类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbDataReader</span></td>
+        <td><p>返回数据库读取实例接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ExecuteReaderAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ExecuteReaderAsync(System.String%2CSystem.Object%2CSystem.Data.CommandType%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L112">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ExecuteReaderAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteReaderAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ExecuteReaderAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteReaderAsync(System.String,System.Object,System.Data.CommandType,System.Threading.CancellationToken)">ExecuteReaderAsync(String, Object, CommandType, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>执行SQL语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DbDataReader&gt; ExecuteReaderAsync(string commandText, object parameters = null, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数匿名类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>SQL类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Data.Common.DbDataReader</span>&gt;</td>
+        <td><p>返回数据库读取器实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ExecuteScalar_System_String_System_Object_System_Data_CommandType_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ExecuteScalar(System.String%2CSystem.Object%2CSystem.Data.CommandType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L89">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ExecuteScalar_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteScalar*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ExecuteScalar_System_String_System_Object_System_Data_CommandType_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteScalar(System.String,System.Object,System.Data.CommandType)">ExecuteScalar(String, Object, CommandType)</h4>
+  <div class="markdown level1 summary"><p>查询数据库聚合值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object ExecuteScalar(string commandText, object parameters = null, CommandType commandType = CommandType.Text)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>命令类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>返回聚合值实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ExecuteScalarAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ExecuteScalarAsync(System.String%2CSystem.Object%2CSystem.Data.CommandType%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L124">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ExecuteScalarAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteScalarAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ExecuteScalarAsync_System_String_System_Object_System_Data_CommandType_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteScalarAsync(System.String,System.Object,System.Data.CommandType,System.Threading.CancellationToken)">ExecuteScalarAsync(String, Object, CommandType, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>执行SQL语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; ExecuteScalarAsync(string commandText, object parameters = null, CommandType commandType = CommandType.Text, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">commandText</span></td>
+        <td><p>SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数匿名类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Data.CommandType</span></td>
+        <td><span class="parametername">commandType</span></td>
+        <td><p>SQL类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><p>返回单一结果实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ExecuteSql_Mozlite_Data_Query_SqlIndentedStringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ExecuteSql(Mozlite.Data.Query.SqlIndentedStringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L745">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ExecuteSql_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteSql*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ExecuteSql_Mozlite_Data_Query_SqlIndentedStringBuilder_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteSql(Mozlite.Data.Query.SqlIndentedStringBuilder)">ExecuteSql(SqlIndentedStringBuilder)</h4>
+  <div class="markdown level1 summary"><p>执行没有返回值的查询实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool ExecuteSql(SqlIndentedStringBuilder sql)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回执行结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ExecuteSqlAsync_Mozlite_Data_Query_SqlIndentedStringBuilder_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ExecuteSqlAsync(Mozlite.Data.Query.SqlIndentedStringBuilder%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L756">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ExecuteSqlAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteSqlAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ExecuteSqlAsync_Mozlite_Data_Query_SqlIndentedStringBuilder_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ExecuteSqlAsync(Mozlite.Data.Query.SqlIndentedStringBuilder,System.Threading.CancellationToken)">ExecuteSqlAsync(SqlIndentedStringBuilder, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>执行没有返回值的查询实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;bool&gt; ExecuteSqlAsync(SqlIndentedStringBuilder sql, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL语句。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回执行结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Fetch_System_Linq_Expressions_Expression_System_Predicate__0___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Fetch(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L456">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Fetch_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Fetch*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Fetch_System_Linq_Expressions_Expression_System_Predicate__0___" data-uid="Mozlite.Data.Internal.DbContextBase`1.Fetch(System.Linq.Expressions.Expression{System.Predicate{`0}})">Fetch(Expression&lt;Predicate&lt;TModel&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;TModel&gt; Fetch(Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TModel&gt;</td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Fetch_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Fetch(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L480">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Fetch_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Fetch*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Fetch_System_String_System_Object_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Fetch(System.String,System.Object)">Fetch(String, Object)</h4>
+  <div class="markdown level1 summary"><p>通过SQL语句获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;TModel&gt; Fetch(string sql, object parameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL语句。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TModel&gt;</td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_FetchAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.FetchAsync(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L468">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_FetchAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.FetchAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_FetchAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.FetchAsync(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Threading.CancellationToken)">FetchAsync(Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IEnumerable&lt;TModel&gt;&gt; FetchAsync(Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TModel&gt;&gt;</td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_FetchAsync_System_String_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.FetchAsync(System.String%2CSystem.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L498">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_FetchAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.FetchAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_FetchAsync_System_String_System_Object_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.FetchAsync(System.String,System.Object,System.Threading.CancellationToken)">FetchAsync(String, Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过SQL语句获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IEnumerable&lt;TModel&gt;&gt; FetchAsync(string sql, object parameters = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL语句。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TModel&gt;&gt;</td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Find_System_Linq_Expressions_Expression_System_Predicate__0___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Find(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L343">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Find_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Find*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Find_System_Linq_Expressions_Expression_System_Predicate__0___" data-uid="Mozlite.Data.Internal.DbContextBase`1.Find(System.Linq.Expressions.Expression{System.Predicate{`0}})">Find(Expression&lt;Predicate&lt;TModel&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TModel Find(Expression&lt;Predicate&lt;TModel&gt;&gt; expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Find_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Find(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L433">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Find_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Find*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Find_System_Object_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Find(System.Object)">Find(Object)</h4>
+  <div class="markdown level1 summary"><p>通过主键获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TModel Find(object key)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值，主键必须为一列时候才可使用。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_FindAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.FindAsync(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L356">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_FindAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.FindAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_FindAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.FindAsync(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Threading.CancellationToken)">FindAsync(Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TModel&gt; FindAsync(Expression&lt;Predicate&lt;TModel&gt;&gt; expression, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TModel&gt;</td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_FindAsync_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.FindAsync(System.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L445">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_FindAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.FindAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_FindAsync_System_Object_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.FindAsync(System.Object,System.Threading.CancellationToken)">FindAsync(Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过主键获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TModel&gt; FindAsync(object key, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值，主键必须为一列时候才可使用。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TModel&gt;</td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_GetScalar__1_System_String_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___System_Func_System_Object___0__.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.GetScalar%60%601(System.String%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Func%7BSystem.Object%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L624">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_GetScalar_" data-uid="Mozlite.Data.Internal.DbContextBase`1.GetScalar*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_GetScalar__1_System_String_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___System_Func_System_Object___0__" data-uid="Mozlite.Data.Internal.DbContextBase`1.GetScalar``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Predicate{`0}},System.Func{System.Object,``0})">GetScalar&lt;TValue&gt;(String, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, Func&lt;Object, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式获取聚合实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TValue GetScalar&lt;TValue&gt;(string scalarMethod, Expression&lt;Func&lt;TModel, object&gt;&gt; column, Expression&lt;Predicate&lt;TModel&gt;&gt; expression, Func&lt;object, TValue&gt; convertFunc)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">scalarMethod</span></td>
+        <td><p>聚合方法。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">column</span></td>
+        <td><p>当前列。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Object</span>, TValue&gt;</td>
+        <td><span class="parametername">convertFunc</span></td>
+        <td><p>转换函数。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><p>返回聚合结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_GetScalarAsync__1_System_String_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___System_Func_System_Object___0__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.GetScalarAsync%60%601(System.String%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Func%7BSystem.Object%2C%60%600%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L644">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_GetScalarAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.GetScalarAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_GetScalarAsync__1_System_String_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___System_Func_System_Object___0__System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.GetScalarAsync``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Predicate{`0}},System.Func{System.Object,``0},System.Threading.CancellationToken)">GetScalarAsync&lt;TValue&gt;(String, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, Func&lt;Object, TValue&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过条件表达式获取聚合实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TValue&gt; GetScalarAsync&lt;TValue&gt;(string scalarMethod, Expression&lt;Func&lt;TModel, object&gt;&gt; column, Expression&lt;Predicate&lt;TModel&gt;&gt; expression, Func&lt;object, TValue&gt; convertFunc, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">scalarMethod</span></td>
+        <td><p>聚合方法。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">column</span></td>
+        <td><p>当前列。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Object</span>, TValue&gt;</td>
+        <td><span class="parametername">convertFunc</span></td>
+        <td><p>转换函数。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TValue&gt;</td>
+        <td><p>返回聚合结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Load__1___0_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Load%60%601(%60%600%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L515">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Load_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Load*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Load__1___0_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="Mozlite.Data.Internal.DbContextBase`1.Load``1(``0,System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">Load&lt;TQuery&gt;(TQuery, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>分页获取实例列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TQuery Load&lt;TQuery&gt;(TQuery query, Expression&lt;Func&lt;TModel, object&gt;&gt; countExpression = null)
+    where TQuery : QueryBase&lt;TModel&gt;</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TQuery</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>查询实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">countExpression</span></td>
+        <td><p>返回总记录数的表达式,用于多表拼接过滤重复记录数。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TQuery</span></td>
+        <td><p>返回分页实例列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TQuery</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_LoadAsync__1___0_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.LoadAsync%60%601(%60%600%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L530">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_LoadAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.LoadAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_LoadAsync__1___0_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.LoadAsync``1(``0,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Threading.CancellationToken)">LoadAsync&lt;TQuery&gt;(TQuery, Expression&lt;Func&lt;TModel, Object&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>分页获取实例列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TQuery&gt; LoadAsync&lt;TQuery&gt;(TQuery query, Expression&lt;Func&lt;TModel, object&gt;&gt; countExpression = null, CancellationToken cancellationToken = default(CancellationToken))
+    where TQuery : QueryBase&lt;TModel&gt;</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TQuery</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>查询实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">countExpression</span></td>
+        <td><p>返回总记录数的表达式,用于多表拼接过滤重复记录数。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TQuery&gt;</td>
+        <td><p>返回分页实例列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TQuery</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_MoveDown_System_Object_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.MoveDown(System.Object%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L678">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_MoveDown_" data-uid="Mozlite.Data.Internal.DbContextBase`1.MoveDown*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_MoveDown_System_Object_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___" data-uid="Mozlite.Data.Internal.DbContextBase`1.MoveDown(System.Object,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Predicate{`0}})">MoveDown(Object, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>下移一个位置。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool MoveDown(object key, Expression&lt;Func&lt;TModel, object&gt;&gt; order, Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">order</span></td>
+        <td><p>排序。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回移动结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_MoveDownAsync_System_Object_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.MoveDownAsync(System.Object%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L710">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_MoveDownAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.MoveDownAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_MoveDownAsync_System_Object_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.MoveDownAsync(System.Object,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Predicate{`0}},System.Threading.CancellationToken)">MoveDownAsync(Object, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>下移一个位置。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; MoveDownAsync(object key, Expression&lt;Func&lt;TModel, object&gt;&gt; order, Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">order</span></td>
+        <td><p>排序。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回移动结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_MoveUp_System_Object_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.MoveUp(System.Object%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L663">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_MoveUp_" data-uid="Mozlite.Data.Internal.DbContextBase`1.MoveUp*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_MoveUp_System_Object_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___" data-uid="Mozlite.Data.Internal.DbContextBase`1.MoveUp(System.Object,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Predicate{`0}})">MoveUp(Object, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>上移一个位置。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool MoveUp(object key, Expression&lt;Func&lt;TModel, object&gt;&gt; order, Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">order</span></td>
+        <td><p>排序。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回移动结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_MoveUpAsync_System_Object_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.MoveUpAsync(System.Object%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L694">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_MoveUpAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.MoveUpAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_MoveUpAsync_System_Object_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.MoveUpAsync(System.Object,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Predicate{`0}},System.Threading.CancellationToken)">MoveUpAsync(Object, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>上移一个位置。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; MoveUpAsync(object key, Expression&lt;Func&lt;TModel, object&gt;&gt; order, Expression&lt;Predicate&lt;TModel&gt;&gt; expression = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">order</span></td>
+        <td><p>排序。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回移动结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_PrimaryKeySql_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.PrimaryKeySql(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L402">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_PrimaryKeySql_" data-uid="Mozlite.Data.Internal.DbContextBase`1.PrimaryKeySql*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_PrimaryKeySql_System_String_System_Object_" data-uid="Mozlite.Data.Internal.DbContextBase`1.PrimaryKeySql(System.String,System.Object)">PrimaryKeySql(String, Object)</h4>
+  <div class="markdown level1 summary"><p>快速构建唯一主键SQL语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SqlIndentedStringBuilder PrimaryKeySql(string header, object key)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">header</span></td>
+        <td><p>SQL语句头，如：DELETE FROM等。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><p>返回SQL构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Query_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Query(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L369">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Query_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Query*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Query_System_String_System_Object_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Query(System.String,System.Object)">Query(String, Object)</h4>
+  <div class="markdown level1 summary"><p>通过SQL语句获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TModel Query(string sql, object parameters = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL语句。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_QueryAsync_System_String_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.QueryAsync(System.String%2CSystem.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L386">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_QueryAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.QueryAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_QueryAsync_System_String_System_Object_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.QueryAsync(System.String,System.Object,System.Threading.CancellationToken)">QueryAsync(String, Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过SQL语句获取模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TModel&gt; QueryAsync(string sql, object parameters = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL语句。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>参数。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TModel&gt;</td>
+        <td><p>返回模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ScalarSql_Mozlite_Data_Query_SqlIndentedStringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ScalarSql(Mozlite.Data.Query.SqlIndentedStringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L724">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ScalarSql_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ScalarSql*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ScalarSql_Mozlite_Data_Query_SqlIndentedStringBuilder_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ScalarSql(Mozlite.Data.Query.SqlIndentedStringBuilder)">ScalarSql(SqlIndentedStringBuilder)</h4>
+  <div class="markdown level1 summary"><p>查询数据库聚合值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object ScalarSql(SqlIndentedStringBuilder sql)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>返回执行结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_ScalarSqlAsync_Mozlite_Data_Query_SqlIndentedStringBuilder_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.ScalarSqlAsync(Mozlite.Data.Query.SqlIndentedStringBuilder%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L735">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_ScalarSqlAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ScalarSqlAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_ScalarSqlAsync_Mozlite_Data_Query_SqlIndentedStringBuilder_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.ScalarSqlAsync(Mozlite.Data.Query.SqlIndentedStringBuilder,System.Threading.CancellationToken)">ScalarSqlAsync(SqlIndentedStringBuilder, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>查询数据库聚合值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;object&gt; ScalarSqlAsync(SqlIndentedStringBuilder sql, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>SQL语句。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><p>返回执行结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Update__0_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Update(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L191">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Update_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Update__0_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update(`0)">Update(TModel)</h4>
+  <div class="markdown level1 summary"><p>更新模型实例，此实例必须包含自增长ID或主键实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Update(TModel model)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Update_System_Linq_Expressions_Expression_System_Predicate__0___System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Update(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L249">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Update_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Update_System_Linq_Expressions_Expression_System_Predicate__0___System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">Update(Expression&lt;Predicate&lt;TModel&gt;&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>根据条件更新相应的模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Update(Expression&lt;Predicate&lt;TModel&gt;&gt; expression, Expression&lt;Func&lt;TModel, object&gt;&gt; statement)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">statement</span></td>
+        <td><p>更新选项实例，可以为匿名对象或者参数名为字段得表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mozlite_Data_Internal_DbContextBase_1_Update_System_Linq_Expressions_Expression_System_Predicate__0___System_Linq_Expressions_Expression_System_Func__0_System_Object____examples">&#31034;&#20363;</h5>
+  <p>public class T{
+public int Id{get;set;}
+public int Views{get;set;}
+public int DayViews{get;set;}
+}
+db.Update(x=&gt;x.Id == 1, x=&gt;new{Views = x.Views + 1,DayViews = x.DayViews + 1});
+db.Update(x=&gt;x.Id == 1, Views=&gt;Views.Views + 1);//这里参数必须为列名称</p>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Update_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Update(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L228">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Update_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Update_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Object)">Update(Expression&lt;Predicate&lt;TModel&gt;&gt;, Object)</h4>
+  <div class="markdown level1 summary"><p>根据条件更新相应的模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Update(Expression&lt;Predicate&lt;TModel&gt;&gt; expression, object statement)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">statement</span></td>
+        <td><p>更新选项实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Update_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Update(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L282">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Update_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Update_System_Object_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update(System.Object)">Update(Object)</h4>
+  <div class="markdown level1 summary"><p>更新所有模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Update(object statement)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">statement</span></td>
+        <td><p>更新选项实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_Update_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.Update(System.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L215">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_Update_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_Update_System_Object_System_Object_" data-uid="Mozlite.Data.Internal.DbContextBase`1.Update(System.Object,System.Object)">Update(Object, Object)</h4>
+  <div class="markdown level1 summary"><p>更新所有模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Update(object key, object statement)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值，主键必须为一列时候才可使用。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">statement</span></td>
+        <td><p>更新选项实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_UpdateAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.UpdateAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L203">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync(`0,System.Threading.CancellationToken)">UpdateAsync(TModel, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>更新模型实例，此实例必须包含自增长ID或主键实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; UpdateAsync(TModel model, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>模型实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.UpdateAsync(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L271">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Threading.CancellationToken)">UpdateAsync(Expression&lt;Predicate&lt;TModel&gt;&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>根据条件更新相应的模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; UpdateAsync(Expression&lt;Predicate&lt;TModel&gt;&gt; expression, Expression&lt;Func&lt;TModel, object&gt;&gt; statement, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">statement</span></td>
+        <td><p>更新选项实例，可以为匿名对象或者参数名为字段得表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Threading_CancellationToken__examples">&#31034;&#20363;</h5>
+  <p>public class T{
+public int Id{get;set;}
+public int Views{get;set;}
+public int DayViews{get;set;}
+}
+db.Update(x=&gt;x.Id == 1, x=&gt;new{Views = x.Views + 1,DayViews = x.DayViews + 1});
+db.Update(x=&gt;x.Id == 1, Views=&gt;Views.Views + 1);//这里参数必须为列名称</p>
+
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.UpdateAsync(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L292">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Object,System.Threading.CancellationToken)">UpdateAsync(Expression&lt;Predicate&lt;TModel&gt;&gt;, Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>根据条件更新相应的模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; UpdateAsync(Expression&lt;Predicate&lt;TModel&gt;&gt; expression, object statement, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">statement</span></td>
+        <td><p>更新选项实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_System_Object_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.UpdateAsync(System.Object%2CSystem.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L305">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_System_Object_System_Object_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync(System.Object,System.Object,System.Threading.CancellationToken)">UpdateAsync(Object, Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>更新所有的模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; UpdateAsync(object key, object statement, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>主键值，主键必须为一列时候才可使用。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">statement</span></td>
+        <td><p>更新选项实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601.UpdateAsync(System.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L318">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync*"></a>
+  <h4 id="Mozlite_Data_Internal_DbContextBase_1_UpdateAsync_System_Object_System_Threading_CancellationToken_" data-uid="Mozlite.Data.Internal.DbContextBase`1.UpdateAsync(System.Object,System.Threading.CancellationToken)">UpdateAsync(Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>更新所有的模型实例对象。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; UpdateAsync(object statement, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">statement</span></td>
+        <td><p>更新选项实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标记。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回是否更新成功。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Data.Internal.IDbContextBase-1.html">IDbContextBase&lt;TModel&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.Internal.IDbExecutor.html">IDbExecutor</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_Max__2_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___System_Func_System_Object___1__">DatabaseExtensions.Max&lt;TModel, TValue&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, Func&lt;Object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_Max__1_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___">DatabaseExtensions.Max&lt;TModel&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_Min__2_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___System_Func_System_Object___1__">DatabaseExtensions.Min&lt;TModel, TValue&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, Func&lt;Object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_Min__1_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___">DatabaseExtensions.Min&lt;TModel&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_Sum__2_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___System_Func_System_Object___1__">DatabaseExtensions.Sum&lt;TModel, TValue&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, Func&lt;Object, TValue&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_Sum__1_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___">DatabaseExtensions.Sum&lt;TModel&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_MaxAsync__2_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___System_Func_System_Object___1__System_Threading_CancellationToken_">DatabaseExtensions.MaxAsync&lt;TModel, TValue&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, Func&lt;Object, TValue&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_MaxAsync__1_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___System_Threading_CancellationToken_">DatabaseExtensions.MaxAsync&lt;TModel&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_MinAsync__2_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___System_Func_System_Object___1__System_Threading_CancellationToken_">DatabaseExtensions.MinAsync&lt;TModel, TValue&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, Func&lt;Object, TValue&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_MinAsync__1_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___System_Threading_CancellationToken_">DatabaseExtensions.MinAsync&lt;TModel&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_SumAsync__2_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___System_Func_System_Object___1__System_Threading_CancellationToken_">DatabaseExtensions.SumAsync&lt;TModel, TValue&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, Func&lt;Object, TValue&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.DatabaseExtensions.html#Mozlite_Data_DatabaseExtensions_SumAsync__1_Mozlite_Data_Internal_IDbContextBase___0__System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Linq_Expressions_Expression_System_Predicate___0___System_Threading_CancellationToken_">DatabaseExtensions.SumAsync&lt;TModel&gt;(IDbContextBase&lt;TModel&gt;, Expression&lt;Func&lt;TModel, Object&gt;&gt;, Expression&lt;Predicate&lt;TModel&gt;&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_Internal_DbContextBase_1.md&amp;value=---%0Auid%3A%20Mozlite.Data.Internal.DbContextBase%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/Internal/DbContextBase.cs/#L18" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

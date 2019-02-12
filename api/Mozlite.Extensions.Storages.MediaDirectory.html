@@ -1,0 +1,939 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MediaDirectory 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="MediaDirectory 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Extensions.Storages.MediaDirectory">
+  
+  
+  <h1 id="Mozlite_Extensions_Storages_MediaDirectory" data-uid="Mozlite.Extensions.Storages.MediaDirectory" class="text-break">MediaDirectory 类
+  </h1>
+  <div class="markdown level0 summary"><p>媒体文件提供者实现类。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MediaDirectory</span></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Extensions.Storages.IMediaDirectory.html">IMediaDirectory</a></div>
+    <div><a class="xref" href="Mozlite.ISingletonService.html">ISingletonService</a></div>
+    <div><a class="xref" href="Mozlite.IService.html">IService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Extensions.Storages.html">Mozlite.Extensions.Storages</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Extensions.Storages.dll</h6>
+  <h5 id="Mozlite_Extensions_Storages_MediaDirectory_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MediaDirectory : IMediaDirectory, ISingletonService, IService</code></pre>
+  </div>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory__ctor_Mozlite_Extensions_Storages_IStorageDirectory_Mozlite_Data_IDbContext_Mozlite_Extensions_Storages_MediaFile__Mozlite_Data_IDbContext_Mozlite_Extensions_Storages_StoredFile__.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.%23ctor(Mozlite.Extensions.Storages.IStorageDirectory%2CMozlite.Data.IDbContext%7BMozlite.Extensions.Storages.MediaFile%7D%2CMozlite.Data.IDbContext%7BMozlite.Extensions.Storages.StoredFile%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L32">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory__ctor_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.#ctor*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory__ctor_Mozlite_Extensions_Storages_IStorageDirectory_Mozlite_Data_IDbContext_Mozlite_Extensions_Storages_MediaFile__Mozlite_Data_IDbContext_Mozlite_Extensions_Storages_StoredFile__" data-uid="Mozlite.Extensions.Storages.MediaDirectory.#ctor(Mozlite.Extensions.Storages.IStorageDirectory,Mozlite.Data.IDbContext{Mozlite.Extensions.Storages.MediaFile},Mozlite.Data.IDbContext{Mozlite.Extensions.Storages.StoredFile})">MediaDirectory(IStorageDirectory, IDbContext&lt;MediaFile&gt;, IDbContext&lt;StoredFile&gt;)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Extensions.Storages.MediaDirectory.html">MediaDirectory</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaDirectory(IStorageDirectory directory, IDbContext&lt;MediaFile&gt; mfdb, IDbContext&lt;StoredFile&gt; sfdb)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Storages.IStorageDirectory.html">IStorageDirectory</a></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>存储文件夹。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaFile.html">MediaFile</a>&gt;</td>
+        <td><span class="parametername">mfdb</span></td>
+        <td><p>数据库操作接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;<a class="xref" href="Mozlite.Extensions.Storages.StoredFile.html">StoredFile</a>&gt;</td>
+        <td><span class="parametername">sfdb</span></td>
+        <td><p>数据库操作接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_DeleteAsync_System_Guid_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.DeleteAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L227">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_DeleteAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.DeleteAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_DeleteAsync_System_Guid_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.DeleteAsync(System.Guid)">DeleteAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>删除文件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; DeleteAsync(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>文件Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回删除结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_DeleteAsync_System_String_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.DeleteAsync(System.String%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L238">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_DeleteAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.DeleteAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_DeleteAsync_System_String_System_Nullable_System_Int32__" data-uid="Mozlite.Extensions.Storages.MediaDirectory.DeleteAsync(System.String,System.Nullable{System.Int32})">DeleteAsync(String, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>删除文件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; DeleteAsync(string extensionName, int? targetId = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extensionName</span></td>
+        <td><p>扩展名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">targetId</span></td>
+        <td><p>对象Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回删除结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_DownloadAsync_System_String_System_Action_Mozlite_Extensions_Storages_MediaFile__System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.DownloadAsync(System.String%2CSystem.Action%7BMozlite.Extensions.Storages.MediaFile%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L81">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_DownloadAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.DownloadAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_DownloadAsync_System_String_System_Action_Mozlite_Extensions_Storages_MediaFile__System_Boolean_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.DownloadAsync(System.String,System.Action{Mozlite.Extensions.Storages.MediaFile},System.Boolean)">DownloadAsync(String, Action&lt;MediaFile&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>下载文件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;MediaResult&gt; DownloadAsync(string url, Action&lt;MediaFile&gt; init, bool unique = true)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>文件URL地址。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaFile.html">MediaFile</a>&gt;</td>
+        <td><span class="parametername">init</span></td>
+        <td><p>实例化媒体文件属性。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unique</span></td>
+        <td><p>每一个文件和媒体存储文件一一对应。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaResult.html">MediaResult</a>&gt;</td>
+        <td><p>返回上传后的结果！</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_DownloadAsync_System_String_System_String_System_Nullable_System_Int32__System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.DownloadAsync(System.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L103">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_DownloadAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.DownloadAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_DownloadAsync_System_String_System_String_System_Nullable_System_Int32__System_Boolean_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.DownloadAsync(System.String,System.String,System.Nullable{System.Int32},System.Boolean)">DownloadAsync(String, String, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>下载文件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MediaResult&gt; DownloadAsync(string url, string extensionName, int? targetId = default(int? ), bool unique = true)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>文件URL地址。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extensionName</span></td>
+        <td><p>扩展名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">targetId</span></td>
+        <td><p>目标Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unique</span></td>
+        <td><p>每一个文件和媒体存储文件一一对应。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaResult.html">MediaResult</a>&gt;</td>
+        <td><p>返回上传后的结果！</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_FetchAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.FetchAsync(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L207">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_FetchAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.FetchAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_FetchAsync_System_String_System_Int32_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.FetchAsync(System.String,System.Int32)">FetchAsync(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>通过扩展名称和目标Id。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IEnumerable&lt;MediaFile&gt;&gt; FetchAsync(string extensionName, int targetId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extensionName</span></td>
+        <td><p>扩展名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetId</span></td>
+        <td><p>目标Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaFile.html">MediaFile</a>&gt;&gt;</td>
+        <td><p>返回媒体文件列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_FindAsync_System_Guid_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.FindAsync(System.Guid)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L179">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_FindAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.FindAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_FindAsync_System_Guid_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.FindAsync(System.Guid)">FindAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>通过GUID获取存储文件实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;StoredPhysicalFile&gt; FindAsync(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>媒体文件Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.StoredPhysicalFile.html">StoredPhysicalFile</a>&gt;</td>
+        <td><p>返回存储文件实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_FindAsync_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.FindAsync(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L196">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_FindAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.FindAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_FindAsync_System_String_System_Int32_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.FindAsync(System.String,System.Int32)">FindAsync(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>通过扩展名称和目标Id。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;MediaFile&gt; FindAsync(string extensionName, int targetId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extensionName</span></td>
+        <td><p>扩展名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetId</span></td>
+        <td><p>目标Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaFile.html">MediaFile</a>&gt;</td>
+        <td><p>返回媒体文件。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_FindThumbAsync_System_Guid_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.FindThumbAsync(System.Guid%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L252">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_FindThumbAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.FindThumbAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_FindThumbAsync_System_Guid_System_Int32_System_Int32_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.FindThumbAsync(System.Guid,System.Int32,System.Int32)">FindThumbAsync(Guid, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>通过GUID获取存储图片文件实例缩略图。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;StoredPhysicalFile&gt; FindThumbAsync(Guid id, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>媒体文件Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>宽度。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>高度。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.StoredPhysicalFile.html">StoredPhysicalFile</a>&gt;</td>
+        <td><p>返回存储缩略图实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_LoadAsync_Mozlite_Extensions_Storages_MediaQuery_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.LoadAsync(Mozlite.Extensions.Storages.MediaQuery)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L217">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_LoadAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.LoadAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_LoadAsync_Mozlite_Extensions_Storages_MediaQuery_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.LoadAsync(Mozlite.Extensions.Storages.MediaQuery)">LoadAsync(MediaQuery)</h4>
+  <div class="markdown level1 summary"><p>加载文件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;MediaQuery&gt; LoadAsync(MediaQuery query)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Storages.MediaQuery.html">MediaQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>查询实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaQuery.html">MediaQuery</a>&gt;</td>
+        <td><p>返回文件列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_SaveAsync_System_IO_FileInfo_System_String_System_Action_Mozlite_Extensions_Storages_MediaFile__System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.SaveAsync(System.IO.FileInfo%2CSystem.String%2CSystem.Action%7BMozlite.Extensions.Storages.MediaFile%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L118">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_SaveAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.SaveAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_SaveAsync_System_IO_FileInfo_System_String_System_Action_Mozlite_Extensions_Storages_MediaFile__System_Boolean_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.SaveAsync(System.IO.FileInfo,System.String,System.Action{Mozlite.Extensions.Storages.MediaFile},System.Boolean)">SaveAsync(FileInfo, String, Action&lt;MediaFile&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>将临时文件存储到系统中。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MediaResult&gt; SaveAsync(FileInfo tempFile, string fileName, Action&lt;MediaFile&gt; init, bool unique = true)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileInfo</span></td>
+        <td><span class="parametername">tempFile</span></td>
+        <td><p>临时文件实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>文件名称，用于解析扩展名和文件名。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaFile.html">MediaFile</a>&gt;</td>
+        <td><span class="parametername">init</span></td>
+        <td><p>实例化媒体文件属性。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unique</span></td>
+        <td><p>每一个文件和媒体存储文件一一对应。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaResult.html">MediaResult</a>&gt;</td>
+        <td><p>返回上传后的结果！</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_UploadAsync_Microsoft_AspNetCore_Http_IFormFile_System_Action_Mozlite_Extensions_Storages_MediaFile__System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.UploadAsync(Microsoft.AspNetCore.Http.IFormFile%2CSystem.Action%7BMozlite.Extensions.Storages.MediaFile%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L50">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_UploadAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.UploadAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_UploadAsync_Microsoft_AspNetCore_Http_IFormFile_System_Action_Mozlite_Extensions_Storages_MediaFile__System_Boolean_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.UploadAsync(Microsoft.AspNetCore.Http.IFormFile,System.Action{Mozlite.Extensions.Storages.MediaFile},System.Boolean)">UploadAsync(IFormFile, Action&lt;MediaFile&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>上传文件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;MediaResult&gt; UploadAsync(IFormFile file, Action&lt;MediaFile&gt; init, bool unique = true)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.IFormFile</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>表单文件。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaFile.html">MediaFile</a>&gt;</td>
+        <td><span class="parametername">init</span></td>
+        <td><p>实例化媒体文件属性。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">unique</span></td>
+        <td><p>每一个文件和媒体存储文件一一对应。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaResult.html">MediaResult</a>&gt;</td>
+        <td><p>返回上传后的结果！</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory_UploadAsync_Microsoft_AspNetCore_Http_IFormFile_System_String_System_Nullable_System_Int32__System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory.UploadAsync(Microsoft.AspNetCore.Http.IFormFile%2CSystem.String%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L66">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Storages_MediaDirectory_UploadAsync_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.UploadAsync*"></a>
+  <h4 id="Mozlite_Extensions_Storages_MediaDirectory_UploadAsync_Microsoft_AspNetCore_Http_IFormFile_System_String_System_Nullable_System_Int32__System_Boolean_" data-uid="Mozlite.Extensions.Storages.MediaDirectory.UploadAsync(Microsoft.AspNetCore.Http.IFormFile,System.String,System.Nullable{System.Int32},System.Boolean)">UploadAsync(IFormFile, String, Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>上传文件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;MediaResult&gt; UploadAsync(IFormFile file, string extensionName, int? targetId = default(int? ), bool uniqueMediaFile = true)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.IFormFile</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>表单文件。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extensionName</span></td>
+        <td><p>扩展名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">targetId</span></td>
+        <td><p>目标Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">uniqueMediaFile</span></td>
+        <td><p>每一个文件和媒体存储文件一一对应。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaResult.html">MediaResult</a>&gt;</td>
+        <td><p>返回上传后的结果！</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Storages.IMediaDirectory.html">IMediaDirectory</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.ISingletonService.html">ISingletonService</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.IService.html">IService</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Storages_MediaDirectory.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Storages.MediaDirectory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions.Storages/MediaDirectory.cs/#L15" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

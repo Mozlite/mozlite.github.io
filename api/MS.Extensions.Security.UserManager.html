@@ -1,0 +1,839 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>UserManager 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="UserManager 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MS.Extensions.Security.UserManager">
+  
+  
+  <h1 id="MS_Extensions_Security_UserManager" data-uid="MS.Extensions.Security.UserManager" class="text-break">UserManager 类
+  </h1>
+  <div class="markdown level0 summary"><p>用户管理。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.AspNetCore.Identity.UserManager</span>&lt;<a class="xref" href="MS.Extensions.Security.User.html">User</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html">UserManager</a>&lt;<a class="xref" href="MS.Extensions.Security.User.html">User</a>, <a class="xref" href="MS.Extensions.Security.UserClaim.html">UserClaim</a>, <a class="xref" href="MS.Extensions.Security.UserLogin.html">UserLogin</a>, <a class="xref" href="MS.Extensions.Security.UserToken.html">UserToken</a>&gt;</div>
+    <div class="level3"><a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html">UserManager</a>&lt;<a class="xref" href="MS.Extensions.Security.User.html">User</a>, <a class="xref" href="MS.Extensions.Security.Role.html">Role</a>, <a class="xref" href="MS.Extensions.Security.UserClaim.html">UserClaim</a>, <a class="xref" href="MS.Extensions.Security.UserRole.html">UserRole</a>, <a class="xref" href="MS.Extensions.Security.UserLogin.html">UserLogin</a>, <a class="xref" href="MS.Extensions.Security.UserToken.html">UserToken</a>, <a class="xref" href="MS.Extensions.Security.RoleClaim.html">RoleClaim</a>&gt;</div>
+    <div class="level4"><span class="xref">UserManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="MS.Extensions.Security.IUserManager.html">IUserManager</a></div>
+    <div><a class="xref" href="Mozlite.Extensions.Security.IUserManager-2.html">IUserManager</a>&lt;<a class="xref" href="MS.Extensions.Security.User.html">User</a>, <a class="xref" href="MS.Extensions.Security.Role.html">Role</a>&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html">IUserManager</a>&lt;<a class="xref" href="MS.Extensions.Security.User.html">User</a>&gt;</div>
+    <div><a class="xref" href="Mozlite.IScopedService.html">IScopedService</a></div>
+    <div><a class="xref" href="Mozlite.IService.html">IService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_DbContext">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.DbContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_GetRoleIds_System_Int32_">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.GetRoleIds(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_GetRoleIdsAsync_System_Int32_">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.GetRoleIdsAsync(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_GetRoles_System_Int32_">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.GetRoles(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_GetRolesAsync_System_Int32_">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.GetRolesAsync(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_GetMaxRole_System_Int32_">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.GetMaxRole(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_GetMaxRoleAsync_System_Int32_">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.GetMaxRoleAsync(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_AddUserToRoles_System_Int32_System_Int32___">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.AddUserToRoles(Int32, Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_AddUserToRolesAsync_System_Int32_System_Int32___">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.AddUserToRolesAsync(Int32, Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_SetUserToRoles_System_Int32_System_Int32___">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.SetUserToRoles(Int32, Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_SetUserToRolesAsync_System_Int32_System_Int32___">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.SetUserToRolesAsync(Int32, Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-7.html#Mozlite_Extensions_Security_UserManager_7_CreateOwnerAsync_System_String_System_String_System_String_System_Action__0__">UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;.CreateOwnerAsync(String, String, String, Action&lt;User&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_GetService__1">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.GetService&lt;TService&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_GetRequiredService__1">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.GetRequiredService&lt;TService&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_SignInManager">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.SignInManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_DbContext">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.DbContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_HttpContext">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.HttpContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_CreateAsync__0_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.CreateAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_CreateAsync__0_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.CreateAsync(User, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_GetUser">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.GetUser()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_GetUserAsync">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.GetUserAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_IsSignedIn">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.IsSignedIn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_PasswordSignInAsync_System_String_System_String_System_Boolean_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.PasswordSignInAsync(String, String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_PasswordSignInAsync_System_String_System_String_System_Boolean_System_Func__0_System_Threading_Tasks_Task__">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.PasswordSignInAsync(String, String, Boolean, Func&lt;User, Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_SignOutAsync">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.SignOutAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_ChangePasswordAsync__0_System_String_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.ChangePasswordAsync(User, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_ResetPasswordAsync__0_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.ResetPasswordAsync(User, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_ResetPasswordAsync__0_System_String_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.ResetPasswordAsync(User, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_Update_System_Int32_System_Object_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.Update(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_UpdateAsync_System_Int32_System_Object_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.UpdateAsync(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_Load__1___0_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.Load&lt;TQuery&gt;(TQuery)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_LoadAsync__1___0_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.LoadAsync&lt;TQuery&gt;(TQuery)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_IsDuplicated__0_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.IsDuplicated(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_IsDuplicatedAsync__0_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.IsDuplicatedAsync(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_IsDuplicated_System_Int32_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.IsDuplicated(Int32, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_IsDuplicatedAsync_System_Int32_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.IsDuplicatedAsync(Int32, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_Lockout_System_Int32_System_Nullable_System_DateTimeOffset__">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.Lockout(Int32, Nullable&lt;DateTimeOffset&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_LockoutAsync_System_Int32_System_Nullable_System_DateTimeOffset__">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.LockoutAsync(Int32, Nullable&lt;DateTimeOffset&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_Delete_System_Int32___">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.Delete(Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_Delete_System_Int32_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.Delete(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_DeleteAsync_System_Int32___">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.DeleteAsync(Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_DeleteAsync_System_Int32_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.DeleteAsync(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_FindByIdAsync_System_Int32_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.FindByIdAsync(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_FindByNameAsync_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.FindByNameAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_HashPassword__0_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.HashPassword(User)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_HashPassword_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.HashPassword(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_VerifyHashedPassword_System_String_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.VerifyHashedPassword(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_PasswordSalt_System_String_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.PasswordSalt(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_CheckPasswordAsync__0_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.CheckPasswordAsync(User, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.UserManager-4.html#Mozlite_Extensions_Security_UserManager_4_VerifyTwoFactorTokenAsync__0_System_String_">UserManager&lt;User, UserClaim, UserLogin, UserToken&gt;.VerifyTwoFactorTokenAsync(User, String)</a>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ResetPasswordTokenPurpose</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ChangePhoneNumberTokenPurpose</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ConfirmEmailTokenPurpose</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetUserName(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetUserId(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetUserAsync(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GenerateConcurrencyStampAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.CreateAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.UpdateAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.DeleteAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.FindByIdAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.FindByNameAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.CreateAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.NormalizeKey(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.UpdateNormalizedUserNameAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetUserNameAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SetUserNameAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetUserIdAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.CheckPasswordAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.HasPasswordAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.AddPasswordAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ChangePasswordAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.RemovePasswordAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.VerifyPasswordAsync(Microsoft.AspNetCore.Identity.IUserPasswordStore&lt;MS.Extensions.Security.User&gt;, MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetSecurityStampAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.UpdateSecurityStampAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GeneratePasswordResetTokenAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ResetPasswordAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.FindByLoginAsync(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.RemoveLoginAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.AddLoginAsync(MS.Extensions.Security.User, Microsoft.AspNetCore.Identity.UserLoginInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetLoginsAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.AddClaimAsync(MS.Extensions.Security.User, System.Security.Claims.Claim)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.AddClaimsAsync(MS.Extensions.Security.User, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ReplaceClaimAsync(MS.Extensions.Security.User, System.Security.Claims.Claim, System.Security.Claims.Claim)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.RemoveClaimAsync(MS.Extensions.Security.User, System.Security.Claims.Claim)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.RemoveClaimsAsync(MS.Extensions.Security.User, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetClaimsAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.AddToRoleAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.AddToRolesAsync(MS.Extensions.Security.User, System.Collections.Generic.IEnumerable&lt;System.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.RemoveFromRoleAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.RemoveFromRolesAsync(MS.Extensions.Security.User, System.Collections.Generic.IEnumerable&lt;System.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetRolesAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.IsInRoleAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetEmailAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SetEmailAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.FindByEmailAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.UpdateNormalizedEmailAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GenerateEmailConfirmationTokenAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ConfirmEmailAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.IsEmailConfirmedAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GenerateChangeEmailTokenAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ChangeEmailAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetPhoneNumberAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SetPhoneNumberAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ChangePhoneNumberAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.IsPhoneNumberConfirmedAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GenerateChangePhoneNumberTokenAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.VerifyChangePhoneNumberTokenAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.VerifyUserTokenAsync(MS.Extensions.Security.User, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GenerateUserTokenAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.RegisterTokenProvider(System.String, Microsoft.AspNetCore.Identity.IUserTwoFactorTokenProvider&lt;MS.Extensions.Security.User&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetValidTwoFactorProvidersAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.VerifyTwoFactorTokenAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GenerateTwoFactorTokenAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetTwoFactorEnabledAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SetTwoFactorEnabledAsync(MS.Extensions.Security.User, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.IsLockedOutAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SetLockoutEnabledAsync(MS.Extensions.Security.User, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetLockoutEnabledAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetLockoutEndDateAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SetLockoutEndDateAsync(MS.Extensions.Security.User, System.Nullable&lt;System.DateTimeOffset&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.AccessFailedAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ResetAccessFailedCountAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetAccessFailedCountAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetUsersForClaimAsync(System.Security.Claims.Claim)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetUsersInRoleAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetAuthenticationTokenAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SetAuthenticationTokenAsync(MS.Extensions.Security.User, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.RemoveAuthenticationTokenAsync(MS.Extensions.Security.User, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetAuthenticatorKeyAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ResetAuthenticatorKeyAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GenerateNewAuthenticatorKey()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GenerateNewTwoFactorRecoveryCodesAsync(MS.Extensions.Security.User, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.CreateTwoFactorRecoveryCode()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.RedeemTwoFactorRecoveryCodeAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.CountRecoveryCodesAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.CreateSecurityTokenAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.UpdatePasswordHash(MS.Extensions.Security.User, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.GetChangeEmailTokenPurpose(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ValidateUserAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ValidatePasswordAsync(MS.Extensions.Security.User, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.UpdateUserAsync(MS.Extensions.Security.User)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ThrowIfDisposed()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.CancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.Store</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.PasswordHasher</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.UserValidators</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.PasswordValidators</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.KeyNormalizer</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.ErrorDescriber</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.Options</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserAuthenticationTokens</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserAuthenticatorKey</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserTwoFactorRecoveryCodes</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserTwoFactor</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserPassword</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserSecurityStamp</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserRole</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserLogin</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserEmail</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserPhoneNumber</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserClaim</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsUserLockout</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.SupportsQueryableUsers</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;MS.Extensions.Security.User&gt;.Users</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="MS.Extensions.Security.html">MS.Extensions.Security</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: MS.Extensions.Security.dll</h6>
+  <h5 id="MS_Extensions_Security_UserManager_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserManager : UserManager&lt;User, Role, UserClaim, UserRole, UserLogin, UserToken, RoleClaim&gt;, IDisposable, IUserManager, IUserManager&lt;User, Role&gt;, IUserManager&lt;User&gt;, IScopedService, IService</code></pre>
+  </div>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=MS_Extensions_Security_UserManager__ctor_Microsoft_AspNetCore_Identity_IUserStore_MS_Extensions_Security_User__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_MS_Extensions_Security_User__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_MS_Extensions_Security_User___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_MS_Extensions_Security_User___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_System_IServiceProvider_.md&amp;value=---%0Auid%3A%20MS.Extensions.Security.UserManager.%23ctor(Microsoft.AspNetCore.Identity.IUserStore%7BMS.Extensions.Security.User%7D%2CMicrosoft.Extensions.Options.IOptions%7BMicrosoft.AspNetCore.Identity.IdentityOptions%7D%2CMicrosoft.AspNetCore.Identity.IPasswordHasher%7BMS.Extensions.Security.User%7D%2CSystem.Collections.Generic.IEnumerable%7BMicrosoft.AspNetCore.Identity.IUserValidator%7BMS.Extensions.Security.User%7D%7D%2CSystem.Collections.Generic.IEnumerable%7BMicrosoft.AspNetCore.Identity.IPasswordValidator%7BMS.Extensions.Security.User%7D%7D%2CMicrosoft.AspNetCore.Identity.ILookupNormalizer%2CMicrosoft.AspNetCore.Identity.IdentityErrorDescriber%2CSystem.IServiceProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/MS.Extensions.Security/Extensions/Security/UserManager.cs/#L31">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="MS_Extensions_Security_UserManager__ctor_" data-uid="MS.Extensions.Security.UserManager.#ctor*"></a>
+  <h4 id="MS_Extensions_Security_UserManager__ctor_Microsoft_AspNetCore_Identity_IUserStore_MS_Extensions_Security_User__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_MS_Extensions_Security_User__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_MS_Extensions_Security_User___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_MS_Extensions_Security_User___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_System_IServiceProvider_" data-uid="MS.Extensions.Security.UserManager.#ctor(Microsoft.AspNetCore.Identity.IUserStore{MS.Extensions.Security.User},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Identity.IPasswordHasher{MS.Extensions.Security.User},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IUserValidator{MS.Extensions.Security.User}},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IPasswordValidator{MS.Extensions.Security.User}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,System.IServiceProvider)">UserManager(IUserStore&lt;User&gt;, IOptions&lt;IdentityOptions&gt;, IPasswordHasher&lt;User&gt;, IEnumerable&lt;IUserValidator&lt;User&gt;&gt;, IEnumerable&lt;IPasswordValidator&lt;User&gt;&gt;, ILookupNormalizer, IdentityErrorDescriber, IServiceProvider)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="MS.Extensions.Security.UserManager.html">UserManager</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserManager(IUserStore&lt;User&gt; store, IOptions&lt;IdentityOptions&gt; optionsAccessor, IPasswordHasher&lt;User&gt; passwordHasher, IEnumerable&lt;IUserValidator&lt;User&gt;&gt; userValidators, IEnumerable&lt;IPasswordValidator&lt;User&gt;&gt; passwordValidators, ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors, IServiceProvider serviceProvider)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IUserStore</span>&lt;<a class="xref" href="MS.Extensions.Security.User.html">User</a>&gt;</td>
+        <td><span class="parametername">store</span></td>
+        <td><p>用户存储接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityOptions</span>&gt;</td>
+        <td><span class="parametername">optionsAccessor</span></td>
+        <td><p><span class="xref">Microsoft.AspNetCore.Identity.IdentityOptions</span>实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IPasswordHasher</span>&lt;<a class="xref" href="MS.Extensions.Security.User.html">User</a>&gt;</td>
+        <td><span class="parametername">passwordHasher</span></td>
+        <td><p>密码加密器接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IUserValidator</span>&lt;<a class="xref" href="MS.Extensions.Security.User.html">User</a>&gt;&gt;</td>
+        <td><span class="parametername">userValidators</span></td>
+        <td><p>用户验证接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IPasswordValidator</span>&lt;<a class="xref" href="MS.Extensions.Security.User.html">User</a>&gt;&gt;</td>
+        <td><span class="parametername">passwordValidators</span></td>
+        <td><p>密码验证接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.ILookupNormalizer</span></td>
+        <td><span class="parametername">keyNormalizer</span></td>
+        <td><p>唯一键格式化字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IdentityErrorDescriber</span></td>
+        <td><span class="parametername">errors</span></td>
+        <td><p>错误实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IServiceProvider</span></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td><p>服务提供者接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=MS_Extensions_Security_UserManager_UploadAvatarAsync_Microsoft_AspNetCore_Http_IFormFile_System_Int32_.md&amp;value=---%0Auid%3A%20MS.Extensions.Security.UserManager.UploadAvatarAsync(Microsoft.AspNetCore.Http.IFormFile%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/MS.Extensions.Security/Extensions/Security/UserManager.cs/#L43">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="MS_Extensions_Security_UserManager_UploadAvatarAsync_" data-uid="MS.Extensions.Security.UserManager.UploadAvatarAsync*"></a>
+  <h4 id="MS_Extensions_Security_UserManager_UploadAvatarAsync_Microsoft_AspNetCore_Http_IFormFile_System_Int32_" data-uid="MS.Extensions.Security.UserManager.UploadAvatarAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">UploadAvatarAsync(IFormFile, Int32)</h4>
+  <div class="markdown level1 summary"><p>上传头像。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MediaResult&gt; UploadAvatarAsync(IFormFile file, int id)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.IFormFile</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>上传的文件实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Storages.MediaResult.html">MediaResult</a>&gt;</td>
+        <td><p>返回上传结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="MS.Extensions.Security.IUserManager.html">IUserManager</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-2.html">IUserManager&lt;TUser, TRole&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Security.IUserManager-1.html">IUserManager&lt;TUser&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.IScopedService.html">IScopedService</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.IService.html">IService</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=MS_Extensions_Security_UserManager.md&amp;value=---%0Auid%3A%20MS.Extensions.Security.UserManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/MS.Extensions.Security/Extensions/Security/UserManager.cs/#L16" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

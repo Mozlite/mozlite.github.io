@@ -1,0 +1,2253 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>IQueryable&lt;TModel&gt; 接口
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="IQueryable&lt;TModel&gt; 接口
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Data.IQueryable`1">
+  
+  
+  <h1 id="Mozlite_Data_IQueryable_1" data-uid="Mozlite.Data.IQueryable`1" class="text-break">IQueryable&lt;TModel&gt; 接口
+  </h1>
+  <div class="markdown level0 summary"><p>查询实例。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Data.html">Mozlite.Data</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Data.dll</h6>
+  <h5 id="Mozlite_Data_IQueryable_1_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IQueryable&lt;TModel&gt; : IQueryContext&lt;TModel&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>实体类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_AsEnumerable.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.AsEnumerable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L251">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_AsEnumerable_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerable*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_AsEnumerable" data-uid="Mozlite.Data.IQueryable`1.AsEnumerable">AsEnumerable()</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TModel&gt; AsEnumerable()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TModel&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_AsEnumerable_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.AsEnumerable(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L208">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_AsEnumerable_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerable*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_AsEnumerable_System_Int32_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerable(System.Int32)">AsEnumerable(Int32)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回<code data-dev-comment-type="paramref" class="paramref">size</code>项结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TModel&gt; AsEnumerable(int size)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>返回的记录数。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TModel&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_AsEnumerable_System_Int32_System_Int32_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.AsEnumerable(System.Int32%2CSystem.Int32%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L245">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_AsEnumerable_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerable*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_AsEnumerable_System_Int32_System_Int32_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.AsEnumerable(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">AsEnumerable(Int32, Int32, Expression&lt;Func&lt;TModel, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPageEnumerable&lt;TModel&gt; AsEnumerable(int pageIndex, int pageSize, Expression&lt;Func&lt;TModel, object&gt;&gt; count = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageIndex</span></td>
+        <td><p>页码。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>每页显示的记录数。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td><p>分页总记录数计算列。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.IPageEnumerable-1.html">IPageEnumerable</a>&lt;TModel&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_AsEnumerable__1_System_Func_System_Data_Common_DbDataReader___0__.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.AsEnumerable%60%601(System.Func%7BSystem.Data.Common.DbDataReader%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L258">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_AsEnumerable_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerable*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_AsEnumerable__1_System_Func_System_Data_Common_DbDataReader___0__" data-uid="Mozlite.Data.IQueryable`1.AsEnumerable``1(System.Func{System.Data.Common.DbDataReader,``0})">AsEnumerable&lt;TValue&gt;(Func&lt;DbDataReader, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果，主要配合查询特定列时候使用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TValue&gt; AsEnumerable&lt;TValue&gt;(Func&lt;DbDataReader, TValue&gt; converter)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Data.Common.DbDataReader</span>, TValue&gt;</td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>对象转换器。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TValue&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_AsEnumerableAsync_System_Int32_System_Int32_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.AsEnumerableAsync(System.Int32%2CSystem.Int32%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L277">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_AsEnumerableAsync_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerableAsync*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_AsEnumerableAsync_System_Int32_System_Int32_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Threading_CancellationToken_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerableAsync(System.Int32,System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Threading.CancellationToken)">AsEnumerableAsync(Int32, Int32, Expression&lt;Func&lt;TModel, Object&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IPageEnumerable&lt;TModel&gt;&gt; AsEnumerableAsync(int pageIndex, int pageSize, Expression&lt;Func&lt;TModel, object&gt;&gt; count = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageIndex</span></td>
+        <td><p>页码。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>每页显示的记录数。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td><p>分页总记录数计算列。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.IPageEnumerable-1.html">IPageEnumerable</a>&lt;TModel&gt;&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_AsEnumerableAsync_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.AsEnumerableAsync(System.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L266">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_AsEnumerableAsync_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerableAsync*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_AsEnumerableAsync_System_Int32_System_Threading_CancellationToken_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerableAsync(System.Int32,System.Threading.CancellationToken)">AsEnumerableAsync(Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回<code data-dev-comment-type="paramref" class="paramref">size</code>项结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;TModel&gt;&gt; AsEnumerableAsync(int size, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>返回的记录数。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TModel&gt;&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_AsEnumerableAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.AsEnumerableAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L286">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_AsEnumerableAsync_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerableAsync*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_AsEnumerableAsync_System_Threading_CancellationToken_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerableAsync(System.Threading.CancellationToken)">AsEnumerableAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;TModel&gt;&gt; AsEnumerableAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TModel&gt;&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_AsEnumerableAsync__1_System_Func_System_Data_Common_DbDataReader___0__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.AsEnumerableAsync%60%601(System.Func%7BSystem.Data.Common.DbDataReader%2C%60%600%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L294">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_AsEnumerableAsync_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerableAsync*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_AsEnumerableAsync__1_System_Func_System_Data_Common_DbDataReader___0__System_Threading_CancellationToken_" data-uid="Mozlite.Data.IQueryable`1.AsEnumerableAsync``1(System.Func{System.Data.Common.DbDataReader,``0},System.Threading.CancellationToken)">AsEnumerableAsync&lt;TValue&gt;(Func&lt;DbDataReader, TValue&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果，主要配合查询特定列时候使用。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;TValue&gt;&gt; AsEnumerableAsync&lt;TValue&gt;(Func&lt;DbDataReader, TValue&gt; converter, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Data.Common.DbDataReader</span>, TValue&gt;</td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>对象转换器。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TValue&gt;&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Distinct_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Distinct(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L126">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Distinct_" data-uid="Mozlite.Data.IQueryable`1.Distinct*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Distinct_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.Distinct(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">Distinct(Expression&lt;Func&lt;TModel, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置选择列(不重复)。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Distinct(Expression&lt;Func&lt;TModel, object&gt;&gt; fields)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>列表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Distinct__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Distinct%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L119">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Distinct_" data-uid="Mozlite.Data.IQueryable`1.Distinct*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Distinct__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.Distinct``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">Distinct&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置选择列(不重复)。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Distinct&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, object&gt;&gt; fields)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>列表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Exclude_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Exclude(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L111">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Exclude_" data-uid="Mozlite.Data.IQueryable`1.Exclude*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Exclude_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.Exclude(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">Exclude(Expression&lt;Func&lt;TModel, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置选择列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Exclude(Expression&lt;Func&lt;TModel, object&gt;&gt; fields)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>不包含的列表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Exclude__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Exclude%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L104">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Exclude_" data-uid="Mozlite.Data.IQueryable`1.Exclude*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Exclude__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.Exclude``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">Exclude&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置选择列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Exclude&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, object&gt;&gt; fields)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>不包含的列表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_FirstOrDefault.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.FirstOrDefault%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L214">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_FirstOrDefault_" data-uid="Mozlite.Data.IQueryable`1.FirstOrDefault*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_FirstOrDefault" data-uid="Mozlite.Data.IQueryable`1.FirstOrDefault">FirstOrDefault()</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TModel FirstOrDefault()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_FirstOrDefault__1_System_Func_System_Data_Common_DbDataReader___0__.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.FirstOrDefault%60%601(System.Func%7BSystem.Data.Common.DbDataReader%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L228">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_FirstOrDefault_" data-uid="Mozlite.Data.IQueryable`1.FirstOrDefault*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_FirstOrDefault__1_System_Func_System_Data_Common_DbDataReader___0__" data-uid="Mozlite.Data.IQueryable`1.FirstOrDefault``1(System.Func{System.Data.Common.DbDataReader,``0})">FirstOrDefault&lt;TValue&gt;(Func&lt;DbDataReader, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TValue FirstOrDefault&lt;TValue&gt;(Func&lt;DbDataReader, TValue&gt; converter)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Data.Common.DbDataReader</span>, TValue&gt;</td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>对象转换器。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_FirstOrDefaultAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.FirstOrDefaultAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L221">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_FirstOrDefaultAsync_" data-uid="Mozlite.Data.IQueryable`1.FirstOrDefaultAsync*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_FirstOrDefaultAsync_System_Threading_CancellationToken_" data-uid="Mozlite.Data.IQueryable`1.FirstOrDefaultAsync(System.Threading.CancellationToken)">FirstOrDefaultAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TModel&gt; FirstOrDefaultAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TModel&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_FirstOrDefaultAsync__1_System_Func_System_Data_Common_DbDataReader___0__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.FirstOrDefaultAsync%60%601(System.Func%7BSystem.Data.Common.DbDataReader%2C%60%600%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L236">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_FirstOrDefaultAsync_" data-uid="Mozlite.Data.IQueryable`1.FirstOrDefaultAsync*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_FirstOrDefaultAsync__1_System_Func_System_Data_Common_DbDataReader___0__System_Threading_CancellationToken_" data-uid="Mozlite.Data.IQueryable`1.FirstOrDefaultAsync``1(System.Func{System.Data.Common.DbDataReader,``0},System.Threading.CancellationToken)">FirstOrDefaultAsync&lt;TValue&gt;(Func&lt;DbDataReader, TValue&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>查询数据库返回结果。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TValue&gt; FirstOrDefaultAsync&lt;TValue&gt;(Func&lt;DbDataReader, TValue&gt; converter, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Data.Common.DbDataReader</span>, TValue&gt;</td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>对象转换器。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TValue&gt;</td>
+        <td><p>返回数据列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_InnerJoin__1_System_Linq_Expressions_Expression_System_Func__0___0_System_Boolean___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.InnerJoin%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2C%60%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L23">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_InnerJoin_" data-uid="Mozlite.Data.IQueryable`1.InnerJoin*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_InnerJoin__1_System_Linq_Expressions_Expression_System_Func__0___0_System_Boolean___" data-uid="Mozlite.Data.IQueryable`1.InnerJoin``1(System.Linq.Expressions.Expression{System.Func{`0,``0,System.Boolean}})">InnerJoin&lt;TForeign&gt;(Expression&lt;Func&lt;TModel, TForeign, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置表格关联。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; InnerJoin&lt;TForeign&gt;(Expression&lt;Func&lt;TModel, TForeign, bool&gt;&gt; onExpression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, TForeign, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">onExpression</span></td>
+        <td><p>关联条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TForeign</span></td>
+        <td><p>拼接类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_InnerJoin__2_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.InnerJoin%60%602(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2C%60%601%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L32">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_InnerJoin_" data-uid="Mozlite.Data.IQueryable`1.InnerJoin*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_InnerJoin__2_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___" data-uid="Mozlite.Data.IQueryable`1.InnerJoin``2(System.Linq.Expressions.Expression{System.Func{``0,``1,System.Boolean}})">InnerJoin&lt;TPrimary, TForeign&gt;(Expression&lt;Func&lt;TPrimary, TForeign, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置表格关联。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; InnerJoin&lt;TPrimary, TForeign&gt;(Expression&lt;Func&lt;TPrimary, TForeign, bool&gt;&gt; onExpression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TPrimary, TForeign, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">onExpression</span></td>
+        <td><p>关联条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPrimary</span></td>
+        <td><p>主键所在的模型类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TForeign</span></td>
+        <td><p>外键所在的模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_LeftJoin__1_System_Linq_Expressions_Expression_System_Func__0___0_System_Boolean___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.LeftJoin%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2C%60%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L40">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_LeftJoin_" data-uid="Mozlite.Data.IQueryable`1.LeftJoin*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_LeftJoin__1_System_Linq_Expressions_Expression_System_Func__0___0_System_Boolean___" data-uid="Mozlite.Data.IQueryable`1.LeftJoin``1(System.Linq.Expressions.Expression{System.Func{`0,``0,System.Boolean}})">LeftJoin&lt;TForeign&gt;(Expression&lt;Func&lt;TModel, TForeign, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置表格左关联。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; LeftJoin&lt;TForeign&gt;(Expression&lt;Func&lt;TModel, TForeign, bool&gt;&gt; onExpression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, TForeign, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">onExpression</span></td>
+        <td><p>关联条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TForeign</span></td>
+        <td><p>拼接类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_LeftJoin__2_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.LeftJoin%60%602(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2C%60%601%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L49">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_LeftJoin_" data-uid="Mozlite.Data.IQueryable`1.LeftJoin*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_LeftJoin__2_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___" data-uid="Mozlite.Data.IQueryable`1.LeftJoin``2(System.Linq.Expressions.Expression{System.Func{``0,``1,System.Boolean}})">LeftJoin&lt;TPrimary, TForeign&gt;(Expression&lt;Func&lt;TPrimary, TForeign, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置表格左关联。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; LeftJoin&lt;TPrimary, TForeign&gt;(Expression&lt;Func&lt;TPrimary, TForeign, bool&gt;&gt; onExpression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TPrimary, TForeign, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">onExpression</span></td>
+        <td><p>关联条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPrimary</span></td>
+        <td><p>主键所在的模型类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TForeign</span></td>
+        <td><p>外键所在的模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_OrderBy_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.OrderBy(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L171">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_OrderBy_" data-uid="Mozlite.Data.IQueryable`1.OrderBy*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_OrderBy_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.OrderBy(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">OrderBy(Expression&lt;Func&lt;TModel, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>添加排序规则。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; OrderBy(Expression&lt;Func&lt;TModel, object&gt;&gt; expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>列名称表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_OrderBy_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.OrderBy(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L195">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_OrderBy_" data-uid="Mozlite.Data.IQueryable`1.OrderBy*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_OrderBy_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Boolean_" data-uid="Mozlite.Data.IQueryable`1.OrderBy(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean)">OrderBy(Expression&lt;Func&lt;TModel, Object&gt;&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>添加排序规则。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; OrderBy(Expression&lt;Func&lt;TModel, object&gt;&gt; expression, bool isDesc)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>列名称表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDesc</span></td>
+        <td><p>是否为降序。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_OrderBy__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.OrderBy%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L156">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_OrderBy_" data-uid="Mozlite.Data.IQueryable`1.OrderBy*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_OrderBy__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.OrderBy``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">OrderBy&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>添加排序规则。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; OrderBy&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, object&gt;&gt; expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>列名称表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_OrderBy__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.OrderBy%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Object%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L187">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_OrderBy_" data-uid="Mozlite.Data.IQueryable`1.OrderBy*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_OrderBy__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___System_Boolean_" data-uid="Mozlite.Data.IQueryable`1.OrderBy``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Boolean)">OrderBy&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, Object&gt;&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>添加排序规则。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; OrderBy&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, object&gt;&gt; expression, bool isDesc)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>列名称表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDesc</span></td>
+        <td><p>是否为降序。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_OrderByDescending_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.OrderByDescending(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L178">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_OrderByDescending_" data-uid="Mozlite.Data.IQueryable`1.OrderByDescending*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_OrderByDescending_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.OrderByDescending(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">OrderByDescending(Expression&lt;Func&lt;TModel, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>添加排序规则。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; OrderByDescending(Expression&lt;Func&lt;TModel, object&gt;&gt; expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>列名称表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_OrderByDescending__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.OrderByDescending%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L164">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_OrderByDescending_" data-uid="Mozlite.Data.IQueryable`1.OrderByDescending*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_OrderByDescending__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.OrderByDescending``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">OrderByDescending&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>添加排序规则。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; OrderByDescending&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, object&gt;&gt; expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>列名称表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_RightJoin__1_System_Linq_Expressions_Expression_System_Func__0___0_System_Boolean___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.RightJoin%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2C%60%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L57">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_RightJoin_" data-uid="Mozlite.Data.IQueryable`1.RightJoin*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_RightJoin__1_System_Linq_Expressions_Expression_System_Func__0___0_System_Boolean___" data-uid="Mozlite.Data.IQueryable`1.RightJoin``1(System.Linq.Expressions.Expression{System.Func{`0,``0,System.Boolean}})">RightJoin&lt;TForeign&gt;(Expression&lt;Func&lt;TModel, TForeign, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置表格右关联。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; RightJoin&lt;TForeign&gt;(Expression&lt;Func&lt;TModel, TForeign, bool&gt;&gt; onExpression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, TForeign, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">onExpression</span></td>
+        <td><p>关联条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TForeign</span></td>
+        <td><p>拼接类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_RightJoin__2_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.RightJoin%60%602(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2C%60%601%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L66">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_RightJoin_" data-uid="Mozlite.Data.IQueryable`1.RightJoin*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_RightJoin__2_System_Linq_Expressions_Expression_System_Func___0___1_System_Boolean___" data-uid="Mozlite.Data.IQueryable`1.RightJoin``2(System.Linq.Expressions.Expression{System.Func{``0,``1,System.Boolean}})">RightJoin&lt;TPrimary, TForeign&gt;(Expression&lt;Func&lt;TPrimary, TForeign, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置表格右关联。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; RightJoin&lt;TPrimary, TForeign&gt;(Expression&lt;Func&lt;TPrimary, TForeign, bool&gt;&gt; onExpression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TPrimary, TForeign, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">onExpression</span></td>
+        <td><p>关联条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TPrimary</span></td>
+        <td><p>主键所在的模型类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TForeign</span></td>
+        <td><p>外键所在的模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Select.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Select%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L96">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Select_" data-uid="Mozlite.Data.IQueryable`1.Select*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Select" data-uid="Mozlite.Data.IQueryable`1.Select">Select()</h4>
+  <div class="markdown level1 summary"><p>设置选择列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Select()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Select_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Select(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L90">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Select_" data-uid="Mozlite.Data.IQueryable`1.Select*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Select_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.Select(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">Select(Expression&lt;Func&lt;TModel, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置选择列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Select(Expression&lt;Func&lt;TModel, object&gt;&gt; fields)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>列表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Select__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Select%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L83">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Select_" data-uid="Mozlite.Data.IQueryable`1.Select*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Select__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___" data-uid="Mozlite.Data.IQueryable`1.Select``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">Select&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置选择列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Select&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, object&gt;&gt; fields)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>列表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Select__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Select%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%60%600%2CSystem.Object%7D%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L75">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Select_" data-uid="Mozlite.Data.IQueryable`1.Select*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Select__1_System_Linq_Expressions_Expression_System_Func___0_System_Object___System_String_" data-uid="Mozlite.Data.IQueryable`1.Select``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)">Select&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, Object&gt;&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>设置选择列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Select&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, object&gt;&gt; field, string alias)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">field</span></td>
+        <td><p>列表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">alias</span></td>
+        <td><p>别名。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Where_System_Linq_Expressions_Expression_System_Predicate__0___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Where(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L148">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Where_" data-uid="Mozlite.Data.IQueryable`1.Where*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Where_System_Linq_Expressions_Expression_System_Predicate__0___" data-uid="Mozlite.Data.IQueryable`1.Where(System.Linq.Expressions.Expression{System.Predicate{`0}})">Where(Expression&lt;Predicate&lt;TModel&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>添加条件表达式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Where(Expression&lt;Predicate&lt;TModel&gt;&gt; expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TModel&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Where_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Where(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L141">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Where_" data-uid="Mozlite.Data.IQueryable`1.Where*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Where_System_String_" data-uid="Mozlite.Data.IQueryable`1.Where(System.String)">Where(String)</h4>
+  <div class="markdown level1 summary"><p>添加条件表达式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Where(string where)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">where</span></td>
+        <td><p>条件语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询上下文。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_Where__1_System_Linq_Expressions_Expression_System_Predicate___0___.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.Where%60%601(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%60%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L134">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_Where_" data-uid="Mozlite.Data.IQueryable`1.Where*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_Where__1_System_Linq_Expressions_Expression_System_Predicate___0___" data-uid="Mozlite.Data.IQueryable`1.Where``1(System.Linq.Expressions.Expression{System.Predicate{``0}})">Where&lt;TEntity&gt;(Expression&lt;Predicate&lt;TEntity&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>添加条件表达式。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; Where&lt;TEntity&gt;(Expression&lt;Predicate&lt;TEntity&gt;&gt; expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TEntity&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>模型类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1_WithNolock.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601.WithNolock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L201">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_IQueryable_1_WithNolock_" data-uid="Mozlite.Data.IQueryable`1.WithNolock*"></a>
+  <h4 id="Mozlite_Data_IQueryable_1_WithNolock" data-uid="Mozlite.Data.IQueryable`1.WithNolock">WithNolock()</h4>
+  <div class="markdown level1 summary"><p>忽略锁（脏查询）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; WithNolock()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IQueryable-1.html">IQueryable</a>&lt;TModel&gt;</td>
+        <td><p>返回当前查询实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="MS.Extensions.Security.DataExtensions.html#MS_Extensions_Security_DataExtensions_IncludeUsers__1_Mozlite_Data_IQueryContext___0__System_Linq_Expressions_Expression_System_Func___0_MS_Extensions_Security_User_System_Boolean___">DataExtensions.IncludeUsers&lt;TModel&gt;(IQueryContext&lt;TModel&gt;, Expression&lt;Func&lt;TModel, User, Boolean&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="MS.Extensions.Security.DataExtensions.html#MS_Extensions_Security_DataExtensions_IncludeUsers__1_Mozlite_Data_IQueryable___0__System_Linq_Expressions_Expression_System_Func___0_MS_Extensions_Security_User_System_Boolean___">DataExtensions.IncludeUsers&lt;TModel&gt;(IQueryable&lt;TModel&gt;, Expression&lt;Func&lt;TModel, User, Boolean&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_IQueryable_1.md&amp;value=---%0Auid%3A%20Mozlite.Data.IQueryable%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data/IQueryable.cs/#L15" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

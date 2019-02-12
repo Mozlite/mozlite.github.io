@@ -1,0 +1,1049 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SqlServerMigrationsSqlGenerator 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SqlServerMigrationsSqlGenerator 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator">
+  
+  
+  <h1 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator" class="text-break">SqlServerMigrationsSqlGenerator 类
+  </h1>
+  <div class="markdown level0 summary"><p>SQLServer数据库迁移SQL生成类。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html">MigrationsSqlGenerator</a></div>
+    <div class="level2"><span class="xref">SqlServerMigrationsSqlGenerator</span></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Data.Migrations.IMigrationsSqlGenerator.html">IMigrationsSqlGenerator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_SqlHelper">MigrationsSqlGenerator.SqlHelper</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_TypeMapper">MigrationsSqlGenerator.TypeMapper</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_System_Collections_Generic_IReadOnlyList_Mozlite_Data_Migrations_Operations_MigrationOperation__">MigrationsSqlGenerator.Generate(IReadOnlyList&lt;MigrationOperation&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_MigrationOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(MigrationOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_AddColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_">MigrationsSqlGenerator.Generate(AddColumnOperation, MigrationCommandListBuilder, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_AddForeignKeyOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_">MigrationsSqlGenerator.Generate(AddForeignKeyOperation, MigrationCommandListBuilder, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_AddPrimaryKeyOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_">MigrationsSqlGenerator.Generate(AddPrimaryKeyOperation, MigrationCommandListBuilder, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_AddUniqueConstraintOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(AddUniqueConstraintOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_AlterDatabaseOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(AlterDatabaseOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_RenameIndexOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(RenameIndexOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_AlterTableOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(AlterTableOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_RenameTableOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(RenameTableOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_CreateTableOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_">MigrationsSqlGenerator.Generate(CreateTableOperation, MigrationCommandListBuilder, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_CreateTableAppender_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.CreateTableAppender(MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropForeignKeyOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_">MigrationsSqlGenerator.Generate(DropForeignKeyOperation, MigrationCommandListBuilder, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropPrimaryKeyOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_">MigrationsSqlGenerator.Generate(DropPrimaryKeyOperation, MigrationCommandListBuilder, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropTableOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_">MigrationsSqlGenerator.Generate(DropTableOperation, MigrationCommandListBuilder, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropUniqueConstraintOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(DropUniqueConstraintOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_SqlOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(SqlOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_ForEachProperty_System_Object_System_Action_System_Reflection_PropertyInfo_System_Object__">MigrationsSqlGenerator.ForEachProperty(Object, Action&lt;PropertyInfo, Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_ColumnDefinition_Mozlite_Data_Migrations_Operations_AddColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.ColumnDefinition(AddColumnOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_DefaultValue_System_Object_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.DefaultValue(Object, String, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_ForeignKeyConstraint_Mozlite_Data_Migrations_Operations_AddForeignKeyOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.ForeignKeyConstraint(AddForeignKeyOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_PrimaryKeyConstraint_Mozlite_Data_Migrations_Operations_AddPrimaryKeyOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.PrimaryKeyConstraint(AddPrimaryKeyOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_UniqueConstraint_Mozlite_Data_Migrations_Operations_AddUniqueConstraintOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.UniqueConstraint(AddUniqueConstraintOperation, MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_EndStatement_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.EndStatement(MigrationCommandListBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_ColumnList_System_String___">MigrationsSqlGenerator.ColumnList(String[])</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Data.SqlServer.Migrations.html">Mozlite.Data.SqlServer.Migrations</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Data.SqlServer.dll</h6>
+  <h5 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SqlServerMigrationsSqlGenerator : MigrationsSqlGenerator, IMigrationsSqlGenerator</code></pre>
+  </div>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator__ctor_Mozlite_Data_ISqlHelper_Mozlite_Data_Migrations_ITypeMapper_Mozlite_Data_Query_IExpressionVisitorFactory_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.%23ctor(Mozlite.Data.ISqlHelper%2CMozlite.Data.Migrations.ITypeMapper%2CMozlite.Data.Query.IExpressionVisitorFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L26">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator__ctor_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.#ctor*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator__ctor_Mozlite_Data_ISqlHelper_Mozlite_Data_Migrations_ITypeMapper_Mozlite_Data_Query_IExpressionVisitorFactory_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.#ctor(Mozlite.Data.ISqlHelper,Mozlite.Data.Migrations.ITypeMapper,Mozlite.Data.Query.IExpressionVisitorFactory)">SqlServerMigrationsSqlGenerator(ISqlHelper, ITypeMapper, IExpressionVisitorFactory)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.html">SqlServerMigrationsSqlGenerator</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlServerMigrationsSqlGenerator(ISqlHelper sqlHelper, ITypeMapper typeMapper, IExpressionVisitorFactory visitorFactory)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.ISqlHelper.html">ISqlHelper</a></td>
+        <td><span class="parametername">sqlHelper</span></td>
+        <td><p>SQL辅助接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.ITypeMapper.html">ITypeMapper</a></td>
+        <td><span class="parametername">typeMapper</span></td>
+        <td><p>类型匹配接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.IExpressionVisitorFactory.html">IExpressionVisitorFactory</a></td>
+        <td><span class="parametername">visitorFactory</span></td>
+        <td><p>条件表达式访问器工厂。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_ColumnDefinition_System_String_System_String_System_Type_System_String_System_Nullable_System_Boolean__System_Nullable_System_Int32__System_Boolean_System_Boolean_System_Nullable_System_Boolean__System_Object_System_String_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.ColumnDefinition(System.String%2CSystem.String%2CSystem.Type%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Object%2CSystem.String%2CSystem.String%2CMozlite.Data.Migrations.MigrationCommandListBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L258">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_ColumnDefinition_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.ColumnDefinition*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_ColumnDefinition_System_String_System_String_System_Type_System_String_System_Nullable_System_Boolean__System_Nullable_System_Int32__System_Boolean_System_Boolean_System_Nullable_System_Boolean__System_Object_System_String_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.ColumnDefinition(System.String,System.String,System.Type,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Boolean,System.Boolean,System.Nullable{System.Boolean},System.Object,System.String,System.String,Mozlite.Data.Migrations.MigrationCommandListBuilder)">ColumnDefinition(String, String, Type, String, Nullable&lt;Boolean&gt;, Nullable&lt;Int32&gt;, Boolean, Boolean, Nullable&lt;Boolean&gt;, Object, String, String, MigrationCommandListBuilder)</h4>
+  <div class="markdown level1 summary"><p>列定义。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ColumnDefinition(string table, string name, Type clrType, string type, bool? unicode, int? maxLength, bool rowVersion, bool identity, bool? nullable, object defaultValue, string defaultValueSql, string computedColumnSql, MigrationCommandListBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">table</span></td>
+        <td><p>表格。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">clrType</span></td>
+        <td><p>CLR类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>字段类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">unicode</span></td>
+        <td><p>是否Unicode字符集。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>大小。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">rowVersion</span></td>
+        <td><p>是否为RowVersion列。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">identity</span></td>
+        <td><p>是否自增长。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">nullable</span></td>
+        <td><p>是否可空。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>默认值。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defaultValueSql</span></td>
+        <td><p>默认SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">computedColumnSql</span></td>
+        <td><p>计算列的SQL字符串。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_ColumnDefinition_System_String_System_String_System_Type_System_String_System_Nullable_System_Boolean__System_Nullable_System_Int32__System_Boolean_System_Boolean_System_Nullable_System_Boolean__System_Object_System_String_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.ColumnDefinition(String, String, Type, String, Nullable&lt;Boolean&gt;, Nullable&lt;Int32&gt;, Boolean, Boolean, Nullable&lt;Boolean&gt;, Object, String, String, MigrationCommandListBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_DropDefaultConstraint_System_String_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.DropDefaultConstraint(System.String%2CSystem.String%2CMozlite.Data.Migrations.MigrationCommandListBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L410">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_DropDefaultConstraint_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.DropDefaultConstraint*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_DropDefaultConstraint_System_String_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.DropDefaultConstraint(System.String,System.String,Mozlite.Data.Migrations.MigrationCommandListBuilder)">DropDefaultConstraint(String, String, MigrationCommandListBuilder)</h4>
+  <div class="markdown level1 summary"><p>删除默认值。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DropDefaultConstraint(string table, string columnName, MigrationCommandListBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">table</span></td>
+        <td><p>表格。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">columnName</span></td>
+        <td><p>列名。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p>命令构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_ForeignKeyAction_Mozlite_Data_Migrations_ReferentialAction_Mozlite_Data_Migrations_MigrationCommandListBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.ForeignKeyAction(Mozlite.Data.Migrations.ReferentialAction%2CMozlite.Data.Migrations.MigrationCommandListBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L206">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_ForeignKeyAction_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.ForeignKeyAction*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_ForeignKeyAction_Mozlite_Data_Migrations_ReferentialAction_Mozlite_Data_Migrations_MigrationCommandListBuilder_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.ForeignKeyAction(Mozlite.Data.Migrations.ReferentialAction,Mozlite.Data.Migrations.MigrationCommandListBuilder)">ForeignKeyAction(ReferentialAction, MigrationCommandListBuilder)</h4>
+  <div class="markdown level1 summary"><p>添加外键操作的相关定义。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ForeignKeyAction(ReferentialAction referentialAction, MigrationCommandListBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.ReferentialAction.html">ReferentialAction</a></td>
+        <td><span class="parametername">referentialAction</span></td>
+        <td><p>外键操作。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_ForeignKeyAction_Mozlite_Data_Migrations_ReferentialAction_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.ForeignKeyAction(ReferentialAction, MigrationCommandListBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_AlterColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.AlterColumnOperation%2CMozlite.Data.Migrations.MigrationCommandListBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L69">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_AlterColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.AlterColumnOperation,Mozlite.Data.Migrations.MigrationCommandListBuilder)">Generate(AlterColumnOperation, MigrationCommandListBuilder)</h4>
+  <div class="markdown level1 summary"><p>修改列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Generate(AlterColumnOperation operation, MigrationCommandListBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.Operations.AlterColumnOperation.html">AlterColumnOperation</a></td>
+        <td><span class="parametername">operation</span></td>
+        <td><p>操作实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_AlterColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(AlterColumnOperation, MigrationCommandListBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_CreateIndexOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.CreateIndexOperation%2CMozlite.Data.Migrations.MigrationCommandListBuilder%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L38">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_CreateIndexOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.CreateIndexOperation,Mozlite.Data.Migrations.MigrationCommandListBuilder,System.Boolean)">Generate(CreateIndexOperation, MigrationCommandListBuilder, Boolean)</h4>
+  <div class="markdown level1 summary"><p>新建索引。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Generate(CreateIndexOperation operation, MigrationCommandListBuilder builder, bool terminate)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.Operations.CreateIndexOperation.html">CreateIndexOperation</a></td>
+        <td><span class="parametername">operation</span></td>
+        <td><p>操作实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">terminate</span></td>
+        <td><p>是否结束语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_CreateIndexOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_">MigrationsSqlGenerator.Generate(CreateIndexOperation, MigrationCommandListBuilder, Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.DropColumnOperation%2CMozlite.Data.Migrations.MigrationCommandListBuilder%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L171">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.DropColumnOperation,Mozlite.Data.Migrations.MigrationCommandListBuilder,System.Boolean)">Generate(DropColumnOperation, MigrationCommandListBuilder, Boolean)</h4>
+  <div class="markdown level1 summary"><p>删除列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Generate(DropColumnOperation operation, MigrationCommandListBuilder builder, bool terminate)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.Operations.DropColumnOperation.html">DropColumnOperation</a></td>
+        <td><span class="parametername">operation</span></td>
+        <td><p>操作实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">terminate</span></td>
+        <td><p>是否结束语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_System_Boolean_">MigrationsSqlGenerator.Generate(DropColumnOperation, MigrationCommandListBuilder, Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropIndexOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.DropIndexOperation%2CMozlite.Data.Migrations.MigrationCommandListBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L151">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropIndexOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.DropIndexOperation,Mozlite.Data.Migrations.MigrationCommandListBuilder)">Generate(DropIndexOperation, MigrationCommandListBuilder)</h4>
+  <div class="markdown level1 summary"><p>删除索引。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Generate(DropIndexOperation operation, MigrationCommandListBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.Operations.DropIndexOperation.html">DropIndexOperation</a></td>
+        <td><span class="parametername">operation</span></td>
+        <td><p>操作实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_DropIndexOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(DropIndexOperation, MigrationCommandListBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_RenameColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.RenameColumnOperation%2CMozlite.Data.Migrations.MigrationCommandListBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L225">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_RenameColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Generate(Mozlite.Data.Migrations.Operations.RenameColumnOperation,Mozlite.Data.Migrations.MigrationCommandListBuilder)">Generate(RenameColumnOperation, MigrationCommandListBuilder)</h4>
+  <div class="markdown level1 summary"><p>重命名列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Generate(RenameColumnOperation operation, MigrationCommandListBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.Operations.RenameColumnOperation.html">RenameColumnOperation</a></td>
+        <td><span class="parametername">operation</span></td>
+        <td><p>操作实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_Generate_Mozlite_Data_Migrations_Operations_RenameColumnOperation_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.Generate(RenameColumnOperation, MigrationCommandListBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_GenerateSqlCreate_Mozlite_Extensions_IEntityType_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.GenerateSqlCreate(Mozlite.Extensions.IEntityType%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L286">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_GenerateSqlCreate_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.GenerateSqlCreate*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_GenerateSqlCreate_Mozlite_Extensions_IEntityType_System_Object_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.GenerateSqlCreate(Mozlite.Extensions.IEntityType,System.Object)">GenerateSqlCreate(IEntityType, Object)</h4>
+  <div class="markdown level1 summary"><p>生成插入语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GenerateSqlCreate(IEntityType entityType, object instance)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.IEntityType.html">IEntityType</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>当前实体。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>当前实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回生成的SQL语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_GenerateSqlCreate_Mozlite_Extensions_IEntityType_System_Object_">MigrationsSqlGenerator.GenerateSqlCreate(IEntityType, Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_GenerateSqlDelete_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.GenerateSqlDelete(Mozlite.Extensions.IEntityType%2CSystem.Linq.Expressions.Expression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L335">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_GenerateSqlDelete_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.GenerateSqlDelete*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_GenerateSqlDelete_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.GenerateSqlDelete(Mozlite.Extensions.IEntityType,System.Linq.Expressions.Expression)">GenerateSqlDelete(IEntityType, Expression)</h4>
+  <div class="markdown level1 summary"><p>生成更新语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GenerateSqlDelete(IEntityType entityType, Expression where)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.IEntityType.html">IEntityType</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>当前实体。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+        <td><span class="parametername">where</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回生成的SQL语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_GenerateSqlDelete_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_">MigrationsSqlGenerator.GenerateSqlDelete(IEntityType, Expression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_GenerateSqlUpdate_Mozlite_Extensions_IEntityType_System_Object_System_Linq_Expressions_Expression_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.GenerateSqlUpdate(Mozlite.Extensions.IEntityType%2CSystem.Object%2CSystem.Linq.Expressions.Expression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L311">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_GenerateSqlUpdate_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.GenerateSqlUpdate*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_GenerateSqlUpdate_Mozlite_Extensions_IEntityType_System_Object_System_Linq_Expressions_Expression_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.GenerateSqlUpdate(Mozlite.Extensions.IEntityType,System.Object,System.Linq.Expressions.Expression)">GenerateSqlUpdate(IEntityType, Object, Expression)</h4>
+  <div class="markdown level1 summary"><p>生成更新语句。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GenerateSqlUpdate(IEntityType entityType, object instance, Expression where)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.IEntityType.html">IEntityType</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>当前实体。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>当前实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+        <td><span class="parametername">where</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回生成的SQL语句。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_GenerateSqlUpdate_Mozlite_Extensions_IEntityType_System_Object_System_Linq_Expressions_Expression_">MigrationsSqlGenerator.GenerateSqlUpdate(IEntityType, Object, Expression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_IndexTraits_System_Boolean_Mozlite_Data_Migrations_MigrationCommandListBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.IndexTraits(System.Boolean%2CMozlite.Data.Migrations.MigrationCommandListBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L196">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_IndexTraits_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.IndexTraits*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_IndexTraits_System_Boolean_Mozlite_Data_Migrations_MigrationCommandListBuilder_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.IndexTraits(System.Boolean,Mozlite.Data.Migrations.MigrationCommandListBuilder)">IndexTraits(Boolean, MigrationCommandListBuilder)</h4>
+  <div class="markdown level1 summary"><p>添加索引的相关定义。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void IndexTraits(bool clustered, MigrationCommandListBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">clustered</span></td>
+        <td><p>是否聚合。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Migrations.MigrationsSqlGenerator.html#Mozlite_Data_Migrations_MigrationsSqlGenerator_IndexTraits_System_Boolean_Mozlite_Data_Migrations_MigrationCommandListBuilder_">MigrationsSqlGenerator.IndexTraits(Boolean, MigrationCommandListBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Rename_System_String_System_String_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Rename(System.String%2CSystem.String%2CSystem.String%2CMozlite.Data.Migrations.MigrationCommandListBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L352">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Rename_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Rename*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Rename_System_String_System_String_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Rename(System.String,System.String,System.String,Mozlite.Data.Migrations.MigrationCommandListBuilder)">Rename(String, String, String, MigrationCommandListBuilder)</h4>
+  <div class="markdown level1 summary"><p>修改名称。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Rename(string name, string newName, string type, MigrationCommandListBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>原名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>新名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Transfer_System_String_System_String_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Transfer(System.String%2CSystem.String%2CSystem.String%2CMozlite.Data.Migrations.MigrationCommandListBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L385">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Transfer_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Transfer*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator_Transfer_System_String_System_String_System_String_Mozlite_Data_Migrations_MigrationCommandListBuilder_" data-uid="Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator.Transfer(System.String,System.String,System.String,Mozlite.Data.Migrations.MigrationCommandListBuilder)">Transfer(String, String, String, MigrationCommandListBuilder)</h4>
+  <div class="markdown level1 summary"><p>转换架构。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Transfer(string newSchema, string schema, string name, MigrationCommandListBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newSchema</span></td>
+        <td><p>新架构。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>原有架构。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Migrations.MigrationCommandListBuilder.html">MigrationCommandListBuilder</a>实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Data.Migrations.IMigrationsSqlGenerator.html">IMigrationsSqlGenerator</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Migrations_SqlServerMigrationsSqlGenerator.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Migrations.SqlServerMigrationsSqlGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L16" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

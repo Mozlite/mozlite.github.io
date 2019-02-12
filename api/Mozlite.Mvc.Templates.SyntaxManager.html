@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SyntaxManager 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SyntaxManager 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Mvc.Templates.SyntaxManager">
+  
+  
+  <h1 id="Mozlite_Mvc_Templates_SyntaxManager" data-uid="Mozlite.Mvc.Templates.SyntaxManager" class="text-break">SyntaxManager 类
+  </h1>
+  <div class="markdown level0 summary"><p>语法管理实现类。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SyntaxManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Mvc.Templates.ISyntaxManager.html">ISyntaxManager</a></div>
+    <div><a class="xref" href="Mozlite.ISingletonService.html">ISingletonService</a></div>
+    <div><a class="xref" href="Mozlite.IService.html">IService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Mvc.Templates.html">Mozlite.Mvc.Templates</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Mvc.dll</h6>
+  <h5 id="Mozlite_Mvc_Templates_SyntaxManager_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SyntaxManager : ISyntaxManager, ISingletonService, IService</code></pre>
+  </div>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Mvc_Templates_SyntaxManager__ctor_System_Collections_Generic_IEnumerable_Mozlite_Mvc_Templates_Declarings_IDeclaringWriter__System_Collections_Generic_IEnumerable_Mozlite_Mvc_Templates_ISyntaxWriter__.md&amp;value=---%0Auid%3A%20Mozlite.Mvc.Templates.SyntaxManager.%23ctor(System.Collections.Generic.IEnumerable%7BMozlite.Mvc.Templates.Declarings.IDeclaringWriter%7D%2CSystem.Collections.Generic.IEnumerable%7BMozlite.Mvc.Templates.ISyntaxWriter%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Mvc/Templates/SyntaxManager.cs/#L28">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Mvc_Templates_SyntaxManager__ctor_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.#ctor*"></a>
+  <h4 id="Mozlite_Mvc_Templates_SyntaxManager__ctor_System_Collections_Generic_IEnumerable_Mozlite_Mvc_Templates_Declarings_IDeclaringWriter__System_Collections_Generic_IEnumerable_Mozlite_Mvc_Templates_ISyntaxWriter__" data-uid="Mozlite.Mvc.Templates.SyntaxManager.#ctor(System.Collections.Generic.IEnumerable{Mozlite.Mvc.Templates.Declarings.IDeclaringWriter},System.Collections.Generic.IEnumerable{Mozlite.Mvc.Templates.ISyntaxWriter})">SyntaxManager(IEnumerable&lt;IDeclaringWriter&gt;, IEnumerable&lt;ISyntaxWriter&gt;)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Mvc.Templates.SyntaxManager.html">SyntaxManager</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SyntaxManager(IEnumerable&lt;IDeclaringWriter&gt; declaringWriters, IEnumerable&lt;ISyntaxWriter&gt; syntaxWriters)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mozlite.Mvc.Templates.Declarings.IDeclaringWriter.html">IDeclaringWriter</a>&gt;</td>
+        <td><span class="parametername">declaringWriters</span></td>
+        <td><p>声明列表。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mozlite.Mvc.Templates.ISyntaxWriter.html">ISyntaxWriter</a>&gt;</td>
+        <td><span class="parametername">syntaxWriters</span></td>
+        <td><p>语法写入器接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Mvc_Templates_SyntaxManager_Load_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Mvc.Templates.SyntaxManager.Load(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Mvc/Templates/SyntaxManager.cs/#L201">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Mvc_Templates_SyntaxManager_Load_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Load*"></a>
+  <h4 id="Mozlite_Mvc_Templates_SyntaxManager_Load_System_String_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Load(System.String)">Load(String)</h4>
+  <div class="markdown level1 summary"><p>加载模板文件。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Syntax Load(string path)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>文件物理路径。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Mvc.Templates.Syntax.html">Syntax</a></td>
+        <td><p>返回当前文档实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Mvc_Templates_SyntaxManager_Parse_Mozlite_Mvc_Templates_CodeReader_Mozlite_Mvc_Templates_Syntax_.md&amp;value=---%0Auid%3A%20Mozlite.Mvc.Templates.SyntaxManager.Parse(Mozlite.Mvc.Templates.CodeReader%2CMozlite.Mvc.Templates.Syntax)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Mvc/Templates/SyntaxManager.cs/#L52">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Mvc_Templates_SyntaxManager_Parse_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Parse*"></a>
+  <h4 id="Mozlite_Mvc_Templates_SyntaxManager_Parse_Mozlite_Mvc_Templates_CodeReader_Mozlite_Mvc_Templates_Syntax_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Parse(Mozlite.Mvc.Templates.CodeReader,Mozlite.Mvc.Templates.Syntax)">Parse(CodeReader, Syntax)</h4>
+  <div class="markdown level1 summary"><p>解析模板语法。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Parse(CodeReader reader, Syntax syntax)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Mvc.Templates.CodeReader.html">CodeReader</a></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>当前读取实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Mvc.Templates.Syntax.html">Syntax</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>当前语法节点。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Mvc_Templates_SyntaxManager_Parse_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Mvc.Templates.SyntaxManager.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Mvc/Templates/SyntaxManager.cs/#L39">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Mvc_Templates_SyntaxManager_Parse_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Parse*"></a>
+  <h4 id="Mozlite_Mvc_Templates_SyntaxManager_Parse_System_String_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>解析模板语法。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Syntax Parse(string source)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>模板源代码。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Mvc.Templates.Syntax.html">Syntax</a></td>
+        <td><p>返回当前文档实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Mvc_Templates_SyntaxManager_Render_Mozlite_Mvc_Templates_Syntax_System_Action_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary__.md&amp;value=---%0Auid%3A%20Mozlite.Mvc.Templates.SyntaxManager.Render(Mozlite.Mvc.Templates.Syntax%2CSystem.Action%7BMicrosoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Mvc/Templates/SyntaxManager.cs/#L253">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Mvc_Templates_SyntaxManager_Render_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Render*"></a>
+  <h4 id="Mozlite_Mvc_Templates_SyntaxManager_Render_Mozlite_Mvc_Templates_Syntax_System_Action_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary__" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Render(Mozlite.Mvc.Templates.Syntax,System.Action{Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary})">Render(Syntax, Action&lt;ViewDataDictionary&gt;)</h4>
+  <div class="markdown level1 summary"><p>获取呈现的代码字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Render(Syntax syntax, Action&lt;ViewDataDictionary&gt; viewData)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Mvc.Templates.Syntax.html">Syntax</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>当前文档实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary</span>&gt;</td>
+        <td><span class="parametername">viewData</span></td>
+        <td><p>当前模型实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回呈现的代码字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Mvc_Templates_SyntaxManager_Write_Mozlite_Mvc_Templates_Syntax_System_IO_TextWriter_System_Action_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary__.md&amp;value=---%0Auid%3A%20Mozlite.Mvc.Templates.SyntaxManager.Write(Mozlite.Mvc.Templates.Syntax%2CSystem.IO.TextWriter%2CSystem.Action%7BMicrosoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Mvc/Templates/SyntaxManager.cs/#L214">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Mvc_Templates_SyntaxManager_Write_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Write*"></a>
+  <h4 id="Mozlite_Mvc_Templates_SyntaxManager_Write_Mozlite_Mvc_Templates_Syntax_System_IO_TextWriter_System_Action_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary__" data-uid="Mozlite.Mvc.Templates.SyntaxManager.Write(Mozlite.Mvc.Templates.Syntax,System.IO.TextWriter,System.Action{Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary})">Write(Syntax, TextWriter, Action&lt;ViewDataDictionary&gt;)</h4>
+  <div class="markdown level1 summary"><p>将文档<code data-dev-comment-type="paramref" class="paramref">syntax</code>解析写入到写入器中。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Syntax syntax, TextWriter writer, Action&lt;ViewDataDictionary&gt; viewData)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Mvc.Templates.Syntax.html">Syntax</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>当前文档实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>写入器实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary</span>&gt;</td>
+        <td><span class="parametername">viewData</span></td>
+        <td><p>当前模型实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Mvc_Templates_SyntaxManager_WriteSyntax_Mozlite_Mvc_Templates_Syntax_System_IO_TextWriter_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_.md&amp;value=---%0Auid%3A%20Mozlite.Mvc.Templates.SyntaxManager.WriteSyntax(Mozlite.Mvc.Templates.Syntax%2CSystem.IO.TextWriter%2CMicrosoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Mvc/Templates/SyntaxManager.cs/#L235">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Mvc_Templates_SyntaxManager_WriteSyntax_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.WriteSyntax*"></a>
+  <h4 id="Mozlite_Mvc_Templates_SyntaxManager_WriteSyntax_Mozlite_Mvc_Templates_Syntax_System_IO_TextWriter_Microsoft_AspNetCore_Mvc_ViewFeatures_ViewDataDictionary_" data-uid="Mozlite.Mvc.Templates.SyntaxManager.WriteSyntax(Mozlite.Mvc.Templates.Syntax,System.IO.TextWriter,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary)">WriteSyntax(Syntax, TextWriter, ViewDataDictionary)</h4>
+  <div class="markdown level1 summary"><p>将语法解析后写入到写入器中。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteSyntax(Syntax syntax, TextWriter writer, ViewDataDictionary model)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Mvc.Templates.Syntax.html">Syntax</a></td>
+        <td><span class="parametername">syntax</span></td>
+        <td><p>当前文档实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.TextWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>写入器实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>当前模型实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Mvc.Templates.ISyntaxManager.html">ISyntaxManager</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.ISingletonService.html">ISingletonService</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.IService.html">IService</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Mvc_Templates_SyntaxManager.md&amp;value=---%0Auid%3A%20Mozlite.Mvc.Templates.SyntaxManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Mvc/Templates/SyntaxManager.cs/#L18" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

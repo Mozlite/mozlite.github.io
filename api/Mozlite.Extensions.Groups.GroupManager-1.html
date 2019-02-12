@@ -1,0 +1,621 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GroupManager&lt;TGroup&gt; 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="GroupManager&lt;TGroup&gt; 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Extensions.Groups.GroupManager`1">
+  
+  
+  <h1 id="Mozlite_Extensions_Groups_GroupManager_1" data-uid="Mozlite.Extensions.Groups.GroupManager`1" class="text-break">GroupManager&lt;TGroup&gt; 类
+  </h1>
+  <div class="markdown level0 summary"><p>初始化类<a class="xref" href="Mozlite.Extensions.Groups.GroupManager-1.html">GroupManager&lt;TGroup&gt;</a>。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mozlite.Extensions.ObjectManager-2.html">ObjectManager</a>&lt;TGroup, <span class="xref">System.Int32</span>&gt;</div>
+    <div class="level2"><a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html">CachableObjectManager</a>&lt;TGroup, <span class="xref">System.Int32</span>&gt;</div>
+    <div class="level3"><a class="xref" href="Mozlite.Extensions.CachableObjectManager-1.html">CachableObjectManager</a>&lt;TGroup&gt;</div>
+    <div class="level4"><span class="xref">GroupManager&lt;TGroup&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Extensions.Groups.IGroupManager-1.html">IGroupManager</a>&lt;TGroup&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.ICachableObjectManager-1.html">ICachableObjectManager</a>&lt;TGroup&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.ICachableObjectManager-2.html">ICachableObjectManager</a>&lt;TGroup, <span class="xref">System.Int32</span>&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.IObjectManager-2.html">IObjectManager</a>&lt;TGroup, <span class="xref">System.Int32</span>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Cache">CachableObjectManager&lt;TGroup, Int32&gt;.Cache</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_CacheKey">CachableObjectManager&lt;TGroup, Int32&gt;.CacheKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Refresh">CachableObjectManager&lt;TGroup, Int32&gt;.Refresh()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Clear">CachableObjectManager&lt;TGroup, Int32&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_ClearAsync_System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.ClearAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Refresh_Mozlite_Extensions_DataResult_">CachableObjectManager&lt;TGroup, Int32&gt;.Refresh(DataResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Refresh_System_Boolean_Mozlite_Extensions_DataAction_">CachableObjectManager&lt;TGroup, Int32&gt;.Refresh(Boolean, DataAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Delete_System_Collections_Generic_IEnumerable__1__">CachableObjectManager&lt;TGroup, Int32&gt;.Delete(IEnumerable&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_DeleteAsync_System_Collections_Generic_IEnumerable__1__System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.DeleteAsync(IEnumerable&lt;Int32&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Delete_System_Linq_Expressions_Expression_System_Predicate__0___">CachableObjectManager&lt;TGroup, Int32&gt;.Delete(Expression&lt;Predicate&lt;TGroup&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Delete__1_">CachableObjectManager&lt;TGroup, Int32&gt;.Delete(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_DeleteAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.DeleteAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_DeleteAsync__1_System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.DeleteAsync(Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Save__0_">CachableObjectManager&lt;TGroup, Int32&gt;.Save(TGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_SaveAsync__0_System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.SaveAsync(TGroup, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Update_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_">CachableObjectManager&lt;TGroup, Int32&gt;.Update(Expression&lt;Predicate&lt;TGroup&gt;&gt;, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_UpdateAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.UpdateAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt;, Object, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Find__1_">CachableObjectManager&lt;TGroup, Int32&gt;.Find(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_FindAsync__1_System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.FindAsync(Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Find_System_Linq_Expressions_Expression_System_Predicate__0___">CachableObjectManager&lt;TGroup, Int32&gt;.Find(Expression&lt;Predicate&lt;TGroup&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_FindAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.FindAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Update__1_System_Object_">CachableObjectManager&lt;TGroup, Int32&gt;.Update(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_UpdateAsync__1_System_Object_System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.UpdateAsync(Int32, Object, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_Fetch_System_Linq_Expressions_Expression_System_Predicate__0___">CachableObjectManager&lt;TGroup, Int32&gt;.Fetch(Expression&lt;Predicate&lt;TGroup&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.CachableObjectManager-2.html#Mozlite_Extensions_CachableObjectManager_2_FetchAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">CachableObjectManager&lt;TGroup, Int32&gt;.FetchAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Context">ObjectManager&lt;TGroup, Int32&gt;.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Save__0_">ObjectManager&lt;TGroup, Int32&gt;.Save(TGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_IsDuplicated__0_">ObjectManager&lt;TGroup, Int32&gt;.IsDuplicated(TGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Update__1_System_Object_">ObjectManager&lt;TGroup, Int32&gt;.Update(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Update_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_">ObjectManager&lt;TGroup, Int32&gt;.Update(Expression&lt;Predicate&lt;TGroup&gt;&gt;, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Delete_System_Linq_Expressions_Expression_System_Predicate__0___">ObjectManager&lt;TGroup, Int32&gt;.Delete(Expression&lt;Predicate&lt;TGroup&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Delete__1_">ObjectManager&lt;TGroup, Int32&gt;.Delete(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Find__1_">ObjectManager&lt;TGroup, Int32&gt;.Find(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Find_System_Linq_Expressions_Expression_System_Predicate__0___">ObjectManager&lt;TGroup, Int32&gt;.Find(Expression&lt;Predicate&lt;TGroup&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Fetch_System_Linq_Expressions_Expression_System_Predicate__0___">ObjectManager&lt;TGroup, Int32&gt;.Fetch(Expression&lt;Predicate&lt;TGroup&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_SaveAsync__0_System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.SaveAsync(TGroup, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_IsDuplicatedAsync__0_System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.IsDuplicatedAsync(TGroup, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_UpdateAsync__1_System_Object_System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.UpdateAsync(Int32, Object, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_UpdateAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.UpdateAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt;, Object, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Clear">ObjectManager&lt;TGroup, Int32&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_ClearAsync_System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.ClearAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Delete_System_Collections_Generic_IEnumerable__1__">ObjectManager&lt;TGroup, Int32&gt;.Delete(IEnumerable&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_DeleteAsync_System_Collections_Generic_IEnumerable__1__System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.DeleteAsync(IEnumerable&lt;Int32&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_DeleteAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.DeleteAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_DeleteAsync__1_System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.DeleteAsync(Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_FindAsync__1_System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.FindAsync(Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_FindAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.FindAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_FetchAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.FetchAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_AsQueryable">ObjectManager&lt;TGroup, Int32&gt;.AsQueryable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Load__1___0_">ObjectManager&lt;TGroup, Int32&gt;.Load&lt;TQuery&gt;(TQuery)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_LoadAsync__1___0_System_Threading_CancellationToken_">ObjectManager&lt;TGroup, Int32&gt;.LoadAsync&lt;TQuery&gt;(TQuery, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Extensions.Groups.html">Mozlite.Extensions.Groups</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Extensions.dll</h6>
+  <h5 id="Mozlite_Extensions_Groups_GroupManager_1_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GroupManager&lt;TGroup&gt; : CachableObjectManager&lt;TGroup&gt;, IGroupManager&lt;TGroup&gt;, ICachableObjectManager&lt;TGroup&gt;, ICachableObjectManager&lt;TGroup, int&gt;, IObjectManager&lt;TGroup, int&gt; where TGroup : GroupBase&lt;TGroup&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TGroup</span></td>
+        <td><p>分组类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Groups_GroupManager_1__ctor_Mozlite_Data_IDbContext__0__Microsoft_Extensions_Caching_Memory_IMemoryCache_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Groups.GroupManager%601.%23ctor(Mozlite.Data.IDbContext%7B%600%7D%2CMicrosoft.Extensions.Caching.Memory.IMemoryCache)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Groups/GroupManager.cs/#L23">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Groups_GroupManager_1__ctor_" data-uid="Mozlite.Extensions.Groups.GroupManager`1.#ctor*"></a>
+  <h4 id="Mozlite_Extensions_Groups_GroupManager_1__ctor_Mozlite_Data_IDbContext__0__Microsoft_Extensions_Caching_Memory_IMemoryCache_" data-uid="Mozlite.Extensions.Groups.GroupManager`1.#ctor(Mozlite.Data.IDbContext{`0},Microsoft.Extensions.Caching.Memory.IMemoryCache)">GroupManager(IDbContext&lt;TGroup&gt;, IMemoryCache)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Extensions.Groups.GroupManager-1.html">GroupManager&lt;TGroup&gt;</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GroupManager(IDbContext&lt;TGroup&gt; context, IMemoryCache cache)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TGroup&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td><p>数据库操作接口实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Caching.Memory.IMemoryCache</span></td>
+        <td><span class="parametername">cache</span></td>
+        <td><p>缓存接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Groups_GroupManager_1_Fetch_System_Linq_Expressions_Expression_System_Predicate__0___.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Groups.GroupManager%601.Fetch(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Groups/GroupManager.cs/#L56">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Groups_GroupManager_1_Fetch_" data-uid="Mozlite.Extensions.Groups.GroupManager`1.Fetch*"></a>
+  <h4 id="Mozlite_Extensions_Groups_GroupManager_1_Fetch_System_Linq_Expressions_Expression_System_Predicate__0___" data-uid="Mozlite.Extensions.Groups.GroupManager`1.Fetch(System.Linq.Expressions.Expression{System.Predicate{`0}})">Fetch(Expression&lt;Predicate&lt;TGroup&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>加载所有的分类。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;TGroup&gt; Fetch(Expression&lt;Predicate&lt;TGroup&gt;&gt; expression = null)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TGroup&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TGroup&gt;</td>
+        <td><p>返回分类列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.CachableObjectManager&lt;TGroup, System.Int32&gt;.Fetch(System.Linq.Expressions.Expression&lt;System.Predicate&lt;TGroup&gt;&gt;)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Groups_GroupManager_1_FetchAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Groups.GroupManager%601.FetchAsync(System.Linq.Expressions.Expression%7BSystem.Predicate%7B%600%7D%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Groups/GroupManager.cs/#L80">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Groups_GroupManager_1_FetchAsync_" data-uid="Mozlite.Extensions.Groups.GroupManager`1.FetchAsync*"></a>
+  <h4 id="Mozlite_Extensions_Groups_GroupManager_1_FetchAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Groups.GroupManager`1.FetchAsync(System.Linq.Expressions.Expression{System.Predicate{`0}},System.Threading.CancellationToken)">FetchAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>加载所有的分类。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IEnumerable&lt;TGroup&gt;&gt; FetchAsync(Expression&lt;Predicate&lt;TGroup&gt;&gt; expression = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Predicate</span>&lt;TGroup&gt;&gt;</td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TGroup&gt;&gt;</td>
+        <td><p>返回分类列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.CachableObjectManager&lt;TGroup, System.Int32&gt;.FetchAsync(System.Linq.Expressions.Expression&lt;System.Predicate&lt;TGroup&gt;&gt;, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Groups_GroupManager_1_IsDuplicated__0_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Groups.GroupManager%601.IsDuplicated(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Groups/GroupManager.cs/#L33">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Groups_GroupManager_1_IsDuplicated_" data-uid="Mozlite.Extensions.Groups.GroupManager`1.IsDuplicated*"></a>
+  <h4 id="Mozlite_Extensions_Groups_GroupManager_1_IsDuplicated__0_" data-uid="Mozlite.Extensions.Groups.GroupManager`1.IsDuplicated(`0)">IsDuplicated(TGroup)</h4>
+  <div class="markdown level1 summary"><p>判断是否已经存在。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsDuplicated(TGroup category)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TGroup</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>分类实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.ObjectManager&lt;TGroup, System.Int32&gt;.IsDuplicated(TGroup)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Groups_GroupManager_1_IsDuplicatedAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Groups.GroupManager%601.IsDuplicatedAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Groups/GroupManager.cs/#L45">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Groups_GroupManager_1_IsDuplicatedAsync_" data-uid="Mozlite.Extensions.Groups.GroupManager`1.IsDuplicatedAsync*"></a>
+  <h4 id="Mozlite_Extensions_Groups_GroupManager_1_IsDuplicatedAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Groups.GroupManager`1.IsDuplicatedAsync(`0,System.Threading.CancellationToken)">IsDuplicatedAsync(TGroup, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>判断是否已经存在。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; IsDuplicatedAsync(TGroup category, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TGroup</span></td>
+        <td><span class="parametername">category</span></td>
+        <td><p>分类实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.ObjectManager&lt;TGroup, System.Int32&gt;.IsDuplicatedAsync(TGroup, System.Threading.CancellationToken)</span></div>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Groups.IGroupManager-1.html">IGroupManager&lt;TGroup&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.ICachableObjectManager-1.html">ICachableObjectManager&lt;TModel&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.ICachableObjectManager-2.html">ICachableObjectManager&lt;TModel, TKey&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.IObjectManager-2.html">IObjectManager&lt;TModel, TKey&gt;</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Groups_GroupManager_1.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Groups.GroupManager%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Groups/GroupManager.cs/#L16" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

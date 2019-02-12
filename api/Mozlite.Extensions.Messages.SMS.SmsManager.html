@@ -1,0 +1,581 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SmsManager 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SmsManager 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager">
+  
+  
+  <h1 id="Mozlite_Extensions_Messages_SMS_SmsManager" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager" class="text-break">SmsManager 类
+  </h1>
+  <div class="markdown level0 summary"><p>短信管理类型。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mozlite.Extensions.ObjectManager-2.html">ObjectManager</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.SMS.Note.html">Note</a>, <span class="xref">System.Int32</span>&gt;</div>
+    <div class="level2"><a class="xref" href="Mozlite.Extensions.ObjectManager-1.html">ObjectManager</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.SMS.Note.html">Note</a>&gt;</div>
+    <div class="level3"><span class="xref">SmsManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Extensions.Messages.SMS.ISmsManager.html">ISmsManager</a></div>
+    <div><a class="xref" href="Mozlite.Extensions.IObjectManager-1.html">IObjectManager</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.SMS.Note.html">Note</a>&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.IObjectManager-2.html">IObjectManager</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.SMS.Note.html">Note</a>, <span class="xref">System.Int32</span>&gt;</div>
+    <div><a class="xref" href="Mozlite.ISingletonService.html">ISingletonService</a></div>
+    <div><a class="xref" href="Mozlite.IService.html">IService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Context">ObjectManager&lt;Note, Int32&gt;.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Save__0_">ObjectManager&lt;Note, Int32&gt;.Save(Note)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_IsDuplicated__0_">ObjectManager&lt;Note, Int32&gt;.IsDuplicated(Note)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Update__1_System_Object_">ObjectManager&lt;Note, Int32&gt;.Update(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Update_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_">ObjectManager&lt;Note, Int32&gt;.Update(Expression&lt;Predicate&lt;Note&gt;&gt;, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Delete_System_Linq_Expressions_Expression_System_Predicate__0___">ObjectManager&lt;Note, Int32&gt;.Delete(Expression&lt;Predicate&lt;Note&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Delete__1_">ObjectManager&lt;Note, Int32&gt;.Delete(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Find__1_">ObjectManager&lt;Note, Int32&gt;.Find(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Find_System_Linq_Expressions_Expression_System_Predicate__0___">ObjectManager&lt;Note, Int32&gt;.Find(Expression&lt;Predicate&lt;Note&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Fetch_System_Linq_Expressions_Expression_System_Predicate__0___">ObjectManager&lt;Note, Int32&gt;.Fetch(Expression&lt;Predicate&lt;Note&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_SaveAsync__0_System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.SaveAsync(Note, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_IsDuplicatedAsync__0_System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.IsDuplicatedAsync(Note, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_UpdateAsync__1_System_Object_System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.UpdateAsync(Int32, Object, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_UpdateAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.UpdateAsync(Expression&lt;Predicate&lt;Note&gt;&gt;, Object, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Clear">ObjectManager&lt;Note, Int32&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_ClearAsync_System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.ClearAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Delete_System_Collections_Generic_IEnumerable__1__">ObjectManager&lt;Note, Int32&gt;.Delete(IEnumerable&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_DeleteAsync_System_Collections_Generic_IEnumerable__1__System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.DeleteAsync(IEnumerable&lt;Int32&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_DeleteAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.DeleteAsync(Expression&lt;Predicate&lt;Note&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_DeleteAsync__1_System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.DeleteAsync(Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_FindAsync__1_System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.FindAsync(Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_FindAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.FindAsync(Expression&lt;Predicate&lt;Note&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_FetchAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.FetchAsync(Expression&lt;Predicate&lt;Note&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_AsQueryable">ObjectManager&lt;Note, Int32&gt;.AsQueryable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Load__1___0_">ObjectManager&lt;Note, Int32&gt;.Load&lt;TQuery&gt;(TQuery)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_LoadAsync__1___0_System_Threading_CancellationToken_">ObjectManager&lt;Note, Int32&gt;.LoadAsync&lt;TQuery&gt;(TQuery, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Extensions.Messages.SMS.html">Mozlite.Extensions.Messages.SMS</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Extensions.dll</h6>
+  <h5 id="Mozlite_Extensions_Messages_SMS_SmsManager_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SmsManager : ObjectManager&lt;Note&gt;, ISmsManager, IObjectManager&lt;Note&gt;, IObjectManager&lt;Note, int&gt;, ISingletonService, IService</code></pre>
+  </div>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_SMS_SmsManager__ctor_Mozlite_Data_IDbContext_Mozlite_Extensions_Messages_SMS_Note__System_Collections_Generic_IEnumerable_Mozlite_Extensions_Messages_SMS_ISmsClient__.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.SMS.SmsManager.%23ctor(Mozlite.Data.IDbContext%7BMozlite.Extensions.Messages.SMS.Note%7D%2CSystem.Collections.Generic.IEnumerable%7BMozlite.Extensions.Messages.SMS.ISmsClient%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/SMS/SmsManager.cs/#L22">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_SMS_SmsManager__ctor_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.#ctor*"></a>
+  <h4 id="Mozlite_Extensions_Messages_SMS_SmsManager__ctor_Mozlite_Data_IDbContext_Mozlite_Extensions_Messages_SMS_Note__System_Collections_Generic_IEnumerable_Mozlite_Extensions_Messages_SMS_ISmsClient__" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.#ctor(Mozlite.Data.IDbContext{Mozlite.Extensions.Messages.SMS.Note},System.Collections.Generic.IEnumerable{Mozlite.Extensions.Messages.SMS.ISmsClient})">SmsManager(IDbContext&lt;Note&gt;, IEnumerable&lt;ISmsClient&gt;)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Extensions.Messages.SMS.SmsManager.html">SmsManager</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SmsManager(IDbContext&lt;Note&gt; context, IEnumerable&lt;ISmsClient&gt; clients)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.SMS.Note.html">Note</a>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td><p>数据库操作实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mozlite.Extensions.Messages.SMS.ISmsClient.html">ISmsClient</a>&gt;</td>
+        <td><span class="parametername">clients</span></td>
+        <td><p>客户端列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_SMS_SmsManager_LoadAsync.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.SMS.SmsManager.LoadAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/SMS/SmsManager.cs/#L151">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_SMS_SmsManager_LoadAsync_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.LoadAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_SMS_SmsManager_LoadAsync" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.LoadAsync">LoadAsync()</h4>
+  <div class="markdown level1 summary"><p>加载未发送的短信列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IEnumerable&lt;Note&gt;&gt; LoadAsync()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mozlite.Extensions.Messages.SMS.Note.html">Note</a>&gt;&gt;</td>
+        <td><p>未发送的短信列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_SMS_SmsManager_Save_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.SMS.SmsManager.Save(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/SMS/SmsManager.cs/#L34">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_SMS_SmsManager_Save_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.Save*"></a>
+  <h4 id="Mozlite_Extensions_Messages_SMS_SmsManager_Save_System_String_System_String_System_String_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.Save(System.String,System.String,System.String)">Save(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>保存短信。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DataResult Save(string client, string phoneNumbers, string message)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>客户端发送器名称<a class="xref" href="Mozlite.Extensions.Messages.SMS.ISmsClient.html#Mozlite_Extensions_Messages_SMS_ISmsClient_Name">Name</a>。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">phoneNumbers</span></td>
+        <td><p>电话号码，多个电话号码使用“,”分开。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>消息字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.DataResult.html">DataResult</a></td>
+        <td><p>返回保存结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_SMS_SmsManager_SaveAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.SMS.SmsManager.SaveAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/SMS/SmsManager.cs/#L72">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_SMS_SmsManager_SaveAsync_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.SaveAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_SMS_SmsManager_SaveAsync_System_String_System_String_System_String_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.SaveAsync(System.String,System.String,System.String)">SaveAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>保存短信。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;DataResult&gt; SaveAsync(string client, string phoneNumbers, string message)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>客户端发送器名称<a class="xref" href="Mozlite.Extensions.Messages.SMS.ISmsClient.html#Mozlite_Extensions_Messages_SMS_ISmsClient_Name">Name</a>。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">phoneNumbers</span></td>
+        <td><p>电话号码，多个电话号码使用“,”分开。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>消息字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.DataResult.html">DataResult</a>&gt;</td>
+        <td><p>返回保存结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_SMS_SmsManager_SendAsync_Mozlite_Extensions_Messages_SMS_Note_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.SMS.SmsManager.SendAsync(Mozlite.Extensions.Messages.SMS.Note)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/SMS/SmsManager.cs/#L108">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_SMS_SmsManager_SendAsync_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.SendAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_SMS_SmsManager_SendAsync_Mozlite_Extensions_Messages_SMS_Note_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.SendAsync(Mozlite.Extensions.Messages.SMS.Note)">SendAsync(Note)</h4>
+  <div class="markdown level1 summary"><p>发送并保存短信。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;SmsResult&gt; SendAsync(Note note)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Messages.SMS.Note.html">Note</a></td>
+        <td><span class="parametername">note</span></td>
+        <td><p>短信实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Messages.SMS.SmsResult.html">SmsResult</a>&gt;</td>
+        <td><p>返回发送结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_SMS_SmsManager_SendAsync_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.SMS.SmsManager.SendAsync(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/SMS/SmsManager.cs/#L138">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_SMS_SmsManager_SendAsync_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.SendAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_SMS_SmsManager_SendAsync_System_String_System_String_System_String_" data-uid="Mozlite.Extensions.Messages.SMS.SmsManager.SendAsync(System.String,System.String,System.String)">SendAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>发送并保存短信。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SmsResult&gt; SendAsync(string client, string phoneNumber, string message)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>客户端发送器名称<a class="xref" href="Mozlite.Extensions.Messages.SMS.ISmsClient.html#Mozlite_Extensions_Messages_SMS_ISmsClient_Name">Name</a>。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">phoneNumber</span></td>
+        <td><p>电话号码。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>消息字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.Messages.SMS.SmsResult.html">SmsResult</a>&gt;</td>
+        <td><p>返回发送结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Messages.SMS.ISmsManager.html">ISmsManager</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.IObjectManager-1.html">IObjectManager&lt;TModel&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.IObjectManager-2.html">IObjectManager&lt;TModel, TKey&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.ISingletonService.html">ISingletonService</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.IService.html">IService</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_SMS_SmsManager.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.SMS.SmsManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/SMS/SmsManager.cs/#L13" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

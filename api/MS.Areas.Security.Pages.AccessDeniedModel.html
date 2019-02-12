@@ -1,0 +1,691 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AccessDeniedModel 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="AccessDeniedModel 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MS.Areas.Security.Pages.AccessDeniedModel">
+  
+  
+  <h1 id="MS_Areas_Security_Pages_AccessDeniedModel" data-uid="MS.Areas.Security.Pages.AccessDeniedModel" class="text-break">AccessDeniedModel 类
+  </h1>
+  <div class="markdown level0 summary"><p>拒绝访问模型。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel</span></div>
+    <div class="level2"><a class="xref" href="Mozlite.Mvc.ModelBase.html">ModelBase</a></div>
+    <div class="level3"><a class="xref" href="MS.Extensions.ModelBase.html">ModelBase</a></div>
+    <div class="level4"><a class="xref" href="MS.Areas.Security.ModelBase.html">ModelBase</a></div>
+    <div class="level5"><span class="xref">AccessDeniedModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncPageFilter</span></div>
+    <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.IPageFilter</span></div>
+    <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <a class="xref" href="MS.Areas.Security.ModelBase.html#MS_Areas_Security_ModelBase_Settings">ModelBase.Settings</a>
+    </div>
+    <div>
+      <a class="xref" href="MS.Extensions.ModelBase.html#MS_Extensions_ModelBase_User">ModelBase.User</a>
+    </div>
+    <div>
+      <a class="xref" href="MS.Extensions.ModelBase.html#MS_Extensions_ModelBase_Role">ModelBase.Role</a>
+    </div>
+    <div>
+      <a class="xref" href="MS.Extensions.ModelBase.html#MS_Extensions_ModelBase_Excel__1_System_Collections_Generic_IEnumerable___0__System_String_">ModelBase.Excel&lt;TModel&gt;(IEnumerable&lt;TModel&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MS.Extensions.ModelBase.html#MS_Extensions_ModelBase_Json_Mozlite_Extensions_Storages_MediaResult_">ModelBase.Json(MediaResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="MS.Extensions.ModelBase.html#MS_Extensions_ModelBase_Json_System_String_Mozlite_Extensions_DataResult_System_Object___">ModelBase.Json(String, DataResult, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="MS.Extensions.ModelBase.html#MS_Extensions_ModelBase_Json_System_Func_System_String__Mozlite_Extensions_DataResult_System_Object___">ModelBase.Json(Func&lt;String&gt;, DataResult, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="MS.Extensions.ModelBase.html#MS_Extensions_ModelBase_Json_System_Func_System_Threading_Tasks_Task_System_String___Mozlite_Extensions_DataResult_System_Object___">ModelBase.Json(Func&lt;Task&lt;String&gt;&gt;, DataResult, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Version">ModelBase.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Localizer">ModelBase.Localizer</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Logger">ModelBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Log_System_String_System_Object___">ModelBase.Log(String, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_LogResult_Mozlite_Extensions_DataResult_System_String_System_String_">ModelBase.LogResult(DataResult, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_LogResult_Mozlite_Extensions_DataResult_System_String_System_Int32___">ModelBase.LogResult(DataResult, String, Int32[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_LogResult__1_Mozlite_Extensions_DataResult_System_String_System_Collections_Generic_IEnumerable___0__">ModelBase.LogResult&lt;TValue&gt;(DataResult, String, IEnumerable&lt;TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_EventId">ModelBase.EventId</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_PageIndex">ModelBase.PageIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_IsValidateCode_System_String_System_String_">ModelBase.IsValidateCode(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_GetService__1">ModelBase.GetService&lt;TService&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_GetRequiredService__1">ModelBase.GetRequiredService&lt;TService&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Notifier">ModelBase.Notifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_HasPermission_System_String_">ModelBase.HasPermission(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_HasPermissionAsync_System_String_">ModelBase.HasPermissionAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_IsAuthorized_System_String_">ModelBase.IsAuthorized(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_IsAuthorizedAsync_System_String_">ModelBase.IsAuthorizedAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_IsAuthenticated">ModelBase.IsAuthenticated</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_UserId">ModelBase.UserId</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_UserName">ModelBase.UserName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_StatusMessage_System_String_">ModelBase.StatusMessage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_StatusMessage_Mozlite_Mvc_Messages_StatusType_System_String_">ModelBase.StatusMessage(StatusType, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_InfoPage_System_String_">ModelBase.InfoPage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_WarningPage_System_String_">ModelBase.WarningPage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_ErrorPage_System_String_">ModelBase.ErrorPage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_SuccessPage_System_String_">ModelBase.SuccessPage(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_RedirectToInfoPage_System_String_System_String_System_String_System_String_">ModelBase.RedirectToInfoPage(String, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_RedirectToWarningPage_System_String_System_String_System_String_System_String_">ModelBase.RedirectToWarningPage(String, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_RedirectToErrorPage_System_String_System_String_System_String_System_String_">ModelBase.RedirectToErrorPage(String, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_RedirectToSuccessPage_System_String_System_String_System_String_System_String_">ModelBase.RedirectToSuccessPage(String, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Page_Mozlite_Extensions_DataResult_System_Object___">ModelBase.Page(DataResult, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_RedirectToResult_Mozlite_Extensions_DataResult_System_Object___">ModelBase.RedirectToResult(DataResult, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Info_System_String_">ModelBase.Info(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Info__1_System_String___0_">ModelBase.Info&lt;TData&gt;(String, TData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Warning_System_String_">ModelBase.Warning(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Warning__1_System_String___0_">ModelBase.Warning&lt;TData&gt;(String, TData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Error_System_String_">ModelBase.Error(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Error__1_System_String___0_">ModelBase.Error&lt;TData&gt;(String, TData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Success_System_Boolean_">ModelBase.Success(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Success__1___0_">ModelBase.Success&lt;TData&gt;(TData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Success_System_String_">ModelBase.Success(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Success__1_System_String___0_">ModelBase.Success&lt;TData&gt;(String, TData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Json_Mozlite_Extensions_DataResult_System_Object___">ModelBase.Json(DataResult, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Error_Microsoft_AspNetCore_Identity_IdentityResult_">ModelBase.Error(IdentityResult)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Json_System_Object_">ModelBase.Json(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Mvc.ModelBase.html#Mozlite_Mvc_ModelBase_Browser">ModelBase.Browser</a>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryUpdateModelAsync&lt;TModel&gt;(TModel)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, System.Linq.Expressions.Expression&lt;System.Func&lt;TModel, System.Object&gt;&gt;[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, System.Func&lt;Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, System.Boolean&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Linq.Expressions.Expression&lt;System.Func&lt;TModel, System.Object&gt;&gt;[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Func&lt;Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, System.Boolean&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryUpdateModelAsync(System.Object, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryUpdateModelAsync(System.Object, System.Type, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Func&lt;Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, System.Boolean&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.BadRequest()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.BadRequest(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.BadRequest(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Challenge()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Challenge(System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Challenge(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Challenge(Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Content(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Content(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Content(System.String, System.String, System.Text.Encoding)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Content(System.String, Microsoft.Net.Http.Headers.MediaTypeHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Forbid()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Forbid(System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Forbid(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Forbid(Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.File(System.Byte[], System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.File(System.Byte[], System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.File(System.IO.Stream, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.File(System.IO.Stream, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.File(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.File(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.LocalRedirect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.LocalRedirectPermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.LocalRedirectPreserveMethod(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.LocalRedirectPermanentPreserveMethod(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.NotFound()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.NotFound(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Page()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.PhysicalFile(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.PhysicalFile(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Redirect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectPermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectPreserveMethod(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectPermanentPreserveMethod(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToAction(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToAction(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToAction(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToAction(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToAction(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToAction(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToActionPreserveMethod(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToActionPermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToActionPermanent(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToActionPermanent(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToActionPermanent(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToActionPermanent(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToActionPermanent(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToActionPermanentPreserveMethod(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoute(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoute(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoute(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoute(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoute(System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoutePreserveMethod(System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoutePermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoutePermanent(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoutePermanent(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoutePermanent(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoutePermanent(System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToRoutePermanentPreserveMethod(System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPage()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPage(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPage(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPage(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPage(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPage(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPagePermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPagePermanent(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPagePermanent(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPagePermanent(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPagePermanent(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPagePermanent(System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPagePermanent(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPagePreserveMethod(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RedirectToPagePermanentPreserveMethod(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.SignIn(System.Security.Claims.ClaimsPrincipal, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.SignIn(System.Security.Claims.ClaimsPrincipal, Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.SignOut(System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.SignOut(Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.StatusCode(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.StatusCode(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Unauthorized()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryValidateModel(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TryValidateModel(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.OnPageHandlerSelected(Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.OnPageHandlerExecuting(Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.OnPageHandlerExecuted(Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutedContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.OnPageHandlerSelectionAsync(Microsoft.AspNetCore.Mvc.Filters.PageHandlerSelectedContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.OnPageHandlerExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutingContext, Microsoft.AspNetCore.Mvc.Filters.PageHandlerExecutionDelegate)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.PageContext</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.HttpContext</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Request</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Response</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.RouteData</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.ModelState</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.TempData</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.Url</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.RazorPages.PageModel.ViewData</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="MS.Areas.Security.Pages.html">MS.Areas.Security.Pages</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: MS.Extensions.Security.dll</h6>
+  <h5 id="MS_Areas_Security_Pages_AccessDeniedModel_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AccessDeniedModel : ModelBase, IAsyncPageFilter, IPageFilter, IFilterMetadata</code></pre>
+  </div>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=MS_Areas_Security_Pages_AccessDeniedModel_OnGet.md&amp;value=---%0Auid%3A%20MS.Areas.Security.Pages.AccessDeniedModel.OnGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/MS.Extensions.Security/Areas/Security/Pages/AccessDenied.cshtml.cs/#L8">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="MS_Areas_Security_Pages_AccessDeniedModel_OnGet_" data-uid="MS.Areas.Security.Pages.AccessDeniedModel.OnGet*"></a>
+  <h4 id="MS_Areas_Security_Pages_AccessDeniedModel_OnGet" data-uid="MS.Areas.Security.Pages.AccessDeniedModel.OnGet">OnGet()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnGet()</code></pre>
+  </div>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncPageFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IPageFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=MS_Areas_Security_Pages_AccessDeniedModel.md&amp;value=---%0Auid%3A%20MS.Areas.Security.Pages.AccessDeniedModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/MS.Extensions.Security/Areas/Security/Pages/AccessDenied.cshtml.cs/#L6" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

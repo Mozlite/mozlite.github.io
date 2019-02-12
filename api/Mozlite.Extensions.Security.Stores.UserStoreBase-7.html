@@ -1,0 +1,3284 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>UserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt; 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="UserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt; 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7">
+  
+  
+  <h1 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7" class="text-break">UserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt; 类
+  </h1>
+  <div class="markdown level0 summary"><p>用户存储基类，包含用户角色的相关操作。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html">IdentityUserStoreBase</a>&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;</div>
+    <div class="level2"><a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-7.html">IdentityUserStoreBase</a>&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;</div>
+    <div class="level3"><span class="xref">UserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;</span></div>
+      <div class="level4"><a class="xref" href="MS.Extensions.Security.Services.UserStore.html">UserStore</a></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserLoginStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserClaimStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserPasswordStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserSecurityStampStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserEmailStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserLockoutStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserPhoneNumberStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticationTokenStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticatorKeyStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorRecoveryCodeStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserRoleStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserStore</span>&lt;TUser&gt;</div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="Mozlite.Extensions.Security.Stores.IUserStoreBase-7.html">IUserStoreBase</a>&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.Security.Stores.IUserStoreBase-4.html">IUserStoreBase</a>&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.Security.Stores.IUserRoleDbContext-7.html">IUserRoleDbContext</a>&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.Security.Stores.IUserDbContext-4.html">IUserDbContext</a>&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.Security.Stores.IRoleDbContext-3.html">IRoleDbContext</a>&lt;TRole, TUserRole, TRoleClaim&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-7.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_7_CreateUserRole__0__1_">IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.CreateUserRole(TUser, TRole)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-7.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_7_GetUsersInRoleAsync_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.GetUsersInRoleAsync(String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-7.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_7_AddToRoleAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.AddToRoleAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-7.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_7_RemoveFromRoleAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.RemoveFromRoleAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-7.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_7_GetRolesAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.GetRolesAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-7.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_7_IsInRoleAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.IsInRoleAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_ErrorDescriber">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.ErrorDescriber</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_CreateUserClaim__0_System_Security_Claims_Claim_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.CreateUserClaim(TUser, Claim)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_CreateUserLogin__0_Microsoft_AspNetCore_Identity_UserLoginInfo_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.CreateUserLogin(TUser, UserLoginInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_CreateUserToken__0_System_String_System_String_System_String_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.CreateUserToken(TUser, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetUserIdAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetUserIdAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetUserNameAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetUserNameAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetUserNameAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetUserNameAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetNormalizedUserNameAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetNormalizedUserNameAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetNormalizedUserNameAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetNormalizedUserNameAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_CreateAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.CreateAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_UpdateAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.UpdateAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_DeleteAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.DeleteAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_FindByIdAsync_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindByIdAsync(String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_FindByNameAsync_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindByNameAsync(String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetPasswordHashAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetPasswordHashAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetPasswordHashAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetPasswordHashAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_HasPasswordAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.HasPasswordAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_FindUserAsync_System_Int32_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindUserAsync(Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_FindUserLoginAsync_System_Int32_System_String_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindUserLoginAsync(Int32, String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_FindUserLoginAsync_System_String_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindUserLoginAsync(String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_Dispose">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetClaimsAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetClaimsAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_AddClaimsAsync__0_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.AddClaimsAsync(TUser, IEnumerable&lt;Claim&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_ReplaceClaimAsync__0_System_Security_Claims_Claim_System_Security_Claims_Claim_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.ReplaceClaimAsync(TUser, Claim, Claim, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_RemoveClaimsAsync__0_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.RemoveClaimsAsync(TUser, IEnumerable&lt;Claim&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_AddLoginAsync__0_Microsoft_AspNetCore_Identity_UserLoginInfo_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.AddLoginAsync(TUser, UserLoginInfo, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_RemoveLoginAsync__0_System_String_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.RemoveLoginAsync(TUser, String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetLoginsAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetLoginsAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_FindByLoginAsync_System_String_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindByLoginAsync(String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetEmailConfirmedAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetEmailConfirmedAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetEmailConfirmedAsync__0_System_Boolean_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetEmailConfirmedAsync(TUser, Boolean, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetEmailAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetEmailAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetEmailAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetEmailAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetNormalizedEmailAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetNormalizedEmailAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetNormalizedEmailAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetNormalizedEmailAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_FindByEmailAsync_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindByEmailAsync(String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetLockoutEndDateAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetLockoutEndDateAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetLockoutEndDateAsync__0_System_Nullable_System_DateTimeOffset__System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetLockoutEndDateAsync(TUser, Nullable&lt;DateTimeOffset&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_IncrementAccessFailedCountAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.IncrementAccessFailedCountAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_ResetAccessFailedCountAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.ResetAccessFailedCountAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetAccessFailedCountAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetAccessFailedCountAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetLockoutEnabledAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetLockoutEnabledAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetLockoutEnabledAsync__0_System_Boolean_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetLockoutEnabledAsync(TUser, Boolean, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetPhoneNumberAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetPhoneNumberAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetPhoneNumberAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetPhoneNumberAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetPhoneNumberConfirmedAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetPhoneNumberConfirmedAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetPhoneNumberConfirmedAsync__0_System_Boolean_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetPhoneNumberConfirmedAsync(TUser, Boolean, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetSecurityStampAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetSecurityStampAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetSecurityStampAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetSecurityStampAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetTwoFactorEnabledAsync__0_System_Boolean_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetTwoFactorEnabledAsync(TUser, Boolean, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetTwoFactorEnabledAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetTwoFactorEnabledAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetUsersForClaimAsync_System_Security_Claims_Claim_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetUsersForClaimAsync(Claim, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_FindTokenAsync__0_System_String_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindTokenAsync(TUser, String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_AddUserTokenAsync__3_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.AddUserTokenAsync(TUserToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_RemoveUserTokenAsync__3_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.RemoveUserTokenAsync(TUserToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetTokenAsync__0_System_String_System_String_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetTokenAsync(TUser, String, String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_RemoveTokenAsync__0_System_String_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.RemoveTokenAsync(TUser, String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetTokenAsync__0_System_String_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetTokenAsync(TUser, String, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_SetAuthenticatorKeyAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.SetAuthenticatorKeyAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_GetAuthenticatorKeyAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetAuthenticatorKeyAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_CountCodesAsync__0_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.CountCodesAsync(TUser, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_ReplaceCodesAsync__0_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.ReplaceCodesAsync(TUser, IEnumerable&lt;String&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IdentityUserStoreBase-4.html#Mozlite_Extensions_Security_Stores_IdentityUserStoreBase_4_RedeemCodeAsync__0_System_String_System_Threading_CancellationToken_">IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.RedeemCodeAsync(TUser, String, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Extensions.Security.Stores.html">Mozlite.Extensions.Security.Stores</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Extensions.dll</h6>
+  <h5 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt; : IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;, IUserLoginStore&lt;TUser&gt;, IUserClaimStore&lt;TUser&gt;, IUserPasswordStore&lt;TUser&gt;, IUserSecurityStampStore&lt;TUser&gt;, IUserEmailStore&lt;TUser&gt;, IUserLockoutStore&lt;TUser&gt;, IUserPhoneNumberStore&lt;TUser&gt;, IUserTwoFactorStore&lt;TUser&gt;, IUserAuthenticationTokenStore&lt;TUser&gt;, IUserAuthenticatorKeyStore&lt;TUser&gt;, IUserTwoFactorRecoveryCodeStore&lt;TUser&gt;, IUserRoleStore&lt;TUser&gt;, IUserStore&lt;TUser&gt;, IDisposable, IUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;, IUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;, IUserRoleDbContext&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;, IUserDbContext&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;, IRoleDbContext&lt;TRole, TUserRole, TRoleClaim&gt; where TUser : UserBase where TRole : RoleBase where TUserClaim : UserClaimBase, new()
+    where TUserRole : UserRoleBase, new()
+    where TUserLogin : UserLoginBase, new()
+    where TUserToken : UserTokenBase, new()
+    where TRoleClaim : RoleClaimBase, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TUser</span></td>
+        <td><p>用户类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>角色类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TUserClaim</span></td>
+        <td><p>用户声明类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TUserRole</span></td>
+        <td><p>用户角色类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TUserLogin</span></td>
+        <td><p>用户登陆类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TUserToken</span></td>
+        <td><p>用户标识类型。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TRoleClaim</span></td>
+        <td><p>角色声明类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7__ctor_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_Mozlite_Data_IDbContext__0__Mozlite_Data_IDbContext__2__Mozlite_Data_IDbContext__4__Mozlite_Data_IDbContext__5__Mozlite_Data_IDbContext__1__Mozlite_Data_IDbContext__3__Mozlite_Data_IDbContext__6__Mozlite_Extensions_Security_IRoleManager__1__3__6__.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.%23ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber%2CMozlite.Data.IDbContext%7B%600%7D%2CMozlite.Data.IDbContext%7B%602%7D%2CMozlite.Data.IDbContext%7B%604%7D%2CMozlite.Data.IDbContext%7B%605%7D%2CMozlite.Data.IDbContext%7B%601%7D%2CMozlite.Data.IDbContext%7B%603%7D%2CMozlite.Data.IDbContext%7B%606%7D%2CMozlite.Extensions.Security.IRoleManager%7B%601%2C%603%2C%606%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L131">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7__ctor_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.#ctor*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7__ctor_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_Mozlite_Data_IDbContext__0__Mozlite_Data_IDbContext__2__Mozlite_Data_IDbContext__4__Mozlite_Data_IDbContext__5__Mozlite_Data_IDbContext__1__Mozlite_Data_IDbContext__3__Mozlite_Data_IDbContext__6__Mozlite_Extensions_Security_IRoleManager__1__3__6__" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.#ctor(Microsoft.AspNetCore.Identity.IdentityErrorDescriber,Mozlite.Data.IDbContext{`0},Mozlite.Data.IDbContext{`2},Mozlite.Data.IDbContext{`4},Mozlite.Data.IDbContext{`5},Mozlite.Data.IDbContext{`1},Mozlite.Data.IDbContext{`3},Mozlite.Data.IDbContext{`6},Mozlite.Extensions.Security.IRoleManager{`1,`3,`6})">UserStoreBase(IdentityErrorDescriber, IDbContext&lt;TUser&gt;, IDbContext&lt;TUserClaim&gt;, IDbContext&lt;TUserLogin&gt;, IDbContext&lt;TUserToken&gt;, IDbContext&lt;TRole&gt;, IDbContext&lt;TUserRole&gt;, IDbContext&lt;TRoleClaim&gt;, IRoleManager&lt;TRole, TUserRole, TRoleClaim&gt;)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Extensions.Security.Stores.UserStoreBase-7.html">UserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UserStoreBase(IdentityErrorDescriber describer, IDbContext&lt;TUser&gt; userContext, IDbContext&lt;TUserClaim&gt; userClaimContext, IDbContext&lt;TUserLogin&gt; userLoginContext, IDbContext&lt;TUserToken&gt; userTokenContext, IDbContext&lt;TRole&gt; roleContext, IDbContext&lt;TUserRole&gt; userRoleContext, IDbContext&lt;TRoleClaim&gt; roleClaimContext, IRoleManager&lt;TRole, TUserRole, TRoleClaim&gt; roleManager)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IdentityErrorDescriber</span></td>
+        <td><span class="parametername">describer</span></td>
+        <td><p>错误描述<span class="xref">Microsoft.AspNetCore.Identity.IdentityErrorDescriber</span>实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUser&gt;</td>
+        <td><span class="parametername">userContext</span></td>
+        <td><p>用户数据库接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUserClaim&gt;</td>
+        <td><span class="parametername">userClaimContext</span></td>
+        <td><p>用户声明数据库接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUserLogin&gt;</td>
+        <td><span class="parametername">userLoginContext</span></td>
+        <td><p>用户登陆数据库接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUserToken&gt;</td>
+        <td><span class="parametername">userTokenContext</span></td>
+        <td><p>用户标识数据库接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TRole&gt;</td>
+        <td><span class="parametername">roleContext</span></td>
+        <td><p>角色上下文。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUserRole&gt;</td>
+        <td><span class="parametername">userRoleContext</span></td>
+        <td><p>用户角色数据库操作接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TRoleClaim&gt;</td>
+        <td><span class="parametername">roleClaimContext</span></td>
+        <td><p>角色声明数据库操作接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Security.IRoleManager-3.html">IRoleManager</a>&lt;TRole, TUserRole, TRoleClaim&gt;</td>
+        <td><span class="parametername">roleManager</span></td>
+        <td><p>角色管理接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">&#23646;&#24615;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_RoleClaimContext.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.RoleClaimContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L72">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RoleClaimContext_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RoleClaimContext*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RoleClaimContext" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RoleClaimContext">RoleClaimContext</h4>
+  <div class="markdown level1 summary"><p>用户声明数据库操作接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDbContext&lt;TRoleClaim&gt; RoleClaimContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TRoleClaim&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_RoleContext.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.RoleContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L37">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RoleContext_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RoleContext*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RoleContext" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RoleContext">RoleContext</h4>
+  <div class="markdown level1 summary"><p>角色数据库操作接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDbContext&lt;TRole&gt; RoleContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TRole&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_RoleManager.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.RoleManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L42">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RoleManager_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RoleManager*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RoleManager" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RoleManager">RoleManager</h4>
+  <div class="markdown level1 summary"><p>角色管理接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRoleManager&lt;TRole, TUserRole, TRoleClaim&gt; RoleManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Security.IRoleManager-3.html">IRoleManager</a>&lt;TRole, TUserRole, TRoleClaim&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserClaimContext.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.UserClaimContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L52">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserClaimContext_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserClaimContext*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserClaimContext" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserClaimContext">UserClaimContext</h4>
+  <div class="markdown level1 summary"><p>用户声明数据库操作接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDbContext&lt;TUserClaim&gt; UserClaimContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUserClaim&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserContext.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.UserContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L47">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserContext_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserContext*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserContext" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserContext">UserContext</h4>
+  <div class="markdown level1 summary"><p>用户数据库操作接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDbContext&lt;TUser&gt; UserContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUser&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserLoginContext.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.UserLoginContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L57">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserLoginContext_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserLoginContext*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserLoginContext" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserLoginContext">UserLoginContext</h4>
+  <div class="markdown level1 summary"><p>用户登陆数据库操作接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDbContext&lt;TUserLogin&gt; UserLoginContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUserLogin&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserRoleContext.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.UserRoleContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L67">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserRoleContext_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserRoleContext*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserRoleContext" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserRoleContext">UserRoleContext</h4>
+  <div class="markdown level1 summary"><p>用户角色数据库操作接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDbContext&lt;TUserRole&gt; UserRoleContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUserRole&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserTokenContext.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.UserTokenContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L62">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserTokenContext_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserTokenContext*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UserTokenContext" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UserTokenContext">UserTokenContext</h4>
+  <div class="markdown level1 summary"><p>用户标识数据库操作接口。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDbContext&lt;TUserToken&gt; UserTokenContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;TUserToken&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddClaimsAsync__0_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.AddClaimsAsync(%600%2CSystem.Collections.Generic.IEnumerable%7BSystem.Security.Claims.Claim%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L387">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddClaimsAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddClaimsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddClaimsAsync__0_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddClaimsAsync(`0,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.Threading.CancellationToken)">AddClaimsAsync(TUser, IEnumerable&lt;Claim&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>添加用户声明。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task AddClaimsAsync(TUser user, IEnumerable&lt;Claim&gt; claims, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>当前用户实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Security.Claims.Claim</span>&gt;</td>
+        <td><span class="parametername">claims</span></td>
+        <td><p>声明列表。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.AddClaimsAsync(TUser, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddLoginAsync__0_Microsoft_AspNetCore_Identity_UserLoginInfo_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.AddLoginAsync(%600%2CMicrosoft.AspNetCore.Identity.UserLoginInfo%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L525">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddLoginAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddLoginAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddLoginAsync__0_Microsoft_AspNetCore_Identity_UserLoginInfo_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddLoginAsync(`0,Microsoft.AspNetCore.Identity.UserLoginInfo,System.Threading.CancellationToken)">AddLoginAsync(TUser, UserLoginInfo, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>添加用户登陆信息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task AddLoginAsync(TUser user, UserLoginInfo login, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>当前用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.UserLoginInfo</span></td>
+        <td><span class="parametername">login</span></td>
+        <td><p>用户登陆信息实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.AddLoginAsync(TUser, Microsoft.AspNetCore.Identity.UserLoginInfo, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddToRoleAsync__0_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.AddToRoleAsync(%600%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L627">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddToRoleAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddToRoleAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddToRoleAsync__0_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddToRoleAsync(`0,System.String,System.Threading.CancellationToken)">AddToRoleAsync(TUser, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>添加用户角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task AddToRoleAsync(TUser user, string normalizedRoleName, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>当前用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">normalizedRoleName</span></td>
+        <td><p>验证角色名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.AddToRoleAsync(TUser, System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddUserTokenAsync__5_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.AddUserTokenAsync(%605)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L504">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddUserTokenAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddUserTokenAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddUserTokenAsync__5_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddUserTokenAsync(`5)">AddUserTokenAsync(TUserToken)</h4>
+  <div class="markdown level1 summary"><p>添加新的用户标识。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task AddUserTokenAsync(TUserToken token)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUserToken</span></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>用户标识实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.AddUserTokenAsync(TUserToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddUserToRoles_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.AddUserToRoles(System.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L714">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddUserToRoles_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddUserToRoles*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddUserToRoles_System_Int32_System_Int32___" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddUserToRoles(System.Int32,System.Int32[])">AddUserToRoles(Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p>将用户添加到角色中。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AddUserToRoles(int userId, int[] roleIds)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">roleIds</span></td>
+        <td><p>角色Id列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回添加结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddUserToRolesAsync_System_Int32_System_Int32___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.AddUserToRolesAsync(System.Int32%2CSystem.Int32%5B%5D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L771">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddUserToRolesAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddUserToRolesAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_AddUserToRolesAsync_System_Int32_System_Int32___System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.AddUserToRolesAsync(System.Int32,System.Int32[],System.Threading.CancellationToken)">AddUserToRolesAsync(Int32, Int32[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>将用户添加到角色中。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; AddUserToRolesAsync(int userId, int[] roleIds, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">roleIds</span></td>
+        <td><p>角色Id列表。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回添加结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_CreateAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.CreateAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L157">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_CreateAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.CreateAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_CreateAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.CreateAsync(`0,System.Threading.CancellationToken)">CreateAsync(TUser, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>新建用户实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IdentityResult&gt; CreateAsync(TUser user, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>用户实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityResult</span>&gt;</td>
+        <td><p>返回添加用户结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.CreateAsync(TUser, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_DeleteAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.DeleteAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L219">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_DeleteAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.DeleteAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_DeleteAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.DeleteAsync(`0,System.Threading.CancellationToken)">DeleteAsync(TUser, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>删除用户实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IdentityResult&gt; DeleteAsync(TUser user, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>当前用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityResult</span>&gt;</td>
+        <td><p>返回删除结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.DeleteAsync(TUser, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByEmailAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.FindByEmailAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L579">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByEmailAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindByEmailAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByEmailAsync_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindByEmailAsync(System.String,System.Threading.CancellationToken)">FindByEmailAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过电子邮件获取用户实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;TUser&gt; FindByEmailAsync(string normalizedEmail, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">normalizedEmail</span></td>
+        <td><p>验证邮件地址。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TUser&gt;</td>
+        <td><p>返回当前用户实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindByEmailAsync(System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByIdAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.FindByIdAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L252">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByIdAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindByIdAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByIdAsync_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindByIdAsync(System.String,System.Threading.CancellationToken)">FindByIdAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过用户ID查询用户实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;TUser&gt; FindByIdAsync(string userId, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>当前用户ID。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TUser&gt;</td>
+        <td><p>返回当前用户实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindByIdAsync(System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByName_System_String_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.FindByName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L81">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByName_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindByName*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByName_System_String_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindByName(System.String)">FindByName(String)</h4>
+  <div class="markdown level1 summary"><p>通过用户验证名称查询用户实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TUser FindByName(string normalizedUserName)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">normalizedUserName</span></td>
+        <td><p>当前验证名称。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><p>返回当前用户实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByNameAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.FindByNameAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L268">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByNameAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindByNameAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindByNameAsync_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindByNameAsync(System.String,System.Threading.CancellationToken)">FindByNameAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过用户验证名称查询用户实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;TUser&gt; FindByNameAsync(string normalizedUserName, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">normalizedUserName</span></td>
+        <td><p>当前验证名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TUser&gt;</td>
+        <td><p>返回当前用户实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindByNameAsync(System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindTokenAsync__0_System_String_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.FindTokenAsync(%600%2CSystem.String%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L494">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindTokenAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindTokenAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindTokenAsync__0_System_String_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindTokenAsync(`0,System.String,System.String,System.Threading.CancellationToken)">FindTokenAsync(TUser, String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>获取用户标识。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;TUserToken&gt; FindTokenAsync(TUser user, string loginProvider, string name, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>当前用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">loginProvider</span></td>
+        <td><p>登陆提供者。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TUserToken&gt;</td>
+        <td><p>返回用户标识实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindTokenAsync(TUser, System.String, System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUser_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.FindUser(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L91">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUser_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindUser*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUser_System_Int32_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindUser(System.Int32)">FindUser(Int32)</h4>
+  <div class="markdown level1 summary"><p>通过Id获取用户实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TUser FindUser(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><p>返回当前用户实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUserAsync_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.FindUserAsync(System.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L279">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUserAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindUserAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUserAsync_System_Int32_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindUserAsync(System.Int32,System.Threading.CancellationToken)">FindUserAsync(Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过Id获取用户实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;TUser&gt; FindUserAsync(int userId, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TUser&gt;</td>
+        <td><p>返回当前用户实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindUserAsync(System.Int32, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUserLoginAsync_System_Int32_System_String_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.FindUserLoginAsync(System.Int32%2CSystem.String%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L344">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUserLoginAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindUserLoginAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUserLoginAsync_System_Int32_System_String_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindUserLoginAsync(System.Int32,System.String,System.String,System.Threading.CancellationToken)">FindUserLoginAsync(Int32, String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>获取用户登陆信息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;TUserLogin&gt; FindUserLoginAsync(int userId, string loginProvider, string providerKey, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">loginProvider</span></td>
+        <td><p>登陆提供者名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">providerKey</span></td>
+        <td><p>登陆唯一键。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TUserLogin&gt;</td>
+        <td><p>返回当前用户登陆信息。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindUserLoginAsync(System.Int32, System.String, System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUserLoginAsync_System_String_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.FindUserLoginAsync(System.String%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L358">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUserLoginAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindUserLoginAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_FindUserLoginAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.FindUserLoginAsync(System.String,System.String,System.Threading.CancellationToken)">FindUserLoginAsync(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>获取用户登陆信息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;TUserLogin&gt; FindUserLoginAsync(string loginProvider, string providerKey, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">loginProvider</span></td>
+        <td><p>登陆提供者名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">providerKey</span></td>
+        <td><p>登陆唯一键。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TUserLogin&gt;</td>
+        <td><p>返回当前用户登陆信息。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.FindUserLoginAsync(System.String, System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetClaimsAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.GetClaimsAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L371">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetClaimsAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetClaimsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetClaimsAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetClaimsAsync(`0,System.Threading.CancellationToken)">GetClaimsAsync(TUser, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>获取当前用户实例的所有声明列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IList&lt;Claim&gt;&gt; GetClaimsAsync(TUser user, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>用户实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.Security.Claims.Claim</span>&gt;&gt;</td>
+        <td><p>返回当前用户实例的所有声明列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetClaimsAsync(TUser, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetLoginsAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.GetLoginsAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L567">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetLoginsAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetLoginsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetLoginsAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetLoginsAsync(`0,System.Threading.CancellationToken)">GetLoginsAsync(TUser, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>获取当前用户的登陆信息列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IList&lt;UserLoginInfo&gt;&gt; GetLoginsAsync(TUser user, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>当前用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.UserLoginInfo</span>&gt;&gt;</td>
+        <td><p>返回当前用户所有登陆信息。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetLoginsAsync(TUser, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetRoles_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.GetRoles(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L684">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetRoles_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetRoles*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetRoles_System_Int32_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetRoles(System.Int32)">GetRoles(Int32)</h4>
+  <div class="markdown level1 summary"><p>获取用户角色列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;TRole&gt; GetRoles(int userId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRole&gt;</td>
+        <td><p>返回角色列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetRolesAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.GetRolesAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L669">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetRolesAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetRolesAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetRolesAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetRolesAsync(`0,System.Threading.CancellationToken)">GetRolesAsync(TUser, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>获取用户的所有角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IList&lt;string&gt;&gt; GetRolesAsync(TUser user, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>用户实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>返回当前用户的所有角色列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.GetRolesAsync(TUser, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetRolesAsync_System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.GetRolesAsync(System.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L699">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetRolesAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetRolesAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetRolesAsync_System_Int32_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetRolesAsync(System.Int32,System.Threading.CancellationToken)">GetRolesAsync(Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>获取用户角色列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IEnumerable&lt;TRole&gt;&gt; GetRolesAsync(int userId, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRole&gt;&gt;</td>
+        <td><p>返回角色列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetUsersForClaimAsync_System_Security_Claims_Claim_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.GetUsersForClaimAsync(System.Security.Claims.Claim%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L471">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetUsersForClaimAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetUsersForClaimAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetUsersForClaimAsync_System_Security_Claims_Claim_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetUsersForClaimAsync(System.Security.Claims.Claim,System.Threading.CancellationToken)">GetUsersForClaimAsync(Claim, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>获取当前声明的所有用户。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IList&lt;TUser&gt;&gt; GetUsersForClaimAsync(Claim claim, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Security.Claims.Claim</span></td>
+        <td><span class="parametername">claim</span></td>
+        <td><p>声明实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;TUser&gt;&gt;</td>
+        <td><p>返回用户列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.GetUsersForClaimAsync(System.Security.Claims.Claim, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetUsersInRoleAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.GetUsersInRoleAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L608">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetUsersInRoleAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetUsersInRoleAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_GetUsersInRoleAsync_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.GetUsersInRoleAsync(System.String,System.Threading.CancellationToken)">GetUsersInRoleAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>检索当前角色的所有用户列表。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IList&lt;TUser&gt;&gt; GetUsersInRoleAsync(string normalizedRoleName, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">normalizedRoleName</span></td>
+        <td><p>验证角色名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IList</span>&lt;TUser&gt;&gt;</td>
+        <td><p>返回用户列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.GetUsersInRoleAsync(System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_IsDuplicated__0_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.IsDuplicated(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L312">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_IsDuplicated_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.IsDuplicated*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_IsDuplicated__0_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.IsDuplicated(`0)">IsDuplicated(TUser)</h4>
+  <div class="markdown level1 summary"><p>判断当前用户名称是否存在。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IdentityResult IsDuplicated(TUser user)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>用户实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IdentityResult</span></td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_IsDuplicatedAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.IsDuplicatedAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L327">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_IsDuplicatedAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.IsDuplicatedAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_IsDuplicatedAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.IsDuplicatedAsync(`0,System.Threading.CancellationToken)">IsDuplicatedAsync(TUser, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>判断当前用户名称是否存在。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IdentityResult&gt; IsDuplicatedAsync(TUser user, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityResult</span>&gt;</td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_IsInRoleAsync__0_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.IsInRoleAsync(%600%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L591">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_IsInRoleAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.IsInRoleAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_IsInRoleAsync__0_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.IsInRoleAsync(`0,System.String,System.Threading.CancellationToken)">IsInRoleAsync(TUser, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>判断用户是否包含当前角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; IsInRoleAsync(TUser user, string normalizedRoleName, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">normalizedRoleName</span></td>
+        <td><p>验证角色名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回判断结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.IsInRoleAsync(TUser, System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_Load__1___0_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.Load%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L290">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_Load_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.Load*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_Load__1___0_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.Load``1(``0)">Load&lt;TQuery&gt;(TQuery)</h4>
+  <div class="markdown level1 summary"><p>分页加载用户。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TQuery Load&lt;TQuery&gt;(TQuery query)
+    where TQuery : UserQuery&lt;TUser&gt;</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TQuery</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>查询实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TQuery</span></td>
+        <td><p>返回查询分页实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TQuery</span></td>
+        <td><p>查询类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_LoadAsync__1___0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.LoadAsync%60%601(%60%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L302">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_LoadAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.LoadAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_LoadAsync__1___0_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.LoadAsync``1(``0,System.Threading.CancellationToken)">LoadAsync&lt;TQuery&gt;(TQuery, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>分页加载用户。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TQuery&gt; LoadAsync&lt;TQuery&gt;(TQuery query, CancellationToken cancellationToken = default(CancellationToken))
+    where TQuery : UserQuery&lt;TUser&gt;</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TQuery</span></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>查询实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TQuery&gt;</td>
+        <td><p>返回查询分页实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">&#31867;&#22411;&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TQuery</span></td>
+        <td><p>查询类型。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveClaimsAsync__0_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.RemoveClaimsAsync(%600%2CSystem.Collections.Generic.IEnumerable%7BSystem.Security.Claims.Claim%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L441">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveClaimsAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RemoveClaimsAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveClaimsAsync__0_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RemoveClaimsAsync(`0,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim},System.Threading.CancellationToken)">RemoveClaimsAsync(TUser, IEnumerable&lt;Claim&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>移除用户声明。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task RemoveClaimsAsync(TUser user, IEnumerable&lt;Claim&gt; claims, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Security.Claims.Claim</span>&gt;</td>
+        <td><span class="parametername">claims</span></td>
+        <td><p>声明列表。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.RemoveClaimsAsync(TUser, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveFromRoleAsync__0_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.RemoveFromRoleAsync(%600%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L647">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveFromRoleAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RemoveFromRoleAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveFromRoleAsync__0_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RemoveFromRoleAsync(`0,System.String,System.Threading.CancellationToken)">RemoveFromRoleAsync(TUser, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>移除用户角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task RemoveFromRoleAsync(TUser user, string normalizedRoleName, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>用户实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">normalizedRoleName</span></td>
+        <td><p>验证角色名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;.RemoveFromRoleAsync(TUser, System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveLoginAsync__0_System_String_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.RemoveLoginAsync(%600%2CSystem.String%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L546">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveLoginAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RemoveLoginAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveLoginAsync__0_System_String_System_String_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RemoveLoginAsync(`0,System.String,System.String,System.Threading.CancellationToken)">RemoveLoginAsync(TUser, String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>移除用户登陆信息。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task RemoveLoginAsync(TUser user, string loginProvider, string providerKey, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>当前用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">loginProvider</span></td>
+        <td><p>登陆提供者名称。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">providerKey</span></td>
+        <td><p>登陆唯一键。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.RemoveLoginAsync(TUser, System.String, System.String, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveUserTokenAsync__5_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.RemoveUserTokenAsync(%605)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L513">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveUserTokenAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RemoveUserTokenAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_RemoveUserTokenAsync__5_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.RemoveUserTokenAsync(`5)">RemoveUserTokenAsync(TUserToken)</h4>
+  <div class="markdown level1 summary"><p>移除用户标识。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task RemoveUserTokenAsync(TUserToken token)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUserToken</span></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>用户标识实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.RemoveUserTokenAsync(TUserToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_ReplaceClaimAsync__0_System_Security_Claims_Claim_System_Security_Claims_Claim_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.ReplaceClaimAsync(%600%2CSystem.Security.Claims.Claim%2CSystem.Security.Claims.Claim%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L415">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_ReplaceClaimAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.ReplaceClaimAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_ReplaceClaimAsync__0_System_Security_Claims_Claim_System_Security_Claims_Claim_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.ReplaceClaimAsync(`0,System.Security.Claims.Claim,System.Security.Claims.Claim,System.Threading.CancellationToken)">ReplaceClaimAsync(TUser, Claim, Claim, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>替换用户声明。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task ReplaceClaimAsync(TUser user, Claim claim, Claim newClaim, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>当前用户实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Claims.Claim</span></td>
+        <td><span class="parametername">claim</span></td>
+        <td><p>声明实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Claims.Claim</span></td>
+        <td><span class="parametername">newClaim</span></td>
+        <td><p>新的声明实例对象。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.ReplaceClaimAsync(TUser, System.Security.Claims.Claim, System.Security.Claims.Claim, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetMaxRole_Mozlite_Data_Internal_IDbTransactionContext__1__System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.SetMaxRole(Mozlite.Data.Internal.IDbTransactionContext%7B%601%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L735">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetMaxRole_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.SetMaxRole*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetMaxRole_Mozlite_Data_Internal_IDbTransactionContext__1__System_Int32_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.SetMaxRole(Mozlite.Data.Internal.IDbTransactionContext{`1},System.Int32)">SetMaxRole(IDbTransactionContext&lt;TRole&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>设置用户最高级的角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool SetMaxRole(IDbTransactionContext&lt;TRole&gt; db, int userId)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Internal.IDbTransactionContext-1.html">IDbTransactionContext</a>&lt;TRole&gt;</td>
+        <td><span class="parametername">db</span></td>
+        <td><p>事务实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回设置结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetMaxRoleAsync_Mozlite_Data_Internal_IDbTransactionContext__1__System_Int32_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.SetMaxRoleAsync(Mozlite.Data.Internal.IDbTransactionContext%7B%601%7D%2CSystem.Int32%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L753">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetMaxRoleAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.SetMaxRoleAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetMaxRoleAsync_Mozlite_Data_Internal_IDbTransactionContext__1__System_Int32_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.SetMaxRoleAsync(Mozlite.Data.Internal.IDbTransactionContext{`1},System.Int32,System.Threading.CancellationToken)">SetMaxRoleAsync(IDbTransactionContext&lt;TRole&gt;, Int32, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>设置用户最高级的角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; SetMaxRoleAsync(IDbTransactionContext&lt;TRole&gt; db, int userId, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Internal.IDbTransactionContext-1.html">IDbTransactionContext</a>&lt;TRole&gt;</td>
+        <td><span class="parametername">db</span></td>
+        <td><p>事务实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回设置结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetUserToRoles_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.SetUserToRoles(System.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L792">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetUserToRoles_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.SetUserToRoles*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetUserToRoles_System_Int32_System_Int32___" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.SetUserToRoles(System.Int32,System.Int32[])">SetUserToRoles(Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p>设置用户角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SetUserToRoles(int userId, int[] roleIds)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">roleIds</span></td>
+        <td><p>角色Id列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回添加结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetUserToRolesAsync_System_Int32_System_Int32___System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.SetUserToRolesAsync(System.Int32%2CSystem.Int32%5B%5D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L815">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetUserToRolesAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.SetUserToRolesAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_SetUserToRolesAsync_System_Int32_System_Int32___System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.SetUserToRolesAsync(System.Int32,System.Int32[],System.Threading.CancellationToken)">SetUserToRolesAsync(Int32, Int32[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>设置用户角色。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; SetUserToRolesAsync(int userId, int[] roleIds, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户Id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">roleIds</span></td>
+        <td><p>角色Id列表。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标识。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回设置结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_Update_System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.Update(System.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L102">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_Update_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.Update*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_Update_System_Int32_System_Object_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.Update(System.Int32,System.Object)">Update(Int32, Object)</h4>
+  <div class="markdown level1 summary"><p>通过用户ID更新用户列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Update(int userId, object fields)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户ID。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>用户列。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回更新结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_UpdateAsync__0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.UpdateAsync(%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L188">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UpdateAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UpdateAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UpdateAsync__0_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UpdateAsync(`0,System.Threading.CancellationToken)">UpdateAsync(TUser, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>更新用户实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IdentityResult&gt; UpdateAsync(TUser user, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUser</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>当前用户实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityResult</span>&gt;</td>
+        <td><p>返回更新结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.Security.Stores.IdentityUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;.UpdateAsync(TUser, System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7_UpdateAsync_System_Int32_System_Object_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607.UpdateAsync(System.Int32%2CSystem.Object%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L114">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UpdateAsync_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UpdateAsync*"></a>
+  <h4 id="Mozlite_Extensions_Security_Stores_UserStoreBase_7_UpdateAsync_System_Int32_System_Object_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Security.Stores.UserStoreBase`7.UpdateAsync(System.Int32,System.Object,System.Threading.CancellationToken)">UpdateAsync(Int32, Object, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>通过用户ID更新用户列。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; UpdateAsync(int userId, object fields, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户ID。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>用户列。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>取消标志。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回更新结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserLoginStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserClaimStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserPasswordStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserSecurityStampStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserEmailStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserLockoutStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserPhoneNumberStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticationTokenStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticatorKeyStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorRecoveryCodeStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserRoleStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IUserStoreBase-7.html">IUserStoreBase&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IUserStoreBase-4.html">IUserStoreBase&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IUserRoleDbContext-7.html">IUserRoleDbContext&lt;TUser, TRole, TUserClaim, TUserRole, TUserLogin, TUserToken, TRoleClaim&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IUserDbContext-4.html">IUserDbContext&lt;TUser, TUserClaim, TUserLogin, TUserToken&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Security.Stores.IRoleDbContext-3.html">IRoleDbContext&lt;TRole, TUserRole, TRoleClaim&gt;</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Security_Stores_UserStoreBase_7.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Security.Stores.UserStoreBase%607%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Security/Stores/UserStoreBase.cs/#L23" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

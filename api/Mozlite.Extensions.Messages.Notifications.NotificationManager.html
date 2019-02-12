@@ -1,0 +1,920 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>NotificationManager 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="NotificationManager 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager">
+  
+  
+  <h1 id="Mozlite_Extensions_Messages_Notifications_NotificationManager" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager" class="text-break">NotificationManager 类
+  </h1>
+  <div class="markdown level0 summary"><p>通知管理实现类。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mozlite.Extensions.ObjectManager-2.html">ObjectManager</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.Notifications.Notification.html">Notification</a>, <span class="xref">System.Int32</span>&gt;</div>
+    <div class="level2"><a class="xref" href="Mozlite.Extensions.ObjectManager-1.html">ObjectManager</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.Notifications.Notification.html">Notification</a>&gt;</div>
+    <div class="level3"><span class="xref">NotificationManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Extensions.Messages.Notifications.INotificationManager.html">INotificationManager</a></div>
+    <div><a class="xref" href="Mozlite.Extensions.IObjectManager-1.html">IObjectManager</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.Notifications.Notification.html">Notification</a>&gt;</div>
+    <div><a class="xref" href="Mozlite.Extensions.IObjectManager-2.html">IObjectManager</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.Notifications.Notification.html">Notification</a>, <span class="xref">System.Int32</span>&gt;</div>
+    <div><a class="xref" href="Mozlite.ISingletonService.html">ISingletonService</a></div>
+    <div><a class="xref" href="Mozlite.IService.html">IService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Context">ObjectManager&lt;Notification, Int32&gt;.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Save__0_">ObjectManager&lt;Notification, Int32&gt;.Save(Notification)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_IsDuplicated__0_">ObjectManager&lt;Notification, Int32&gt;.IsDuplicated(Notification)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Update__1_System_Object_">ObjectManager&lt;Notification, Int32&gt;.Update(Int32, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Update_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_">ObjectManager&lt;Notification, Int32&gt;.Update(Expression&lt;Predicate&lt;Notification&gt;&gt;, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Delete_System_Linq_Expressions_Expression_System_Predicate__0___">ObjectManager&lt;Notification, Int32&gt;.Delete(Expression&lt;Predicate&lt;Notification&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Delete__1_">ObjectManager&lt;Notification, Int32&gt;.Delete(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Find__1_">ObjectManager&lt;Notification, Int32&gt;.Find(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Find_System_Linq_Expressions_Expression_System_Predicate__0___">ObjectManager&lt;Notification, Int32&gt;.Find(Expression&lt;Predicate&lt;Notification&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Fetch_System_Linq_Expressions_Expression_System_Predicate__0___">ObjectManager&lt;Notification, Int32&gt;.Fetch(Expression&lt;Predicate&lt;Notification&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_SaveAsync__0_System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.SaveAsync(Notification, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_IsDuplicatedAsync__0_System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.IsDuplicatedAsync(Notification, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_UpdateAsync__1_System_Object_System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.UpdateAsync(Int32, Object, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_UpdateAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Object_System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.UpdateAsync(Expression&lt;Predicate&lt;Notification&gt;&gt;, Object, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Clear">ObjectManager&lt;Notification, Int32&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_ClearAsync_System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.ClearAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Delete_System_Collections_Generic_IEnumerable__1__">ObjectManager&lt;Notification, Int32&gt;.Delete(IEnumerable&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_DeleteAsync_System_Collections_Generic_IEnumerable__1__System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.DeleteAsync(IEnumerable&lt;Int32&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_DeleteAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.DeleteAsync(Expression&lt;Predicate&lt;Notification&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_DeleteAsync__1_System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.DeleteAsync(Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_FindAsync__1_System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.FindAsync(Int32, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_FindAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.FindAsync(Expression&lt;Predicate&lt;Notification&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_FetchAsync_System_Linq_Expressions_Expression_System_Predicate__0___System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.FetchAsync(Expression&lt;Predicate&lt;Notification&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_AsQueryable">ObjectManager&lt;Notification, Int32&gt;.AsQueryable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_Load__1___0_">ObjectManager&lt;Notification, Int32&gt;.Load&lt;TQuery&gt;(TQuery)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Extensions.ObjectManager-2.html#Mozlite_Extensions_ObjectManager_2_LoadAsync__1___0_System_Threading_CancellationToken_">ObjectManager&lt;Notification, Int32&gt;.LoadAsync&lt;TQuery&gt;(TQuery, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Extensions.Messages.Notifications.html">Mozlite.Extensions.Messages.Notifications</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Extensions.dll</h6>
+  <h5 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NotificationManager : ObjectManager&lt;Notification&gt;, INotificationManager, IObjectManager&lt;Notification&gt;, IObjectManager&lt;Notification, int&gt;, ISingletonService, IService</code></pre>
+  </div>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager__ctor_Mozlite_Data_IDbContext_Mozlite_Extensions_Messages_Notifications_Notification__Microsoft_AspNetCore_Http_IHttpContextAccessor_Mozlite_Extensions_Settings_ISettingsManager_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.%23ctor(Mozlite.Data.IDbContext%7BMozlite.Extensions.Messages.Notifications.Notification%7D%2CMicrosoft.AspNetCore.Http.IHttpContextAccessor%2CMozlite.Extensions.Settings.ISettingsManager)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L25">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager__ctor_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.#ctor*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager__ctor_Mozlite_Data_IDbContext_Mozlite_Extensions_Messages_Notifications_Notification__Microsoft_AspNetCore_Http_IHttpContextAccessor_Mozlite_Extensions_Settings_ISettingsManager_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.#ctor(Mozlite.Data.IDbContext{Mozlite.Extensions.Messages.Notifications.Notification},Microsoft.AspNetCore.Http.IHttpContextAccessor,Mozlite.Extensions.Settings.ISettingsManager)">NotificationManager(IDbContext&lt;Notification&gt;, IHttpContextAccessor, ISettingsManager)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Extensions.Messages.Notifications.NotificationManager.html">NotificationManager</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotificationManager(IDbContext&lt;Notification&gt; context, IHttpContextAccessor httpContextAccessor, ISettingsManager settingsManager)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.IDbContext-1.html">IDbContext</a>&lt;<a class="xref" href="Mozlite.Extensions.Messages.Notifications.Notification.html">Notification</a>&gt;</td>
+        <td><span class="parametername">context</span></td>
+        <td><p>数据库操作实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.IHttpContextAccessor</span></td>
+        <td><span class="parametername">httpContextAccessor</span></td>
+        <td><p>Http上下文访问接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Settings.ISettingsManager.html">ISettingsManager</a></td>
+        <td><span class="parametername">settingsManager</span></td>
+        <td><p>配置管理接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">&#23646;&#24615;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_UserId.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.UserId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L34">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_UserId_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.UserId*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_UserId" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.UserId">UserId</h4>
+  <div class="markdown level1 summary"><p>当前用户ID。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int UserId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">&#23646;&#24615;&#20540;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_Clear.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L183">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_Clear_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.Clear*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_Clear" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>清空所有数据。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear()</code></pre>
+  </div>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.ObjectManager&lt;Mozlite.Extensions.Messages.Notifications.Notification, System.Int32&gt;.Clear()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_ClearAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.ClearAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L191">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_ClearAsync_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.ClearAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_ClearAsync_System_Threading_CancellationToken_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.ClearAsync(System.Threading.CancellationToken)">ClearAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>清空所有数据。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task ClearAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><span class="xref">Mozlite.Extensions.ObjectManager&lt;Mozlite.Extensions.Messages.Notifications.Notification, System.Int32&gt;.ClearAsync(System.Threading.CancellationToken)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_GetSize.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.GetSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L78">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_GetSize_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.GetSize*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_GetSize" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.GetSize">GetSize()</h4>
+  <div class="markdown level1 summary"><p>获取当前用户得通知数量。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetSize()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>返回通知得数量。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_GetSizeAsync.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.GetSizeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L87">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_GetSizeAsync_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.GetSizeAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_GetSizeAsync" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.GetSizeAsync">GetSizeAsync()</h4>
+  <div class="markdown level1 summary"><p>获取当前用户得通知数量。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;int&gt; GetSizeAsync()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>返回通知得数量。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_Load_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.Load(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L41">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_Load_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.Load*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_Load_System_Int32_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.Load(System.Int32)">Load(Int32)</h4>
+  <div class="markdown level1 summary"><p>加载当前用户最新得通知。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;Notification&gt; Load(int size = 0)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>通知记录数。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mozlite.Extensions.Messages.Notifications.Notification.html">Notification</a>&gt;</td>
+        <td><p>返回通知列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_LoadAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.LoadAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L60">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_LoadAsync_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.LoadAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_LoadAsync_System_Int32_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.LoadAsync(System.Int32)">LoadAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>加载当前用户最新得通知。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;IEnumerable&lt;Notification&gt;&gt; LoadAsync(int size = 0)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>通知记录数。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mozlite.Extensions.Messages.Notifications.Notification.html">Notification</a>&gt;&gt;</td>
+        <td><p>返回通知列表。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_Save_System_Int32___Mozlite_Extensions_Messages_Notifications_Notification_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.Save(System.Int32%5B%5D%2CMozlite.Extensions.Messages.Notifications.Notification)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L98">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_Save_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.Save*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_Save_System_Int32___Mozlite_Extensions_Messages_Notifications_Notification_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.Save(System.Int32[],Mozlite.Extensions.Messages.Notifications.Notification)">Save(Int32[], Notification)</h4>
+  <div class="markdown level1 summary"><p>保存对象实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DataResult Save(int[] userId, Notification model)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户列表。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Messages.Notifications.Notification.html">Notification</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.DataResult.html">DataResult</a></td>
+        <td><p>返回保存结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_SaveAsync_System_Int32___Mozlite_Extensions_Messages_Notifications_Notification_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.SaveAsync(System.Int32%5B%5D%2CMozlite.Extensions.Messages.Notifications.Notification)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L120">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SaveAsync_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SaveAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SaveAsync_System_Int32___Mozlite_Extensions_Messages_Notifications_Notification_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SaveAsync(System.Int32[],Mozlite.Extensions.Messages.Notifications.Notification)">SaveAsync(Int32[], Notification)</h4>
+  <div class="markdown level1 summary"><p>保存对象实例。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;DataResult&gt; SaveAsync(int[] userId, Notification model)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">userId</span></td>
+        <td><p>用户列表。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Messages.Notifications.Notification.html">Notification</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>模型实例对象。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mozlite.Extensions.DataResult.html">DataResult</a>&gt;</td>
+        <td><p>返回保存结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatus_System_Int32_Mozlite_Extensions_Messages_Notifications_NotificationStatus_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatus(System.Int32%2CMozlite.Extensions.Messages.Notifications.NotificationStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L142">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatus_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatus*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatus_System_Int32_Mozlite_Extensions_Messages_Notifications_NotificationStatus_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatus(System.Int32,Mozlite.Extensions.Messages.Notifications.NotificationStatus)">SetStatus(Int32, NotificationStatus)</h4>
+  <div class="markdown level1 summary"><p>设置状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SetStatus(int id, NotificationStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>通知id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Messages.Notifications.NotificationStatus.html">NotificationStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>状态。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回设置结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatus_System_Int32___Mozlite_Extensions_Messages_Notifications_NotificationStatus_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatus(System.Int32%5B%5D%2CMozlite.Extensions.Messages.Notifications.NotificationStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L164">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatus_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatus*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatus_System_Int32___Mozlite_Extensions_Messages_Notifications_NotificationStatus_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatus(System.Int32[],Mozlite.Extensions.Messages.Notifications.NotificationStatus)">SetStatus(Int32[], NotificationStatus)</h4>
+  <div class="markdown level1 summary"><p>设置状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SetStatus(int[] ids, NotificationStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p>通知id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Messages.Notifications.NotificationStatus.html">NotificationStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>状态。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>返回设置结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatusAsync_System_Int32_Mozlite_Extensions_Messages_Notifications_NotificationStatus_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatusAsync(System.Int32%2CMozlite.Extensions.Messages.Notifications.NotificationStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L153">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatusAsync_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatusAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatusAsync_System_Int32_Mozlite_Extensions_Messages_Notifications_NotificationStatus_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatusAsync(System.Int32,Mozlite.Extensions.Messages.Notifications.NotificationStatus)">SetStatusAsync(Int32, NotificationStatus)</h4>
+  <div class="markdown level1 summary"><p>设置状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; SetStatusAsync(int id, NotificationStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>通知id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Messages.Notifications.NotificationStatus.html">NotificationStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>状态。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回设置结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatusAsync_System_Int32___Mozlite_Extensions_Messages_Notifications_NotificationStatus_.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatusAsync(System.Int32%5B%5D%2CMozlite.Extensions.Messages.Notifications.NotificationStatus)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L175">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatusAsync_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatusAsync*"></a>
+  <h4 id="Mozlite_Extensions_Messages_Notifications_NotificationManager_SetStatusAsync_System_Int32___Mozlite_Extensions_Messages_Notifications_NotificationStatus_" data-uid="Mozlite.Extensions.Messages.Notifications.NotificationManager.SetStatusAsync(System.Int32[],Mozlite.Extensions.Messages.Notifications.NotificationStatus)">SetStatusAsync(Int32[], NotificationStatus)</h4>
+  <div class="markdown level1 summary"><p>设置状态。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; SetStatusAsync(int[] ids, NotificationStatus status)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">ids</span></td>
+        <td><p>通知id。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.Messages.Notifications.NotificationStatus.html">NotificationStatus</a></td>
+        <td><span class="parametername">status</span></td>
+        <td><p>状态。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>返回设置结果。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.Messages.Notifications.INotificationManager.html">INotificationManager</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.IObjectManager-1.html">IObjectManager&lt;TModel&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Extensions.IObjectManager-2.html">IObjectManager&lt;TModel, TKey&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.ISingletonService.html">ISingletonService</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.IService.html">IService</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Extensions_Messages_Notifications_NotificationManager.md&amp;value=---%0Auid%3A%20Mozlite.Extensions.Messages.Notifications.NotificationManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Extensions/Messages/Notifications/NotificationManager.cs/#L14" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

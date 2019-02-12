@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SqlServerQuerySqlGenerator 类
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SqlServerQuerySqlGenerator 类
+   ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator">
+  
+  
+  <h1 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator" class="text-break">SqlServerQuerySqlGenerator 类
+  </h1>
+  <div class="markdown level0 summary"><p>SQLServer数据库查询字符串生成器。</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>&#32487;&#25215;</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html">QuerySqlGenerator</a></div>
+    <div class="level2"><span class="xref">SqlServerQuerySqlGenerator</span></div>
+  </div>
+  <div classs="implements">
+    <h5>&#23454;&#29616;</h5>
+    <div><a class="xref" href="Mozlite.Data.Query.IQuerySqlGenerator.html">IQuerySqlGenerator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>&#32487;&#25215;&#25104;&#21592;</h5>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_SqlHelper">QuerySqlGenerator.SqlHelper</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_PrimaryKeyParameter">QuerySqlGenerator.PrimaryKeyParameter</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_AppendWherePrimaryKey_Mozlite_Data_Query_SqlIndentedStringBuilder_Mozlite_Extensions_IEntityType_System_Boolean_">QuerySqlGenerator.AppendWherePrimaryKey(SqlIndentedStringBuilder, IEntityType, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Create_Mozlite_Extensions_IEntityType_">QuerySqlGenerator.Create(IEntityType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Update_Mozlite_Extensions_IEntityType_">QuerySqlGenerator.Update(IEntityType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Update_Mozlite_Extensions_IEntityType_System_Object_">QuerySqlGenerator.Update(IEntityType, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Update_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_System_Object_">QuerySqlGenerator.Update(IEntityType, Expression, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Update_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_System_Linq_Expressions_LambdaExpression_">QuerySqlGenerator.Update(IEntityType, Expression, LambdaExpression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_PrimaryKeySql_Mozlite_Extensions_IEntityType_System_String_System_Object_">QuerySqlGenerator.PrimaryKeySql(IEntityType, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Delete_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_">QuerySqlGenerator.Delete(IEntityType, Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Scalar_Mozlite_Extensions_IEntityType_System_String_System_Linq_Expressions_LambdaExpression_System_Linq_Expressions_Expression_System_String_">QuerySqlGenerator.Scalar(IEntityType, String, LambdaExpression, Expression, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Visit_System_Linq_Expressions_Expression_">QuerySqlGenerator.Visit(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Select_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_">QuerySqlGenerator.Select(IEntityType, Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Query_Mozlite_Data_Query_IQuerySql_">QuerySqlGenerator.Query(IQuerySql)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>&#21629;&#21517;&#31354;&#38388;</strong>: <a class="xref" href="Mozlite.Data.SqlServer.Query.html">Mozlite.Data.SqlServer.Query</a></h6>
+  <h6><strong>&#31243;&#24207;&#38598;</strong>: Mozlite.Data.SqlServer.dll</h6>
+  <h5 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_syntax">&#35821;&#27861;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SqlServerQuerySqlGenerator : QuerySqlGenerator, IQuerySqlGenerator</code></pre>
+  </div>
+  <h3 id="constructors">&#26500;&#36896;&#20989;&#25968;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator__ctor_Mozlite_Data_ISqlHelper_Mozlite_Data_Query_IExpressionVisitorFactory_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.%23ctor(Mozlite.Data.ISqlHelper%2CMozlite.Data.Query.IExpressionVisitorFactory)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L173">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator__ctor_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.#ctor*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator__ctor_Mozlite_Data_ISqlHelper_Mozlite_Data_Query_IExpressionVisitorFactory_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.#ctor(Mozlite.Data.ISqlHelper,Mozlite.Data.Query.IExpressionVisitorFactory)">SqlServerQuerySqlGenerator(ISqlHelper, IExpressionVisitorFactory)</h4>
+  <div class="markdown level1 summary"><p>初始化类<a class="xref" href="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.html">SqlServerQuerySqlGenerator</a>。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SqlServerQuerySqlGenerator(ISqlHelper sqlHelper, IExpressionVisitorFactory visitorFactory)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.ISqlHelper.html">ISqlHelper</a></td>
+        <td><span class="parametername">sqlHelper</span></td>
+        <td><p>SQL辅助接口。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.IExpressionVisitorFactory.html">IExpressionVisitorFactory</a></td>
+        <td><span class="parametername">visitorFactory</span></td>
+        <td><p>表达式工厂接口。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">&#26041;&#27861;
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Any_Mozlite_Extensions_IEntityType_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Any(Mozlite.Extensions.IEntityType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L36">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Any_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Any*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Any_Mozlite_Extensions_IEntityType_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Any(Mozlite.Extensions.IEntityType)">Any(IEntityType)</h4>
+  <div class="markdown level1 summary"><p>判断唯一主键关联是否存在。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SqlIndentedStringBuilder Any(IEntityType entityType)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.IEntityType.html">IEntityType</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>模型实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><p>返回SQL构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Any_Mozlite_Extensions_IEntityType_">QuerySqlGenerator.Any(IEntityType)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Any_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Any(Mozlite.Extensions.IEntityType%2CSystem.Linq.Expressions.Expression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L53">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Any_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Any*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Any_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Any(Mozlite.Extensions.IEntityType,System.Linq.Expressions.Expression)">Any(IEntityType, Expression)</h4>
+  <div class="markdown level1 summary"><p>判断是否存在。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SqlIndentedStringBuilder Any(IEntityType entityType, Expression expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.IEntityType.html">IEntityType</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>模型实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><p>返回SQL构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Any_Mozlite_Extensions_IEntityType_System_Linq_Expressions_Expression_">QuerySqlGenerator.Any(IEntityType, Expression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Move_Mozlite_Extensions_IEntityType_System_String_System_Linq_Expressions_LambdaExpression_System_Linq_Expressions_Expression_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Move(Mozlite.Extensions.IEntityType%2CSystem.String%2CSystem.Linq.Expressions.LambdaExpression%2CSystem.Linq.Expressions.Expression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L72">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Move_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Move*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Move_Mozlite_Extensions_IEntityType_System_String_System_Linq_Expressions_LambdaExpression_System_Linq_Expressions_Expression_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Move(Mozlite.Extensions.IEntityType,System.String,System.Linq.Expressions.LambdaExpression,System.Linq.Expressions.Expression)">Move(IEntityType, String, LambdaExpression, Expression)</h4>
+  <div class="markdown level1 summary"><p>移动排序。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SqlIndentedStringBuilder Move(IEntityType entityType, string direction, LambdaExpression order, Expression expression)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Extensions.IEntityType.html">IEntityType</a></td>
+        <td><span class="parametername">entityType</span></td>
+        <td><p>模型实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>方向：&quot;&lt;&quot;下移，&quot;&gt;&quot;上移。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.LambdaExpression</span></td>
+        <td><span class="parametername">order</span></td>
+        <td><p>排序列。</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>分组条件表达式。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><p>返回SQL构建实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Move_Mozlite_Extensions_IEntityType_System_String_System_Linq_Expressions_LambdaExpression_System_Linq_Expressions_Expression_">QuerySqlGenerator.Move(IEntityType, String, LambdaExpression, Expression)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_PageQuery_Mozlite_Data_Query_IQuerySql_Mozlite_Data_Query_SqlIndentedStringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.PageQuery(Mozlite.Data.Query.IQuerySql%2CMozlite.Data.Query.SqlIndentedStringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L125">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_PageQuery_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.PageQuery*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_PageQuery_Mozlite_Data_Query_IQuerySql_Mozlite_Data_Query_SqlIndentedStringBuilder_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.PageQuery(Mozlite.Data.Query.IQuerySql,Mozlite.Data.Query.SqlIndentedStringBuilder)">PageQuery(IQuerySql, SqlIndentedStringBuilder)</h4>
+  <div class="markdown level1 summary"><p>分页查询脚本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PageQuery(IQuerySql sql, SqlIndentedStringBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.IQuerySql.html">IQuerySql</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>当前查询实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a>实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_PageQuery_Mozlite_Data_Query_IQuerySql_Mozlite_Data_Query_SqlIndentedStringBuilder_">QuerySqlGenerator.PageQuery(IQuerySql, SqlIndentedStringBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Query_Mozlite_Data_Query_IQuerySql_Mozlite_Data_Query_SqlIndentedStringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Query(Mozlite.Data.Query.IQuerySql%2CMozlite.Data.Query.SqlIndentedStringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L109">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Query_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Query*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_Query_Mozlite_Data_Query_IQuerySql_Mozlite_Data_Query_SqlIndentedStringBuilder_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.Query(Mozlite.Data.Query.IQuerySql,Mozlite.Data.Query.SqlIndentedStringBuilder)">Query(IQuerySql, SqlIndentedStringBuilder)</h4>
+  <div class="markdown level1 summary"><p>查询脚本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Query(IQuerySql sql, SqlIndentedStringBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.IQuerySql.html">IQuerySql</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>当前查询实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.IndentedStringBuilder.html">IndentedStringBuilder</a>实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_Query_Mozlite_Data_Query_IQuerySql_Mozlite_Data_Query_SqlIndentedStringBuilder_">QuerySqlGenerator.Query(IQuerySql, SqlIndentedStringBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_SelectIdentity.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.SelectIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L26">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_SelectIdentity_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.SelectIdentity*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_SelectIdentity" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.SelectIdentity">SelectIdentity()</h4>
+  <div class="markdown level1 summary"><p>获取插入数据后自增长的SQL字符串。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string SelectIdentity()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回自增长获取的SQL字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_SelectIdentity">QuerySqlGenerator.SelectIdentity()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_SizeQuery_Mozlite_Data_Query_IQuerySql_Mozlite_Data_Query_SqlIndentedStringBuilder_.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.SizeQuery(Mozlite.Data.Query.IQuerySql%2CMozlite.Data.Query.SqlIndentedStringBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L156">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_SizeQuery_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.SizeQuery*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_SizeQuery_Mozlite_Data_Query_IQuerySql_Mozlite_Data_Query_SqlIndentedStringBuilder_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.SizeQuery(Mozlite.Data.Query.IQuerySql,Mozlite.Data.Query.SqlIndentedStringBuilder)">SizeQuery(IQuerySql, SqlIndentedStringBuilder)</h4>
+  <div class="markdown level1 summary"><p>选项特定数量的记录数的查询脚本。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SizeQuery(IQuerySql sql, SqlIndentedStringBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">&#21442;&#25968;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#21517;&#31216;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.IQuerySql.html">IQuerySql</a></td>
+        <td><span class="parametername">sql</span></td>
+        <td><p>当前查询实例。</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td><p><a class="xref" href="Mozlite.Data.Query.SqlIndentedStringBuilder.html">SqlIndentedStringBuilder</a>实例。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_SizeQuery_Mozlite_Data_Query_IQuerySql_Mozlite_Data_Query_SqlIndentedStringBuilder_">QuerySqlGenerator.SizeQuery(IQuerySql, SqlIndentedStringBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_WithNolock.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.WithNolock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L17">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+  </span>
+  <a id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_WithNolock_" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.WithNolock*"></a>
+  <h4 id="Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator_WithNolock" data-uid="Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator.WithNolock">WithNolock()</h4>
+  <div class="markdown level1 summary"><p>忽略锁（脏查询）。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">&#22768;&#26126;</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string WithNolock()</code></pre>
+  </div>
+  <h5 class="returns">&#36820;&#22238;</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>&#31867;&#22411;</th>
+        <th>&#25551;&#36848;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>返回SQL字符串。</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">&#37325;&#20889;</h5>
+  <div><a class="xref" href="Mozlite.Data.Query.QuerySqlGenerator.html#Mozlite_Data_Query_QuerySqlGenerator_WithNolock">QuerySqlGenerator.WithNolock()</a></div>
+  <h3 id="implements">&#23454;&#29616;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Data.Query.IQuerySqlGenerator.html">IQuerySqlGenerator</a>
+  </div>
+  <h3 id="extensionmethods">&#25193;&#23637;&#26041;&#27861;</h3>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_Included_System_Object_System_Collections_IEnumerable_">Cores.Included(Object, IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Cores.html#Mozlite_Cores_ToJsonString_System_Object_Newtonsoft_Json_JsonSerializerSettings_">Cores.ToJsonString(Object, JsonSerializerSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="Mozlite.Data.TypeExtensions.html#Mozlite_Data_TypeExtensions_ToDictionary_System_Object_System_StringComparer_">TypeExtensions.ToDictionary(Object, StringComparer)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/new/master/apiSpec/new?filename=Mozlite_Data_SqlServer_Query_SqlServerQuerySqlGenerator.md&amp;value=---%0Auid%3A%20Mozlite.Data.SqlServer.Query.SqlServerQuerySqlGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/src/Mozlite.Data.SqlServer/Query/SqlServerQuerySqlGenerator.cs/#L11" class="contribution-link">&#26597;&#30475;&#28304;&#20195;&#30721;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
