@@ -69,10 +69,27 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="自定义程序集服务注册接口">自定义程序集服务注册接口</h1>
 
-<div class="WARNING">
-<h5>警告</h5>
-<p>正在上传中，请耐心等待...</p>
-</div>
+<p>在<a href="ioc.html">IOC容器注册接口</a>中，可以自动进行接口和实现类注册，但是很多时候需要进行手动注册。我们建议每个业务逻辑都写在自己的Razor UI库中，所以我们预留了这个接口。</p>
+<pre><code class="lang-csharp">    /// &lt;summary&gt;
+    /// 服务配置接口。
+    /// &lt;/summary&gt;
+    public interface IServiceConfigurer : IService
+    {
+        /// &lt;summary&gt;
+        /// 配置服务方法。
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;services&quot;&gt;服务集合实例。&lt;/param&gt;
+        /// &lt;param name=&quot;configuration&quot;&gt;配置接口。&lt;/param&gt;
+        void ConfigureServices(IServiceCollection services, IConfiguration configuration);
+    }
+</code></pre>
+<p>在实现类中，进行手动添加注册，其中<code>configuration</code>为配置接口实例。</p>
+<p><strong>其他链接</strong></p>
+<ul>
+<li><a href="ioc.html">IOC容器注册接口</a></li>
+<li><a href="app.html">自定义应用程序中间件使用接口</a></li>
+<li><a href="suppress.html">替换已有程序集注册的接口实现类</a></li>
+</ul>
 </article>
           </div>
           

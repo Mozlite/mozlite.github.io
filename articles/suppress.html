@@ -69,10 +69,49 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="替换已有程序集注册的接口实现类">替换已有程序集注册的接口实现类</h1>
 
-<div class="WARNING">
-<h5>警告</h5>
-<p>正在上传中，请耐心等待...</p>
+<p>在<a href="ioc.html">IOC容器注册接口</a>中，可以自动进行接口和实现类注册，但是很多时候需要进行手动注册。我们建议每个业务逻辑都写在自己的Razor UI库中，如果在实现业务中，有些实现类不适合我们的业务，就需要进行重写。</p>
+<p>在重写了实现类后，需要让<code>Mozlite</code>能够自动识别调用哪一个实现类，这样我们就需要忽略原有实现类，可以使用如下特性对新的类进行标注。</p>
+<pre><code class="lang-csharp">    /// &lt;summary&gt;
+    /// 挂起服务类型，用于替换已有的一些默认服务类型。
+    /// &lt;/summary&gt;
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true, Inherited = false)]
+    public class SuppressAttribute : Attribute
+    {
+        /// &lt;summary&gt;
+        /// 初始化类&lt;see cref=&quot;SuppressAttribute&quot;/&gt;。
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;fullName&quot;&gt;全名。&lt;/param&gt;
+        public SuppressAttribute(string fullName)
+        {
+            FullName = fullName;
+        }
+
+        /// &lt;summary&gt;
+        /// 初始化类&lt;see cref=&quot;SuppressAttribute&quot;/&gt;。
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;type&quot;&gt;要被替换的类型。&lt;/param&gt;
+        public SuppressAttribute(Type type)
+        {
+            FullName = type.FullName;
+        }
+
+        /// &lt;summary&gt;
+        /// 被替换类型的全名。
+        /// &lt;/summary&gt;
+        public string FullName { get; }
+    }
+</code></pre>
+<p>这个特性主要就是告诉<code>Mozlite</code>，当前标注的类将对<code>FullName</code>的类进行替换，那样自动注册实现类的时候将忽略这个类。</p>
+<div class="NOTE">
+<h5>注意</h5>
+<p>如果要忽略整个程序集的容器，可以在配置文件<code>appsettings.json</code>中进行配置，添加<code>Excludes:[程序集名称]</code>节点！</p>
 </div>
+<p><strong>其他链接</strong></p>
+<ul>
+<li><a href="ioc.html">IOC容器注册接口</a></li>
+<li><a href="service.html">自定义程序集服务注册接口</a></li>
+<li><a href="app.html">自定义应用程序中间件使用接口</a></li>
+</ul>
 </article>
           </div>
           

@@ -69,10 +69,57 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="后台服务">后台服务</h1>
 
-<div class="WARNING">
-<h5>警告</h5>
-<p>正在上传中，请耐心等待...</p>
-</div>
+<p>在aspnetcore2.x版本之后，添加了一个后台服务接口<code>IHostedService</code>，在核心框架中实现类一个基类<code>HostedService</code>，如果需要在程序集中使用到后台服务，可以继承这个类。</p>
+<pre><code class="lang-csharp">    /// &lt;summary&gt;
+    /// 后台服务基类。
+    /// &lt;/summary&gt;
+    public abstract class HostedService : IHostedService, IServices, IDisposable
+    {
+        private Task _executingTask;
+        private CancellationTokenSource _cts;
+        /// &lt;summary&gt;
+        /// 当应用程序开启时候触发得方法。
+        /// &lt;/summary&gt;
+        public virtual Task StartAsync(CancellationToken cancellationToken)
+        {
+            _cts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+            _executingTask = ExecuteAsync(_cts.Token);
+            return _executingTask.IsCompleted ? _executingTask : Task.CompletedTask;
+        }
+
+        /// &lt;summary&gt;
+        /// 当应用程序关闭时候触发得方法。
+        /// &lt;/summary&gt;
+        public virtual async Task StopAsync(CancellationToken cancellationToken)
+        {
+            if (_executingTask == null)
+                return;
+            _cts.Cancel();
+            await Task.WhenAny(_executingTask, Task.Delay(-1, cancellationToken));
+            cancellationToken.ThrowIfCancellationRequested();
+        }
+
+        /// &lt;summary&gt;
+        /// 执行得方法，一直执行直到设置取消标记。
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;cancellationToken&quot;&gt;取消标记。&lt;/param&gt;
+        /// &lt;returns&gt;返回当前执行得任务。&lt;/returns&gt;
+        protected abstract Task ExecuteAsync(CancellationToken cancellationToken);
+
+        /// &lt;summary&gt;
+        /// 释放资源。
+        /// &lt;/summary&gt;
+        public void Dispose()
+        {
+            _cts?.Cancel();
+        }
+    }
+</code></pre>
+<p><strong>相关链接</strong></p>
+<ul>
+<li><a href="task.html">后台任务服务</a></li>
+<li><a href="installer.html">安装初始化</a></li>
+</ul>
 </article>
           </div>
           

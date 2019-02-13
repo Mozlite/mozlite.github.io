@@ -5,16 +5,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#33258;&#23450;&#20041;&#24212;&#29992;&#31243;&#24207;&#20013;&#38388;&#20214;&#20351;&#29992;&#25509;&#21475; </title>
+    <title>Mozlite&#39033;&#30446;&#25991;&#26723; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#33258;&#23450;&#20041;&#24212;&#29992;&#31243;&#24207;&#20013;&#38388;&#20214;&#20351;&#29992;&#25509;&#21475; ">
+    <meta name="title" content="Mozlite&#39033;&#30446;&#25991;&#26723; ">
     <meta name="generator" content="docfx 2.40.10.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -57,44 +57,11 @@
         </div>
       </header>
       <div role="main" class="container-fluid body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
+        <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="自定义应用程序中间件使用接口">自定义应用程序中间件使用接口</h1>
+<h1 id="mozlite项目文档">Mozlite项目文档</h1>
 
-<p>我们建议每个业务逻辑都写在自己的Razor UI库中，可以在扩展的库中添加中间件，所以我们预留了这个接口。</p>
-<pre><code class="lang-csharp">    /// &lt;summary&gt;
-    /// 应用程序配置接口。
-    /// &lt;/summary&gt;
-    public interface IApplicationConfigurer : IServices
-    {
-        /// &lt;summary&gt;
-        /// 优先级。
-        /// &lt;/summary&gt;
-        int Priority { get; }
-
-        /// &lt;summary&gt;
-        /// 配置应用程序实例。
-        /// &lt;/summary&gt;
-        /// &lt;param name=&quot;app&quot;&gt;应用程序构建实例。&lt;/param&gt;
-        /// &lt;param name=&quot;configuration&quot;&gt;配置接口。&lt;/param&gt;
-        void Configure(IApplicationBuilder app, IConfiguration configuration);
-    }
-</code></pre>
-<p>在实现类中，进行手动添加配置，其中<code>configuration</code>为配置接口实例，而<code>Priority</code>则是中间件运行的优先级。</p>
-<p><strong>其他链接</strong></p>
-<ul>
-<li><a href="ioc.html">IOC容器注册接口</a></li>
-<li><a href="service.html">自定义程序集服务注册接口</a></li>
-<li><a href="suppress.html">替换已有程序集注册的接口实现类</a></li>
-</ul>
 </article>
           </div>
           
@@ -103,7 +70,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Mozlite/Docs/blob/master/articles/app.md/#L1" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/README.md/#L1" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
                   </li>
                 </ul>
               </div>
@@ -129,8 +96,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
   </body>
 </html>

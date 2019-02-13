@@ -69,10 +69,54 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="ioc容器注册接口">IOC容器注册接口</h1>
 
+<p>在aspnetcore中，整个核心就是使用IOC来进行对象控制，这可以使得不同程序集对象耦合度不高，容易扩展。用对象池管理对象，也对经常使用的对象初始化性能更好，所以在aspnetcore中，在使用接口对象时候需要进行注册。</p>
+<ol>
+<li>注册普通的接口实例，主要是每次使用对象的时候都是实例化一个对象；</li>
+<li>注册上下文中单例实例，在当前线程上下文中只有一个对象实例；</li>
+<li>注册单例的接口实例，整个应用程序域中只有一个实例；</li>
+</ol>
 <div class="WARNING">
 <h5>警告</h5>
-<p>正在上传中，请耐心等待...</p>
+<p>这三种方式的对象具有自己的优先等级，普通接口&lt;上下文单例&lt;单例。如果优先级高的构造函数，注入等级低的接口，将会抛出错误！</p>
 </div>
+<p>在aspnetcore中的容器主要包含这三种情况，在Startup.cs文件中进行注册，具体代码如下：</p>
+<pre><code class="lang-csharp">    // This method gets called by the runtime. Use this method to add services to the container.
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddTransient();
+        services.AddTransient&lt;&gt;();
+        services.TryAddTransient();
+        services.TryAddTransient&lt;&gt;();
+        services.AddScoped();
+        services.AddScoped&lt;&gt;();
+        services.TryAddScoped();
+        services.TryAddScoped&lt;&gt;();
+        services.AddSingleton();
+        services.AddSingleton&lt;&gt;();
+        services.TryAddSingleton();
+        services.TryAddSingleton&lt;&gt;();
+        services.TryAdd();
+        services.TryAddEnumerable();
+    }
+</code></pre>
+<h2 id="自动注册接口">自动注册接口</h2>
+<p>由于每次对象都需要注册，所以在<code>Mozlite</code>中我们将自动分析接口类型，然后实现自动注册，应对三种方式的接口对象，对应的接口如下：</p>
+<ol>
+<li>注册普通的接口实例：<code>IService</code>，如果多个实现类型使用<code>IServices</code>；</li>
+<li>注册上下文中单例实例：<code>IScopedService</code>，如果多个实现类型使用<code>IScopedServices</code>；</li>
+<li>注册单例的接口实例：<code>ISingletonService</code>，如果多个实现类型使用<code>ISingletonServices</code>；</li>
+</ol>
+<p>只要在对应的接口或者实例中实现以上接口，<code>Mozlite</code>将会自动进行注册程序集中的对象。</p>
+<div class="NOTE">
+<h5>注意</h5>
+<p>如果要忽略整个程序集的容器，可以在配置文件<code>appsettings.json</code>中进行配置，添加<code>Excludes:[程序集名称]</code>节点！</p>
+</div>
+<p><strong>其他链接</strong></p>
+<ul>
+<li><a href="service.html">自定义程序集服务注册接口</a></li>
+<li><a href="app.html">自定义应用程序中间件使用接口</a></li>
+<li><a href="suppress.html">替换已有程序集注册的接口实现类</a></li>
+</ul>
 </article>
           </div>
           
