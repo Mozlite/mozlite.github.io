@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#26032;&#24314;&#39033;&#30446; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#26032;&#24314;&#39033;&#30446; ">
+    <meta name="generator" content="docfx 2.40.10.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container-fluid hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="新建项目">新建项目</h1>
+
+<p>使用Mozlite进行开发时候，需要按照如下步骤进行项目初始建立，因为没有制作项目模板所以需要手动完成。</p>
+<div class="WARNING">
+<h5>警告</h5>
+<p>本文提到的项目名称默认为<code>Apollo</code>，如果没有特殊说明，<code>Apollo</code>只是代表着例子项目</p>
+</div>
+<h2 id="建立项目">建立项目</h2>
+<p>根据<a href="intro.html">简单介绍里的项目目录</a>，在我们的硬盘上建立目录<code>Apollo</code>，如果有多个项目都是基于<code>Mozlite</code>进行开发，可以将<code>Mozlite</code>目录放在所有项目的同级目录中。</p>
+<p>├──Apollo(项目文件夹1)</p>
+<p>├──Demo2(项目文件夹2)</p>
+<p>├──Demo3(项目文件夹3)</p>
+<p>├──Mozlite(框架文件夹，直接克隆)</p>
+<h2 id="下载mozlite">下载Mozlite</h2>
+<p>使用git克隆，或者直接到<a href="https://github.com/Mozlite/aspnetcore">Mozlite</a>下载源代码到<code>Mozlite</code>目录中。</p>
+<pre><code class="lang-sh">    clone https://github.com/Mozlite/aspnetcore.git mozlite
+</code></pre>
+<h2 id="建立csharp项目">建立CSharp项目</h2>
+<p>通过VS在目录<code>Apollo</code>建立MVC网站项目（也可以是WebPages项目），个人建议使用WebPages项目。当然如果你是前后端代码分离的，使用API项目。添加标准库<code>Apollo.Extensions</code>，此库主要是为了衔接<code>Mozlite</code>项目，和项目中使用的通用功能模块的定义。</p>
+<p>如果有使用到用户登录注册模块，可以将<code>Mozlite</code>项目中的<code>MS.Extensions.Security</code>中的<code>Extensions</code>目录复制到<code>Apollo.Extensions</code>项目中，并且修改User等相关定义，兼容当前项目的业务逻辑。并且建立<code>Apollo.Extensions.Security</code>Razor UI库，把<code>MS.Extensions.Security</code>中的Areas目录复制到项目中，并根据前端设计进行修改。</p>
+<p>如果使用到<code>电子邮件</code>,<code>短信</code>，<code>通知</code>,<code>API</code>的功能，需要将<code>Mozlite.Mvc.RazorUI</code>目录引用到<code>Apollo</code>中。</p>
+<h2 id="修改startup文件">修改Startup文件</h2>
+<p>由于<code>Mozlite</code>提供了<a href="ioc.html">自动容器注册接口</a>，需要将框架相关功能在启动项中进行设置，具体代码如下：</p>
+<pre><code class="lang-csharp">    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddMozlite(Configuration)
+                    .AddSqlServer()
+                    .AddMozliteMvc();
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler(&quot;/Error&quot;);
+                //app.UseHsts();
+            }
+            //必须在其他中间件之前
+            //app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            //app.UseCookiePolicy();
+
+            app.UseMozliteMvc(Configuration);
+        }
+    }
+</code></pre>
+<p>这样就可以在项目中使用<code>Mozlite</code>相关功能了，关于具体的功能，其他文档中将进行介绍。</p>
+<h2 id="修改ui页面">修改UI页面</h2>
+<p>在<code>Pages/Shared</code>中添加布局页面，并根据业务逻辑展开开发。</p>
+<div class="NOTE">
+<h5>注意</h5>
+<p>本框架是基于Bootstrap进行开发的，所有TagHelper有涉及到样式的，必须兼容Bootstrap，否则样式需要自己重新编写。</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix col-md-2">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Mozlite/Docs/blob/master/articles/project.md/#L1" class="contribution-link">&#25913;&#21892;&#27492;&#25991;&#26723;</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">返回↑</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container-fluid">
+            <span class="pull-right">
+              <a href="#top">返回↑</a>
+            </span>
+            
+            <span> <strong>DocFX</strong> 2019&copy; <a href="https://www.mozlite.com">www.mozlite.com</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
